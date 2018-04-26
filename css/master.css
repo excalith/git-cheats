@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  background: #21252b;
+  font-family: 'Fira Sans', sans-serif;
+  overflow-y: scroll;
+}
+
+/* ---- FORM ---- */
+.form {
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
+  width: 750px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  width:100%;
+  height: 55px;
+  text-align: center;
+  color: #fff;
+  background: #282c34;
+  border:none;
+}
+
+/* ---- ISOTOPE ---- */
+
+.grid {
+  margin: 0 auto;
+  width: 750px;
+}
+
+/* CLEAR FIX */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- GRID ITEM ---- */
+.grid-item {
+  position: relative;
+  float: left;
+  width: 750px;
+  /*height: auto;*/
+  margin-bottom: 15px;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  background: #282c34;
+}
+
+.grid-item > * {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.grid-item .title {
+    position: relative;
+    top: -5px;
+    font-size: 34px;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.grid-item .category {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  color: #fbc02d;
+  text-transform: capitalize;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.grid-item .code {
+    position: relative;
+    width: 725px;
+    height:auto;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: normal;
+    background-color: #21252b;
+    padding: 10px 20px 10px 10px;
+}
+
+.grid-item .main-desc {
+  position: relative;
+  margin-bottom:20px;
+  font-size: 12px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.grid-item .options-title {
+  margin-bottom: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.grid-item .desc {
+  position: relative;
+  width: 99.99%;
+  margin-bottom:15px;
+  padding: 15px;
+  font-size: 12px;
+  border: #21252b 1px solid;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.grid-item a {
+  text-decoration: none;
+  font-size: 12px;
+  float: right;
+  color: #BDBDBD;
+}
+
+.grid-item a:hover {
+  text-decoration: none;
+  color: #00BCD4;
+}
+
+.grid-item.create   { border-left: 4px solid #8bc34a;}
+.grid-item.changes, .grid-item.config  { border-left: 4px solid #ff8800;}
+.grid-item.branch, .grid-item.checkout   { border-left: 4px solid #3d53b3;}
+.grid-item.update   { border-left: 4px solid #00bcd4;}
+.grid-item.merge, .grid-item.rebase   { border-left: 4px solid #c2185b;}
+.grid-item.undo  { border-left: 4px solid #ff5252;}
+.grid-item.extensions  { border-left: 4px solid #8fffa7;}
+.grid-item.history   { border-left: 4px solid #774aff;}

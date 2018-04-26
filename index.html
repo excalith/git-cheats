@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Git Cheatsheet</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+</head>
+
+<body>
+    <a href="https://github.com/excalith/Interactive-Git-Cheatsheet">
+        <img style="position: absolute; top: 0; right: 0; border: 0; z-index:999" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
+            alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+    </a>
+    <div class="form">
+        <input type="text" class="quicksearch" placeholder="Search" autofocus="" />
+    </div>
+
+    <div class="grid">
+    </div>
+
+    <script>
+        // init isotope
+        var qsRegex;
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            filter: function () {
+                return qsRegex ? $(this).text().match(qsRegex) : true;
+            }
+        });
+
+        $grid.isotope('updateSortData').isotope();
+
+        // use value of search field to filter
+        var $quicksearch = $('.quicksearch').keyup(debounce(function () {
+            qsRegex = new RegExp($quicksearch.val(), 'gi');
+            $grid.isotope();
+        }, 200));
+
+        // debounce so filtering doesn't happen every millisecond
+        function debounce(fn, threshold) {
+            var timeout;
+            return function debounced() {
+                if (timeout) {
+                    clearTimeout(timeout);
+                }
+                function delayed() {
+                    fn();
+                    timeout = null;
+                }
+                timeout = setTimeout(delayed, threshold || 100);
+            }
+        }
+
+        // parse json
+        $.getJSON("commands.json", function (json) {
+            // commands
+            for (i = 0; i < json.length; i++) {
+                var $item = $("<div class='grid-item " + json[i].keywords +
+                    "' data-category='" + json[i].category +
+                    "'><p class='title'>" + json[i].title +
+
+                    "</p><p class='category'>" + json[i].category +
+                    "</p><p class='main-desc'>" + json[i].desc + "</p>" +
+                    "<p class='options-title'>Options:</p>");
+
+                // command options
+                for (j = 0; j < json[i].options.length; j++) {
+                    $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
+                    $item.append("<p class='desc'>" + json[i].options[j].desc + "</p>");
+                };
+
+                // git-scm link for more info
+                $item.append("<a href='" + json[i].url + "'>(Read More)</a></div>");
+                $grid.append($item)
+                    .isotope('appended', $item);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
