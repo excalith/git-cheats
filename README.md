@@ -9,5 +9,6 @@ Interactive Git Cheatsheet is a small project for people who wants to get into g
 * [jQuery](https://github.com/jquery/jquery) - Making life bearable
 * [Isotope](https://github.com/metafizzy/isotope) - Filtering & sorting commands
 
-## Other Repos
+## Other Useful Repos
+* [Git Init](https://pel-daniel.github.io/git-init) - Great learning tool for learning how to use commands
 * [Learn Git Branching](https://learngitbranching.js.org/?demo) - Learn how to use branches properly
