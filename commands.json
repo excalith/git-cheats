@@ -228,7 +228,7 @@
     },
     {
         "title": "checkout",
-        "category": "branch",
+        "category": "branching",
         "keywords": "branching checkout",
         "desc": "Switch branches or restore working tree files",
         "url": "https://git-scm.com/docs/git-checkout",

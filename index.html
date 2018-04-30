@@ -59,12 +59,11 @@
         $.getJSON("commands.json", function (json) {
             // commands
             for (i = 0; i < json.length; i++) {
-                var $item = $("<div class='grid-item " + json[i].keywords +
-                    "' data-category='" + json[i].category +
-                    "'><p class='title'>" + json[i].title +
-
-                    "</p><p class='category'>" + json[i].category +
-                    "</p><p class='main-desc'>" + json[i].desc + "</p>" +
+                var $item = $(
+                    "<div class='grid-item " + json[i].keywords + "' data-category='" + json[i].category + "'>" +
+                    "<p class='title'>" + json[i].title + "</p>" +
+                    "<p class='category " + json[i].keywords +"'>" + json[i].category + "</p>" +
+                    "<p class='main-desc'>" + json[i].desc + "</p>" +
                     "<p class='options-title'>Options:</p>");
 
                 // command options
