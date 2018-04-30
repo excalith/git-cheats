@@ -138,12 +138,12 @@ input[type="text"] {
   text-decoration: none;
   font-size: 12px;
   float: right;
-  color: #BDBDBD;
+  color: #00BCD4;
 }
 
 .grid-item a:hover {
   text-decoration: none;
-  color: #00BCD4;
+  color: rgb(0, 255, 213);
 }
 
 .grid-item.create   { border-left: 4px solid #8bc34a;}
