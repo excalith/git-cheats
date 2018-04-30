@@ -9,7 +9,7 @@ Interactive Git Cheatsheet is a small project for people who wants to get into g
 Please feel free to contribute any way you can. Just keep in mind that this is a simple tool to help people **get used to** common commands. No need to add commands such as ```reflogs``` and ```checkout --orphan``` etc.
 
 That being said, you can;
-* Create issues for issues and enhancements
+* Create issues for feature requests and issues
 * Create pull requests for any fixes / additions
 
 ## Dependencies:
