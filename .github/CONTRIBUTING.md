@@ -13,21 +13,17 @@ The following is a set of guidelines for contributing to this repository.
   * [Commit Messages](#commit-messages)
 
 ## Code of Conduct
-This project and everyone participating in it is governed by the [Interactive Git Cheatsheet Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by the [Interactive Git Cheatsheet Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## How Can I Contribute?
 ### Reporting Bugs
-
-This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
-
-Before creating bug reports, please perform a [cursory search](https://github.com/excalith/Interactive-Git-Cheatsheet/issues) to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one. When you are creating a bug report, please include as many details as possible. Fill out [the required template](.github/ISSUE_TEMPLATE.md), the information it asks for helps us resolve issues faster.
+Before creating bug reports, please perform a [cursory search](https://github.com/excalith/Interactive-Git-Cheatsheet/issues) to see if the problem has already been reported. If it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one. When you are creating a bug report, please include as many details as possible. Fill out [the required template](ISSUE_TEMPLATE.md), the information it asks for helps us resolve issues faster.
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
 
 ### Suggesting Enhancements
-
-This section guides you through submitting an enhancement suggestions, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
+Before suggesting an enhancement, please perform a [cursory search](https://github.com/excalith/Interactive-Git-Cheatsheet/issues) to see if the suggestion has already been submitted.
 
 * **User a clear descriptive title** for the suggestion
 * **Describe the current behavior** and **explain which behavior you expected to see instead** and why
@@ -38,9 +34,9 @@ Unsure where to begin contributing? You can start by looking through these `begi
 * [Beginner issues](https://github.com/excalith/Interactive-Git-Cheatsheet/labels/beginner) - issues which should only require a few lines of code, and a test or two.
 * [Help wanted issues](https://github.com/excalith/Interactive-Git-Cheatsheet/labels/help%20wanted) - issues which should be a bit more involved than `beginner` issues.
 
-Both issue lists are sorted by total number of comments. While not perfect, number of comments is a reasonable proxy for impact a given change will have.
 
 ### Pull Requests
+While creating a Pull Request, fill out the [the required template](PULL_REQUEST_TEMPLATE.md)
 
 * **Do not** add complicated commands since this project is to help people get the basic commands
 * **Do not** change design into a complicated and / or overwhelming piece of junk
