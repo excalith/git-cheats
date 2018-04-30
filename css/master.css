@@ -158,3 +158,32 @@ input[type="text"] {
 .grid-item.undo  { border-left: 4px solid #ff5252; color: #ff5252;}
 .grid-item.extensions  { border-left: 4px solid #8fffa7; color: #8fffa7;}
 .grid-item.history   { border-left: 4px solid #5270f5; color: #5270f5;}
+
+/* ---- OCTOCAT! ---- */
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+      transform: rotate(0)
+  }
+  20%,
+  60% {
+      transform: rotate(-25deg)
+  }
+  40%,
+  80% {
+      transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+      animation: none
+  }
+  .github-corner .octo-arm {
+      animation: octocat-wave 560ms ease-in-out
+  }
+}
