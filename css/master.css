@@ -141,6 +141,12 @@ input[type="text"] {
   font-size: 13px;
   text-decoration: none;
   color: rgb(167, 168, 172);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .grid-item a:hover {
