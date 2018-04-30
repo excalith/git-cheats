@@ -5,6 +5,13 @@ Interactive Git Cheatsheet is a small project for people who wants to get into g
 
 ![Anim](/images/anim.gif)
 
+## How To Contribute:
+Please feel free to contribute any way you can. Just keep in mind that this is a simple tool to help people **get used to** common commands. No need to add commands such as ```reflogs``` and ```checkout --orphan``` etc.
+
+That being said, you can;
+* Create issues for issues and enhancements
+* Create pull requests for any fixes / additions
+
 ## Dependencies:
 * [jQuery](https://github.com/jquery/jquery) - Making life bearable
 * [Isotope](https://github.com/metafizzy/isotope) - Filtering & sorting commands
