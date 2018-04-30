@@ -108,7 +108,7 @@
                 "desc": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected"
             },
             {
-                "code": "commit --amend",
+                "code": "git commit --amend",
                 "desc": "Changes / Updates the last commit"
             },
             {
