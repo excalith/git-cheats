@@ -2,7 +2,7 @@
     {
         "title": "init",
         "category": "create",
-        "keywords": "init create start",
+        "keywords": "create init start",
         "desc": "Create an empty Git repository or reinitialize an existing one",
         "url": "https://git-scm.com/docs/git-init",
         "options": [
@@ -15,7 +15,7 @@
     {
         "title": "clone",
         "category": "create",
-        "keywords": "clone create new",
+        "keywords": "create clone new",
         "desc": "Create a new local repository",
         "url": "https://git-scm.com/docs/git-clone",
         "options": [
@@ -25,20 +25,24 @@
             },
             {
                 "code": "git clone -b [branch-name] ssh://user@domain.com/repo.git",
-                "desc": "Clone a repository and checkout to branch-name"
+                "desc": "Clone a repository with branch-name checked out"
             }
         ]
     },
     {
         "title": "add",
         "category": "changes",
-        "keywords": "status changes add",
+        "keywords": "changes add",
         "desc": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit",
         "url": "https://git-scm.com/docs/git-add",
         "options": [
             {
                 "code": "git add [source]",
                 "desc": "Adds given file to stage area"
+            },
+            {
+                "code": "git add --patch [source]",
+                "desc": "Interactively choose hunks of patch between the index and the work tree and add them to the index"
             },
             {
                 "code": "git add folder/*",
@@ -53,7 +57,7 @@
     {
         "title": "status",
         "category": "changes",
-        "keywords": "status changes",
+        "keywords": "changes status",
         "desc": "Changed files on your working directory",
         "url": "https://git-scm.com/docs/git-status",
         "options": [
@@ -74,7 +78,7 @@
     {
         "title": "diff",
         "category": "changes",
-        "keywords": "status changes diff",
+        "keywords": "changes diff",
         "desc": "Show changes between the working tree and the index or a tree, changes between the index and a tree",
         "url": "https://git-scm.com/docs/git-diff",
         "options": [
@@ -91,7 +95,7 @@
     {
         "title": "commit",
         "category": "changes",
-        "keywords": "status changes commit",
+        "keywords": "changes commit",
         "desc": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes",
         "url": "https://git-scm.com/docs/git-commit",
         "options": [
@@ -109,14 +113,14 @@
             },
             {
                 "code": "git commit --squash",
-                "desc": "Construct a commit message for use with rebase --autosquash"
+                "desc": "Create a single commit on top of the current branch"
             }
         ]
     },
     {
         "title": "stash",
         "category": "changes",
-        "keywords": "stash changes",
+        "keywords": "changes stash",
         "desc": "Stash the changes in a dirty working directory away",
         "url": "https://git-scm.com/docs/git-stash",
         "options": [
@@ -149,7 +153,7 @@
     {
         "title": "rm",
         "category": "changes",
-        "keywords": "status changes remove rm",
+        "keywords": "changes remove rm",
         "desc": "Remove files from the index",
         "url": "https://git-scm.com/docs/git-rm",
         "options": [
@@ -162,7 +166,7 @@
     {
         "title": "mv",
         "category": "changes",
-        "keywords": "status changes move mv",
+        "keywords": "changes move mv",
         "desc": "Move or rename a file or a directory",
         "url": "https://git-scm.com/docs/git-mv",
         "options": [
@@ -199,8 +203,8 @@
     },
     {
         "title": "branch",
-        "category": "branch",
-        "keywords": "branch",
+        "category": "branching",
+        "keywords": "branching branch",
         "desc": "List, create, or delete branches",
         "url": "https://git-scm.com/docs/git-branch",
         "options": [
@@ -225,7 +229,7 @@
     {
         "title": "checkout",
         "category": "branch",
-        "keywords": "checkout",
+        "keywords": "branching checkout",
         "desc": "Switch branches or restore working tree files",
         "url": "https://git-scm.com/docs/git-checkout",
         "options": [
@@ -294,7 +298,7 @@
     {
         "title": "merge",
         "category": "merge",
-        "keywords": "merge-rebase merge",
+        "keywords": "merge",
         "desc": "Merges a branch to your current HEAD",
         "url": "https://git-scm.com/docs/git-merge",
         "options": [
@@ -307,13 +311,17 @@
     {
         "title": "rebase",
         "category": "patching",
-        "keywords": "merge-rebase rebase",
+        "keywords": "patching rebase",
         "desc": "Rebase your current HEAD onto branch-name",
         "url": "https://git-scm.com/docs/git-rebase",
         "options": [
             {
                 "code": "git rebase [branch-name]",
                 "desc": "Rebase your current HEAD onto branch-name"
+            },
+            {
+                "code": "git rebase --interactive",
+                "desc": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing."
             },
             {
                 "code": "git rebase --continue",
@@ -328,7 +336,7 @@
     {
         "title": "cherry-pick",
         "category": "patching",
-        "keywords": "cherry-pick",
+        "keywords": "patching cherry-pick",
         "desc": "Apply the changes from a different commit to your current HEAD",
         "url": "https://git-scm.com/docs/git-cherry-pick",
         "options": [
@@ -341,7 +349,7 @@
     {
         "title": "reset",
         "category": "undo",
-        "keywords": "undo reset",
+        "keywords": "reset undo",
         "desc": "This form resets the index entries for all paths to their state",
         "url": "https://git-scm.com/docs/git-reset",
         "options": [
@@ -366,7 +374,7 @@
     {
         "title": "clean",
         "category": "undo",
-        "keywords": "undo clean",
+        "keywords": "reset undo clean",
         "desc": "Shows untracked files about to be removed",
         "url": "https://git-scm.com/docs/git-clean",
         "options": [
