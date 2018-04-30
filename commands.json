@@ -306,7 +306,7 @@
     },
     {
         "title": "rebase",
-        "category": "rebase",
+        "category": "patching",
         "keywords": "merge-rebase rebase",
         "desc": "Rebase your current HEAD onto branch-name",
         "url": "https://git-scm.com/docs/git-rebase",
@@ -322,6 +322,19 @@
             {
                 "code": "git rebase --abort",
                 "desc": "Abort a rebase"
+            }
+        ]
+    },
+    {
+        "title": "cherry-pick",
+        "category": "patching",
+        "keywords": "cherry-pick",
+        "desc": "Apply the changes from a different commit to your current HEAD",
+        "url": "https://git-scm.com/docs/git-cherry-pick",
+        "options": [
+            {
+                "code": "git cherry-pick [commit]",
+                "desc": "Pick and apply changes from commit hash to your current HEAD"
             }
         ]
     },
