@@ -203,8 +203,8 @@
     },
     {
         "title": "branch",
-        "category": "branching",
-        "keywords": "branching branch",
+        "category": "branch",
+        "keywords": "branch",
         "desc": "List, create, or delete branches",
         "url": "https://git-scm.com/docs/git-branch",
         "options": [
@@ -228,8 +228,8 @@
     },
     {
         "title": "checkout",
-        "category": "branching",
-        "keywords": "branching checkout",
+        "category": "branch",
+        "keywords": "branch checkout",
         "desc": "Switch branches or restore working tree files",
         "url": "https://git-scm.com/docs/git-checkout",
         "options": [
@@ -310,8 +310,8 @@
     },
     {
         "title": "rebase",
-        "category": "patching",
-        "keywords": "patching rebase",
+        "category": "patch",
+        "keywords": "patch rebase",
         "desc": "Rebase your current HEAD onto branch-name",
         "url": "https://git-scm.com/docs/git-rebase",
         "options": [
@@ -335,8 +335,8 @@
     },
     {
         "title": "cherry-pick",
-        "category": "patching",
-        "keywords": "patching cherry-pick",
+        "category": "patch",
+        "keywords": "patch cherry-pick",
         "desc": "Apply the changes from a different commit to your current HEAD",
         "url": "https://git-scm.com/docs/git-cherry-pick",
         "options": [

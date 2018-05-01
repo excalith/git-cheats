@@ -29,13 +29,42 @@
     </div>
 
     <script>
+
+        // parse json
+        $.getJSON("commands.json", function (json) {
+            // commands
+            for (i = 0; i < json.length; i++) {
+                var $item = $(
+                    "<div class='grid-item " + json[i].category + "' keywords='" + json[i].keywords + "'>" +
+                    "<p class='title'>" + json[i].title + "</p>" +
+                    "<p class='category " + json[i].category + "'>" + json[i].category + "</p>" +
+                    "<p class='main-desc'>" + json[i].desc + "</p>" +
+                    "<p class='options-title'>Options:</p>");
+
+                // command options
+                for (j = 0; j < json[i].options.length; j++) {
+                    $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
+                    $item.append("<p class='desc'>" + json[i].options[j].desc + "</p>");
+                };
+
+                // git-scm link for more info
+                $item.append("<a href='" + json[i].url + "'>(Read More)</a></div>");
+                $grid.append($item)
+                    .isotope('appended', $item);
+            }
+        });
+
         // init isotope
         var qsRegex;
         var $grid = $('.grid').isotope({
             itemSelector: '.grid-item',
             layoutMode: 'fitRows',
             filter: function () {
-                return qsRegex ? $(this).text().match(qsRegex) : true;
+                // This allows user to find all text within grid-items. Disabled for request
+                //return qsRegex ? $(this).text().match(qsRegex) : true;
+
+                // This allows user to find only keywords within keywords attribute.
+                return qsRegex ? $(this).attr('keywords').match(qsRegex) : true;
             }
         });
 
@@ -62,29 +91,6 @@
             }
         }
 
-        // parse json
-        $.getJSON("commands.json", function (json) {
-            // commands
-            for (i = 0; i < json.length; i++) {
-                var $item = $(
-                    "<div class='grid-item " + json[i].keywords + "' data-category='" + json[i].category + "'>" +
-                    "<p class='title'>" + json[i].title + "</p>" +
-                    "<p class='category " + json[i].keywords + "'>" + json[i].category + "</p>" +
-                    "<p class='main-desc'>" + json[i].desc + "</p>" +
-                    "<p class='options-title'>Options:</p>");
-
-                // command options
-                for (j = 0; j < json[i].options.length; j++) {
-                    $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
-                    $item.append("<p class='desc'>" + json[i].options[j].desc + "</p>");
-                };
-
-                // git-scm link for more info
-                $item.append("<a href='" + json[i].url + "'>(Read More)</a></div>");
-                $grid.append($item)
-                    .isotope('appended', $item);
-            }
-        });
     </script>
 
 </body>
