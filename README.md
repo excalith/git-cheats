@@ -6,13 +6,21 @@ Interactive Git Cheatsheet is a small project for people who wants to get into g
 ![Anim](/images/anim.gif)
 
 ## How To Contribute:
-Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [CONTRIBUTE.md](.github/CONTRIBUTING.md) before contributing.
+Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [CONTRIBUTE.md](.github/CONTRIBUTING.md) before contributing. 
 
 That being said, you can;
 * Create issues for feature requests and issues
 * Create pull requests for any fixes / additions
 
-## Authors
+## Change Log
+#### v1.1.0
+* Added Language Support (Currently it is only English)
+* Added Support For Filtering Out Advanced Commands (Currently there are no advanced commands)
+
+#### v1.0.0
+* Initial Release
+
+## Contributors
 * [Can Cellek](https://github.com/excalith)
 
 ## License
