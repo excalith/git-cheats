@@ -9,25 +9,157 @@ body {
   overflow-y: scroll;
 }
 
-/* ---- FORM ---- */
-.form {
-  margin: 0 auto;
-  padding: 25px 0 25px 0;
-  width: 750px;
+hr {
+  border: 1px solid #21252b ;
 }
 
-input[type="text"] {
-  font-size: 20px;
-  width:100%;
+/* ---- FORM ---- */
+#form {
+  clear: both;
+  height:55px;
+  width: 750px;
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
+}
+
+#form input[type="text"] {
+  float: left;
+  width:690px;
   height: 55px;
+  font-size: 20px;
   text-align: center;
   color: #fff;
   background: #282c34;
-  border:none;
+  border-radius: 5px 0 0 5px;
+  border-style: none;
+}
+
+.dropbtn {
+  display: inline-block;
+  margin-left: 5px;
+  width:55px;
+  height: 55px;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  line-height: 55px;
+  background: #282c34;
+  border-radius: 0 5px 5px 0;
+  border-style: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+  border-radius: 0 5px 0 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 20;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background: #282c34;
+  color: #fff;
+  min-width: 220px;
+  padding: 15px;
+  z-index: 20;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+  border: 2px solid #21252b ;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #8bc34a;
+  border: 2px solid #21252b ;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /* ---- ISOTOPE ---- */
 .grid {
+  top: 50px;
   margin: 0 auto;
   width: 750px;
 }
@@ -45,7 +177,7 @@ input[type="text"] {
   float: left;
   width: 750px;
   margin-bottom: 15px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 5px 5px 0;
   padding: 10px 10px 20px 10px;
   background: #282c34;
 }
@@ -93,6 +225,10 @@ input[type="text"] {
     color: #fff;
     background-color: #21252b;
     padding: 10px 20px 10px 10px;
+}
+
+.grid-item .code:before {
+  content: "> git ";
 }
 
 .grid-item .main-desc {
