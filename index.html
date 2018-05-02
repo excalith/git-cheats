@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/master.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,18 +28,18 @@
         <input type="text" class="quicksearch" placeholder="" autofocus="" />
         <div class="dropdown">
 
-            <button class="dropbtn"><i class="fas fa-cog"></i></button>
+            <button class="dropbtn">
+                <i class="fas fa-cog"></i>
+            </button>
             <div class="dropdown-content">
                 <label class="checkbox">
-                    <span class="adv"></span>
+                    <span class="advanced-label"></span>
                     <input id="ShowAdvanced" type="checkbox" checked="checked">
                     <span class="checkmark"></span>
                 </label>
                 <hr>
-                <label class="checkbox">English
-                    <input type="radio" checked="checked" name="lang" value="en">
-                    <span class="checkmark"></span>
-                </label>
+                <span class="languages">
+                </span>
             </div>
         </div>
     </div>
@@ -47,23 +48,6 @@
     </div>
 
     <script>
-        $(".dropdown").hover(function () {
-            $("#overlay").fadeIn("fast", function () { });
-        });
-
-        $("#overlay").hover(function () {
-            $("#overlay").fadeOut("fast", function () { });
-        });
-
-        $('#ShowAdvanced').change(function () {
-            refreshList();
-        });
-
-        $('input[name="lang"]').change(function () {
-            lang = $('input[name=lang]:checked').val();
-            refreshList();
-        });
-
         // init isotope
         var lang = "en";
         var qsRegex;
@@ -94,10 +78,37 @@
             $grid.isotope('reloadItems')
 
             // read json data
-            $.getJSON("commands/" + lang + ".json", function (json) {
+            $.getJSON("commands.json", function (json) {
                 // gui localization
-                $(".quicksearch").attr("placeholder", json[0].search).val("").focus().blur();
-                $(".adv").text(json[0].advancedCommands);
+                $(".quicksearch").attr("placeholder", json[0].search[lang]).val("").focus().blur();
+                $(".advanced-label").text(json[0].advancedCommands[lang]);
+
+
+                jQuery('.languages').html('');
+                for (key in json[0].languages) {
+                    if (json[0].languages.hasOwnProperty(key)) {
+                        var value = json[0].languages[key];
+                        var checkedVal = "";
+
+                        if (lang == key) {
+                            checkedVal = "checked='checked'";
+                        }
+
+                        var $language = $(
+                            "<label class='checkbox'>" + value +
+                            "<input type='radio' name='lang' value='" + key + "' " + checkedVal + ">" +
+                            "<span class='checkmark'></span>" +
+                            "</label>"
+                        );
+
+                        $(".languages").append($language)
+                    }
+                }
+
+                $('input[name="lang"]').change(function () {
+                    lang = $('input[name=lang]:checked').val();
+                    refreshList();
+                });
 
                 // commands (skip first index for ui localization)
                 for (i = 1; i < json.length; i++) {
@@ -107,7 +118,7 @@
                             "<div class='grid-item " + json[i].category + "' keywords='" + json[i].keywords + "'>" +
                             "<p class='title'>" + json[i].title + "</p>" +
                             "<p class='category " + json[i].category + "'>" + json[i].category + "</p>" +
-                            "<p class='main-desc'>" + json[i].desc + "</p>" +
+                            "<p class='main-desc'>" + json[i].desc[lang] + "</p>" +
                             "<p class='options-title'>Options:</p>");
 
                         // command options
@@ -115,7 +126,7 @@
                             // if command option is advanced check ShowAdvanced
                             if (json[i].options[j].advanced == true && $('#ShowAdvanced').prop('checked') || json[i].options[j].advanced == false) {
                                 $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
-                                $item.append("<p class='desc'>" + json[i].options[j].desc + "</p>");
+                                $item.append("<p class='desc'>" + json[i].options[j].desc[lang] + "</p>");
                             }
                         };
 
@@ -144,6 +155,20 @@
                 timeout = setTimeout(delayed, threshold || 100);
             }
         }
+
+        $(".dropdown").hover(function () {
+            $("#overlay").fadeIn("fast", function () { });
+        });
+
+        $("#overlay").hover(function () {
+            $("#overlay").fadeOut("fast", function () { });
+        });
+
+        $('#ShowAdvanced').change(function () {
+            refreshList();
+        });
+
+
 
     </script>
 
