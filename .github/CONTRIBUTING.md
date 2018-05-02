@@ -34,6 +34,15 @@ Unsure where to begin contributing? You can start by looking through these `begi
 * [Beginner issues](https://github.com/excalith/Interactive-Git-Cheatsheet/labels/beginner) - issues which should only require a few lines of code, and a test or two.
 * [Help wanted issues](https://github.com/excalith/Interactive-Git-Cheatsheet/labels/help%20wanted) - issues which should be a bit more involved than `beginner` issues.
 
+### Localization
+In order to localize this app, you only need to modify [commands.json](../commands.json) file.
+
+To start localization;
+* Declare your language in `languages` with key / value first and use this convention for your localization.
+* Translations are needed only in keys:
+  * `search` : Search Bar placeholder
+  * `advancedCommands` : Dropdown checkbox for advanced commands
+  * `desc` : Throughout the entire json, you will see desc keys where they explains each command
 
 ### Pull Requests
 While creating a Pull Request, fill out the [the required template](PULL_REQUEST_TEMPLATE.md)
