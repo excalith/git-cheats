@@ -38,10 +38,10 @@ Unsure where to begin contributing? You can start by looking through these `begi
 ### Pull Requests
 While creating a Pull Request, fill out the [the required template](PULL_REQUEST_TEMPLATE.md)
 
-* **Do not** add complicated commands since this project is to help people get the basic commands
+* With v1.1.0 you can add complicated commands!
 * **Do not** change design into a complicated and / or overwhelming piece of junk
 * **Do not** include issue numbers in the PR title
-* **Include** screenshots and animated GIFs in your pull request whenever possible
+* **Include** screenshots or animated GIFs in your pull request whenever possible
 
 
 ### Commit Messages
