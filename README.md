@@ -1,12 +1,12 @@
 # Interactive Git Cheatsheet
 Interactive Git Cheatsheet is a small project for people who wants to get into git using commands but don't know where to start. It started as a side-project to help my friends / colleagues check commands easily, but it turned out it has been shared through my friends lots of times and it is being used on a daily basis. Suprising enough, I wanted to create a repository for this. Maybe someone finds it useful and / or wants to contribute!
 
-Currently we are working on a custom domain. You can check the older version from [here](http://gitsheet.ml/) (Thanks [kanna6501](https://github.com/kanna6501)!)
+### [Try The App Here](http://gitcheats.com/)
 
 ![Anim](/images/anim.gif)
 
 ## How To Contribute:
-Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [CONTRIBUTE.md](.github/CONTRIBUTING.md) before contributing. 
+Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [CONTRIBUTE.md](.github/CONTRIBUTING.md) before contributing.
 
 That being said, you can;
 * Create issues for feature requests and issues
@@ -14,8 +14,9 @@ That being said, you can;
 
 ## Change Log
 #### v1.1.0
-* Added Language Support (Currently it is only English)
-* Added Support For Filtering Out Advanced Commands (Currently there are no advanced commands)
+* Add New Domain [gitcheats.com](http://gitcheats.com/)
+* Add Language Support (Currently it is only English)
+* Add Support For Filtering Out Advanced Commands (Currently there are no advanced commands)
 
 #### v1.0.0
 * Initial Release
