@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Git Cheats - Cheatsheet For Git Commands</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="css/master.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
@@ -115,14 +115,11 @@
                 for (i = 1; i < json.length; i++) {
                     // if command is advanced check ShowAdvanced
                     if (json[i].advanced == true && $('#ShowAdvanced').prop('checked') || json[i].advanced == false) {
-
-
-
                         var $item = $(
                             "<div class='grid-item " + json[i].category + "' keywords='" + json[i].keywords + "'>" +
                             "<p class='title'>" + json[i].title + "</p>" +
                             "<p class='category " + json[i].category + "'>" + json[i].category + "</p>" +
-                            "<p class='main-desc'>" + json[i].desc[json[i].desc[lang] == null ? "en" : lang] + "</p>" +
+                            "<p class='main-desc'>" + json[i].desc[!json[i].desc[lang].length ? "en" : lang] + "</p>" +
                             "<p class='options-title'>Options:</p>");
 
                         // command options
@@ -130,7 +127,7 @@
                             // if command option is advanced check ShowAdvanced
                             if (json[i].options[j].advanced == true && $('#ShowAdvanced').prop('checked') || json[i].options[j].advanced == false) {
                                 $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
-                                $item.append("<p class='desc'>" + json[i].options[j].desc[json[i].options[j].desc[lang] == null ? "en" : lang] + "</p>");
+                                $item.append("<p class='desc'>" + json[i].options[j].desc[!json[i].options[j].desc[lang].length ? "en" : lang] + "</p>");
                             }
                         };
 
@@ -171,8 +168,6 @@
         $('#ShowAdvanced').change(function () {
             refreshList();
         });
-
-
 
     </script>
 

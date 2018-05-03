@@ -1,13 +1,16 @@
 [
     {
         "languages": {
-            "en": "English"
+            "en": "English",
+            "tr": "Türkçe"
         },
         "search": {
-            "en": "Search Command"
+            "en": "Search Command",
+            "tr": "Komut Ara"
         },
         "advancedCommands": {
-            "en": "Advanced Commands"
+            "en": "Advanced Commands",
+            "tr": "Gelişmiş Komutlar"
         }
     },
     {
@@ -16,7 +19,8 @@
         "category": "create",
         "keywords": "create init start",
         "desc": {
-            "en": "Create an empty Git repository or reinitialize an existing one"
+            "en": "Create an empty Git repository or reinitialize an existing one",
+            "tr": "Boş ya da varolan bir klasöre Git tanımla"
         },
         "url": "https://git-scm.com/docs/git-init",
         "options": [
@@ -24,7 +28,8 @@
                 "advanced": false,
                 "code": "init",
                 "desc": {
-                    "en": "Create an empty Git repository or reinitialize an existing one"
+                    "en": "Create an empty Git repository or reinitialize an existing one",
+                    "tr": "Boş ya da varolan bir klasöre Git tanımla"
                 }
             }
         ]
@@ -34,21 +39,26 @@
         "title": "clone",
         "category": "create",
         "keywords": "create clone new",
-        "desc": "Create a new local repository",
+        "desc": {
+            "en": "Clone a repository into a new directory",
+            "tr": "Klasöre depo klonla"
+        },
         "url": "https://git-scm.com/docs/git-clone",
         "options": [
             {
                 "advanced": false,
                 "code": "clone ssh://user@domain.com/repo.git",
                 "desc": {
-                    "en": "Clone a repository"
+                    "en": "Clone a repository",
+                    "tr": "İlgili depoyu klonla"
                 }
             },
             {
                 "advanced": false,
                 "code": "clone -b [branch-name] ssh://user@domain.com/repo.git",
                 "desc": {
-                    "en": "Clone a repository with branch-name checked out"
+                    "en": "Clone a repository with branch-name checked out",
+                    "tr": "İlgili depoyu klonla ve ilgili branşa geç"
                 }
             }
         ]
@@ -59,7 +69,8 @@
         "category": "changes",
         "keywords": "changes add",
         "desc": {
-            "en": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit"
+            "en": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit",
+            "tr": "Index'e değişiklik yapılan içeriği ekleyip bir sonraki commit işlemi için hazır hale getirir."
         },
         "url": "https://git-scm.com/docs/git-add",
         "options": [
@@ -67,28 +78,32 @@
                 "advanced": false,
                 "code": "add [source]",
                 "desc": {
-                    "en": "Adds given file to stage area"
+                    "en": "Adds given file to stage area",
+                    "tr": "İlgili dosyayı ekler"
                 }
             },
             {
                 "advanced": false,
                 "code": "add --patch [source]",
                 "desc": {
-                    "en": "Interactively choose hunks of patch between the index and the work tree and add them to the index"
+                    "en": "Interactively choose hunks of patch between the index and the work tree and add them to the index",
+                    "tr": "Hangi değişiklikleri ekleyeceğinizi seçmenize olanak sağlar"
                 }
             },
             {
                 "advanced": false,
                 "code": "add folder/*",
                 "desc": {
-                    "en": "Adds all files within given folder"
+                    "en": "Adds all files within given folder",
+                    "tr": "İlgili klasördeki tüm değişiklikleri eklemenizi sağlar"
                 }
             },
             {
                 "advanced": false,
                 "code": "add *.extension",
                 "desc": {
-                    "en": "Adds all extension files to stage area"
+                    "en": "Adds all extension files to stage area",
+                    "tr": "İlgili uzantıya sahip tüm dosyaları eklemenizi sağlar"
                 }
             }
         ]
@@ -99,7 +114,8 @@
         "category": "changes",
         "keywords": "changes status",
         "desc": {
-            "en": "Changed files on your working directory"
+            "en": "Changed files on your working directory",
+            "tr": "Commit edilmemiş tüm değişmiş dosyaları gösterir"
         },
         "url": "https://git-scm.com/docs/git-status",
         "options": [
@@ -107,21 +123,24 @@
                 "advanced": false,
                 "code": "status",
                 "desc": {
-                    "en": "Changed files on your working directory"
+                    "en": "Changed files on your working directory",
+                    "tr": "Değişen dosyaları göster"
                 }
             },
             {
                 "advanced": false,
                 "code": "status -s",
                 "desc": {
-                    "en": "Give the output in the short-format"
+                    "en": "Give the output in the short-format",
+                    "tr": "Sonucu kısa formatta göster"
                 }
             },
             {
                 "advanced": false,
                 "code": "status -b",
                 "desc": {
-                    "en": "Show the branch and tracking info even in short-format"
+                    "en": "Show the branch and tracking info even in short-format",
+                    "tr": "Sonucu branş ve değişiklikler olarak kısa formatta göster"
                 }
             }
         ]
@@ -132,7 +151,8 @@
         "category": "changes",
         "keywords": "changes diff",
         "desc": {
-            "en": "Show changes between the working tree and the index or a tree, changes between the index and a tree"
+            "en": "Show changes between the working tree and the index or a tree, changes between the index and a tree",
+            "tr": "Değişiklikleri karşılaştır"
         },
         "url": "https://git-scm.com/docs/git-diff",
         "options": [
@@ -140,14 +160,16 @@
                 "advanced": false,
                 "code": "diff",
                 "desc": {
-                    "en": "Show changes all changes between the working tree and the index"
+                    "en": "Show changes all changes between the working tree and the index",
+                    "tr": "Tüm değişiklikleri karşılaştır"
                 }
             },
             {
                 "advanced": false,
                 "code": "diff [source]",
                 "desc": {
-                    "en": "Show changes to a file between the working tree and the index"
+                    "en": "Show changes to a file between the working tree and the index",
+                    "tr": "Index'teki ve herhangi bir commit'teki dosya üzerindeki değişiklikleri göster"
                 }
             }
         ]
@@ -158,7 +180,8 @@
         "category": "changes",
         "keywords": "changes commit",
         "desc": {
-            "en": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes"
+            "en": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes",
+            "tr": "Eklenen tüm değişiklikleri kaydet"
         },
         "url": "https://git-scm.com/docs/git-commit",
         "options": [
@@ -166,28 +189,32 @@
                 "advanced": false,
                 "code": "commit -m [message]",
                 "desc": {
-                    "en": "Use the given msg as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs"
+                    "en": "Use the given msg as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs",
+                    "tr": "Eklenen değişiklikleri commit mesajıyla kaydet"
                 }
             },
             {
                 "advanced": false,
                 "code": "commit --all",
                 "desc": {
-                    "en": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected"
+                    "en": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected",
+                    "tr": "Takip edilmeyenler hariç tüm eklenen, değişen ve silinen dosyaları ekler"
                 }
             },
             {
                 "advanced": false,
                 "code": "commit --amend",
                 "desc": {
-                    "en": "Changes / Updates the last commit"
+                    "en": "Changes / Updates the last commit",
+                    "tr": "Son commit'e ekleme ya da düzenleme yapar"
                 }
             },
             {
                 "advanced": false,
                 "code": "commit --squash",
                 "desc": {
-                    "en": "Create a single commit on top of the current branch"
+                    "en": "Create a single commit on top of the current branch",
+                    "tr": "Aktif branşın üzerine tek bir commit oluşturur"
                 }
             }
         ]
@@ -198,7 +225,8 @@
         "category": "changes",
         "keywords": "changes stash",
         "desc": {
-            "en": "Stash the changes in a dirty working directory away"
+            "en": "Stash the changes in a dirty working directory away",
+            "tr": "Değişiklikleri sonra kullanılmak üzere kasaya atar"
         },
         "url": "https://git-scm.com/docs/git-stash",
         "options": [
@@ -206,42 +234,48 @@
                 "advanced": false,
                 "code": "stash list",
                 "desc": {
-                    "en": "Shows all your stashes"
+                    "en": "Shows all your stashes",
+                    "tr": "Tüm kasa verilerinizi gösterir"
                 }
             },
             {
                 "advanced": false,
                 "code": "stash save [Stash Message]",
                 "desc": {
-                    "en": "Saves your local modifications to a new stash entry"
+                    "en": "Saves your local modifications to a new stash entry",
+                    "tr": "Kasanıza lokal değişiklikleri mesaj ile kaydeder"
                 }
             },
             {
                 "advanced": false,
                 "code": "stash apply stash@{index}",
                 "desc": {
-                    "en": "Applies the stash in index"
+                    "en": "Applies the stash in index",
+                    "tr": "İlgili indexteki kasayı uygular"
                 }
             },
             {
                 "advanced": false,
                 "code": "stash pop stash@{index}",
                 "desc": {
-                    "en": "Applies the stash in index and removes it from stash list"
+                    "en": "Applies the stash in index and removes it from stash list",
+                    "tr": "İlgili indexteki kasayı uygular ve kasadan kaldırır"
                 }
             },
             {
                 "advanced": false,
                 "code": "stash drop stash@{index}",
                 "desc": {
-                    "en": "Removes the index from stash list without applying"
+                    "en": "Removes the index from stash list without applying",
+                    "tr": "İlgili indexteki kasayı uygulamadan siler"
                 }
             },
             {
                 "advanced": false,
                 "code": "stash clear",
                 "desc": {
-                    "en": "Clears the stash list"
+                    "en": "Clears the stash list",
+                    "tr": "Kasa listesini temizler"
                 }
             }
         ]
@@ -252,7 +286,8 @@
         "category": "changes",
         "keywords": "changes remove rm",
         "desc": {
-            "en": "Remove files from the index"
+            "en": "Remove files from the index",
+            "tr": "İlgili dosyayı indexten kaldırır"
         },
         "url": "https://git-scm.com/docs/git-rm",
         "options": [
@@ -260,7 +295,8 @@
                 "advanced": false,
                 "code": "rm [source]",
                 "desc": {
-                    "en": "Removes file from stage area"
+                    "en": "Removes file from stage area",
+                    "tr": "İlgili dosyayı indexten kaldırır"
                 }
             }
         ]
@@ -271,7 +307,8 @@
         "category": "changes",
         "keywords": "changes move mv",
         "desc": {
-            "en": "Move or rename a file or a directory"
+            "en": "Move or rename a file or a directory",
+            "tr": "Dosya ya da klasörün yerini ya da adını değiştir"
         },
         "url": "https://git-scm.com/docs/git-mv",
         "options": [
@@ -279,14 +316,16 @@
                 "advanced": false,
                 "code": "mv [source] [destination]",
                 "desc": {
-                    "en": "Moves or renames source"
+                    "en": "Moves or renames source",
+                    "tr": "Kaynağı ilgili yere taşır ya da adını değiştirir"
                 }
             },
             {
                 "advanced": false,
                 "code": "mv -f [source] [destination]",
                 "desc": {
-                    "en": "Forces to move or rename the source even if it exists in destination"
+                    "en": "Forces to move or rename the source even if it exists in destination",
+                    "tr": "Kaynak, hedef kalsörde aynı isimde ise üzerine yazar"
                 }
             }
         ]
@@ -297,7 +336,8 @@
         "category": "changes",
         "keywords": "changes tag",
         "desc": {
-            "en": "Marks the current commit with a tag"
+            "en": "Marks the current commit with a tag",
+            "tr": "İlgili commit'i tag ile işaretler"
         },
         "url": "https://git-scm.com/docs/git-tag",
         "options": [
@@ -305,21 +345,24 @@
                 "advanced": false,
                 "code": "tag --list",
                 "desc": {
-                    "en": "Lists all tags"
+                    "en": "Lists all tags",
+                    "tr": "Tag listesini gösterir"
                 }
             },
             {
                 "advanced": false,
                 "code": "tag [name]",
                 "desc": {
-                    "en": "Marks the current commit with a tag"
+                    "en": "Marks the current commit with a tag",
+                    "tr": "Aktif commit'i girdiğiniz isim ile tagler"
                 }
             },
             {
                 "advanced": false,
                 "code": "tag --delete [name]",
                 "desc": {
-                    "en": "Delete existing tags with the given names"
+                    "en": "Delete existing tags with the given names",
+                    "tr": "İlgili isimdeki tagi siler"
                 }
             }
         ]
@@ -330,7 +373,8 @@
         "category": "branch",
         "keywords": "branch",
         "desc": {
-            "en": "List, create, or delete branches"
+            "en": "List, create, or delete branches",
+            "tr": "Branş yaratma, silme ve listeleme"
         },
         "url": "https://git-scm.com/docs/git-branch",
         "options": [
@@ -338,28 +382,32 @@
                 "advanced": false,
                 "code": "branch [name]",
                 "desc": {
-                    "en": "Creates a new branch from HEAD called branch-name"
+                    "en": "Creates a new branch from HEAD called branch-name",
+                    "tr": "Yeni bir branş yaratır"
                 }
             },
             {
                 "advanced": false,
                 "code": "branch -b [name]",
                 "desc": {
-                    "en": "Creates and checks out to a new branch from HEAD called branch-name"
+                    "en": "Creates and checks out to a new branch from HEAD called branch-name",
+                    "tr": "Yeni bir branş yaratır ve ilgili branşa geçer"
                 }
             },
             {
                 "advanced": false,
                 "code": "branch --all",
                 "desc": {
-                    "en": "List both remote-tracking branches and local branches"
+                    "en": "List both remote-tracking branches and local branches",
+                    "tr": "Lokal ve sunucuda takip edilen tüm branşları listeler"
                 }
             },
             {
                 "advanced": false,
                 "code": "branch --delete",
                 "desc": {
-                    "en": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream"
+                    "en": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream",
+                    "tr": "İlgili branşı siler"
                 }
             }
         ]
@@ -370,7 +418,8 @@
         "category": "branch",
         "keywords": "branch checkout",
         "desc": {
-            "en": "Switch branches or restore working tree files"
+            "en": "Switch branches or restore working tree files",
+            "tr": "Branşlar arası geçişi sağlar"
         },
         "url": "https://git-scm.com/docs/git-checkout",
         "options": [
@@ -378,28 +427,32 @@
                 "advanced": false,
                 "code": "checkout [name]",
                 "desc": {
-                    "en": "Switch branches or restore working tree files"
+                    "en": "Switch branches or restore working tree files",
+                    "tr": "Branşlar arası geçişi sağlar"
                 }
             },
             {
                 "advanced": false,
                 "code": "checkout --track [origin/name]",
                 "desc": {
-                    "en": "Checkout and track a remote branch"
+                    "en": "Checkout and track a remote branch",
+                    "tr": "Sunucudaki bir branşı lokale kopyalar"
                 }
             },
             {
                 "advanced": false,
                 "code": "checkout .",
                 "desc": {
-                    "en": "Discard all tracked local changes in HEAD"
+                    "en": "Discard all tracked local changes in HEAD",
+                    "tr": "Lokalinizde yapılan ve commit edilmemiş tüm değişiklikleri siler"
                 }
             },
             {
                 "advanced": false,
                 "code": "checkout HEAD [source]",
                 "desc": {
-                    "en": "Resets a tracked file"
+                    "en": "Resets a tracked file",
+                    "tr": "Takip edilen ve üzerinde değişiklik yapılmış bir dosyayı bir önceki haline getirir"
                 }
             }
         ]
@@ -410,7 +463,8 @@
         "category": "update",
         "keywords": "update fetch",
         "desc": {
-            "en": "Download objects and refs from another repository"
+            "en": "Download objects and refs from another repository",
+            "tr": "Sunucudaki objeleri ve referansları günceller"
         },
         "url": "https://git-scm.com/docs/git-fetch",
         "options": [
@@ -418,14 +472,16 @@
                 "advanced": false,
                 "code": "fetch --all",
                 "desc": {
-                    "en": "Fetch all remotes"
+                    "en": "Fetch all remotes",
+                    "tr": "Sunucudaki tüm obje ve referansları güncelle"
                 }
             },
             {
                 "advanced": false,
                 "code": "fetch --prune",
                 "desc": {
-                    "en": "Before fetching, remove any remote-tracking references that no longer exist on the remote"
+                    "en": "Before fetching, remove any remote-tracking references that no longer exist on the remote",
+                    "tr": "Sunucudaki bilgileri güncellerken lokalinizde olup sunucuda olmayan referansları siler"
                 }
             }
         ]
@@ -436,7 +492,8 @@
         "category": "update",
         "keywords": "update pull",
         "desc": {
-            "en": "Fetch from and integrate with another repository or a local branch"
+            "en": "Fetch from and integrate with another repository or a local branch",
+            "tr": "Sunucudan lokalinize commit edilmiş güncel verileri çeker"
         },
         "url": "https://git-scm.com/docs/git-pull",
         "options": [
@@ -444,7 +501,8 @@
                 "advanced": false,
                 "code": "pull",
                 "desc": {
-                    "en": "Fetch from and integrate with another repository or a local branch"
+                    "en": "Fetch from and integrate with another repository or a local branch",
+                    "tr": "Sunucudan lokalinize commit edilmiş güncel verileri çeker"
                 }
             }
         ]
@@ -455,7 +513,8 @@
         "category": "update",
         "keywords": "update push",
         "desc": {
-            "en": "Update remote refs along with associated objects"
+            "en": "Update remote refs along with associated objects",
+            "tr": "Yapmış olduğunuz tüm commitleri sunucuya gönderir"
         },
         "url": "https://git-scm.com/docs/git-push",
         "options": [
@@ -463,7 +522,8 @@
                 "advanced": false,
                 "code": "push",
                 "desc": {
-                    "en": "Update remote refs along with associated objects"
+                    "en": "Update remote refs along with associated objects",
+                    "tr": "Yapmış olduğunuz tüm commitleri sunucuya gönderir"
                 }
             }
         ]
@@ -474,7 +534,8 @@
         "category": "merge",
         "keywords": "merge",
         "desc": {
-            "en": "Merges a branch to your current HEAD"
+            "en": "Merges a branch to your current HEAD",
+            "tr": "Bir branşı, aktif branşınıza gömer"
         },
         "url": "https://git-scm.com/docs/git-merge",
         "options": [
@@ -482,7 +543,8 @@
                 "advanced": false,
                 "code": "merge [branch-name]",
                 "desc": {
-                    "en": "Merges a branch to your current HEAD"
+                    "en": "Merges a branch to your current HEAD",
+                    "tr": "Bir branşı, aktif branşınıza gömer"
                 }
             }
         ]
@@ -493,7 +555,8 @@
         "category": "patch",
         "keywords": "patch rebase",
         "desc": {
-            "en": "Rebase your current HEAD onto branch-name"
+            "en": "Rebase your current HEAD onto branch-name",
+            "tr": "Aktif branşınızı başka bir branşa aktarır"
         },
         "url": "https://git-scm.com/docs/git-rebase",
         "options": [
@@ -501,28 +564,32 @@
                 "advanced": false,
                 "code": "rebase [branch-name]",
                 "desc": {
-                    "en": "Rebase your current HEAD onto branch-name"
+                    "en": "Rebase your current HEAD onto branch-name",
+                    "tr": "Aktif branşınızı başka bir branşa aktarır"
                 }
             },
             {
                 "advanced": false,
                 "code": "rebase --interactive",
                 "desc": {
-                    "en": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing."
+                    "en": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing.",
+                    "tr": "Aktif branşınızı başka bir branşa interaktif bir şekilde sizden komut bekleyerek aktarır"
                 }
             },
             {
                 "advanced": false,
                 "code": "rebase --continue",
                 "desc": {
-                    "en": "Continue a rebase after resolving conflicts"
+                    "en": "Continue a rebase after resolving conflicts",
+                    "tr": "Rebase işlemi sırasında conflict çözümlemesinden sonra devam etmeyi sağlar"
                 }
             },
             {
                 "advanced": false,
                 "code": "rebase --abort",
                 "desc": {
-                    "en": "Abort a rebase"
+                    "en": "Abort a rebase",
+                    "tr": "Rebase işlemini iptal eder"
                 }
             }
         ]
@@ -533,7 +600,8 @@
         "category": "patch",
         "keywords": "patch cherry-pick",
         "desc": {
-            "en": "Apply the changes from a different commit to your current HEAD"
+            "en": "Apply the changes from a different commit to your current HEAD",
+            "tr": "Herhangi bir commit'teki tüm değişiklikleri branşınıza aktarır"
         },
         "url": "https://git-scm.com/docs/git-cherry-pick",
         "options": [
@@ -541,7 +609,8 @@
                 "advanced": false,
                 "code": "cherry-pick [commit]",
                 "desc": {
-                    "en": "Pick and apply changes from commit hash to your current HEAD"
+                    "en": "Pick and apply changes from commit hash to your current HEAD",
+                    "tr": "Herhangi bir commit'teki tüm değişiklikleri branşınıza aktarır"
                 }
             }
         ]
@@ -552,7 +621,8 @@
         "category": "undo",
         "keywords": "reset undo",
         "desc": {
-            "en": "This form resets the index entries for all paths to their state"
+            "en": "This form resets the index entries for all paths to their state",
+            "tr": "İlgili branşı istediğiniz bir commit'e geri çevirir"
         },
         "url": "https://git-scm.com/docs/git-reset",
         "options": [
@@ -560,28 +630,32 @@
                 "advanced": false,
                 "code": "reset",
                 "desc": {
-                    "en": "Resets the index entries for all paths to their state"
+                    "en": "Resets the index entries for all paths to their state",
+                    "tr": "İlgili branşı istediğiniz bir commit'e geri çevirir"
                 }
             },
             {
                 "advanced": false,
                 "code": "reset --soft",
                 "desc": {
-                    "en": "Does not touch the index file or the working tree at all"
+                    "en": "Does not touch the index file or the working tree at all",
+                    "tr": "Geri çevirme işlemindeki güncel dosyaları silmez"
                 }
             },
             {
                 "advanced": false,
                 "code": "reset --mixed",
                 "desc": {
-                    "en": "Resets the index but not the working tree and reports what has not been updated"
+                    "en": "Resets the index but not the working tree and reports what has not been updated",
+                    "tr": "İlgili commit'i ilk haline çevirir ve değişiklikleri gösterir"
                 }
             },
             {
                 "advanced": false,
                 "code": "reset --hard",
                 "desc": {
-                    "en": "Resets the index and working tree. Any changes to tracked files in the working tree since commit are discarded"
+                    "en": "Resets the index and working tree. Any changes to tracked files in the working tree since commit are discarded",
+                    "tr": "Geri çevirme işleminde güncel tüm dosyaları siler"
                 }
             }
         ]
@@ -592,7 +666,8 @@
         "category": "undo",
         "keywords": "reset undo clean",
         "desc": {
-            "en": "Shows untracked files about to be removed"
+            "en": "Shows untracked files about to be removed",
+            "tr": "Takip edilmeyen dosyaları göstermeye ya da silmeye yarar"
         },
         "url": "https://git-scm.com/docs/git-clean",
         "options": [
@@ -600,14 +675,16 @@
                 "advanced": false,
                 "code": "clean -n",
                 "desc": {
-                    "en": "Shows untracked files about to be removed"
+                    "en": "Shows untracked files about to be removed",
+                    "tr": "Takip edilmeyen tüm dosyaları gösterir"
                 }
             },
             {
                 "advanced": false,
                 "code": "clean -f",
                 "desc": {
-                    "en": "Removes all untracked files"
+                    "en": "Removes all untracked files",
+                    "tr": "Takip edilmeyen tüm dosyaları siler"
                 }
             }
         ]
@@ -618,7 +695,8 @@
         "category": "history",
         "keywords": "history log",
         "desc": {
-            "en": "Show all commits"
+            "en": "Show all commits",
+            "tr": "Tüm commitleri listeler"
         },
         "url": "https://git-scm.com/docs/git-log",
         "options": [
@@ -626,21 +704,24 @@
                 "advanced": false,
                 "code": "log",
                 "desc": {
-                    "en": "Show all commits"
+                    "en": "Show all commits",
+                    "tr": "Tüm commitleri listeler"
                 }
             },
             {
                 "advanced": false,
                 "code": "log -p [source]",
                 "desc": {
-                    "en": "Show changes to file"
+                    "en": "Show changes to file",
+                    "tr": "Kaynak dosyadaki tüm değişiklikleri gösterir"
                 }
             },
             {
                 "advanced": false,
                 "code": "log --graph",
                 "desc": {
-                    "en": "Shows all commits as graph"
+                    "en": "Shows all commits as graph",
+                    "tr": "Tüm commitleri grafik olarak gösterir"
                 }
             }
         ]
@@ -651,7 +732,8 @@
         "category": "extensions",
         "keywords": "extensions flow init feature release hotfix start finish",
         "desc": {
-            "en": "A git extension for feature branch workflow"
+            "en": "A git extension for feature branch workflow",
+            "tr": "Feature branşlaşma metoduyla çalışan bir eklenti"
         },
         "url": "https://git-scm.com/docs/git-init",
         "options": [
@@ -659,63 +741,72 @@
                 "advanced": false,
                 "code": "flow init",
                 "desc": {
-                    "en": "Initialize flow inside an existing repository"
+                    "en": "Initialize flow inside an existing repository",
+                    "tr": "Varolan bir git deposunda flow eklentisini açar"
                 }
             },
             {
                 "advanced": false,
                 "code": "flow feature start [name]",
                 "desc": {
-                    "en": "Create a new branch from latest develop as feature/feature-name"
+                    "en": "Create a new branch from latest develop as feature/feature-name",
+                    "tr": ""
                 }
             },
             {
                 "advanced": false,
                 "code": "flow feature finish [name]",
                 "desc": {
-                    "en": "Merges feature-name into develop and removes branch"
+                    "en": "Merges feature-name into develop and removes branch",
+                    "tr": "İlgili branşı develop branşına merge eder"
                 }
             },
             {
                 "advanced": false,
                 "code": "flow feature publish [name]",
                 "desc": {
-                    "en": "Publishes a feature to the remote"
+                    "en": "Publishes a feature to the remote",
+                    "tr": "İlgili branşı sunucuya gönderir"
                 }
             },
             {
                 "advanced": false,
                 "code": "flow feature pull origin [name]",
                 "desc": {
-                    "en": "Pull a feature from remote to your local repository"
+                    "en": "Pull a feature from remote to your local repository",
+                    "tr": "İlgili branşı sunucudan lokalinize çeker"
                 }
             },
             {
                 "advanced": false,
                 "code": "flow release start [name]",
                 "desc": {
-                    "en": "Creates a release branch from latest develop"
+                    "en": "Creates a release branch from latest develop",
+                    "tr": "Son develop commit'inden bir release branşı başlatır"
                 }
             },
             {
                 "advanced": false,
                 "code": "flow release finish [name]",
                 "desc": {
-                    "en": "Merges release branch into master and develop"
+                    "en": "Merges release branch into master and develop",
+                    "tr": "Release branşını master ve develop'a gömer"
                 }
             },
             {
                 "advanced": false,
                 "code": "flow hotfix start [name]",
                 "desc": {
-                    "en": "Creates a hotfix/fix-name branch from master"
+                    "en": "Creates a hotfix/fix-name branch from master",
+                    "tr": "Master branşından hotfix altında bir branş açar"
                 }
             },
             {
                 "advanced": false,
                 "code": "flow hotfix finish [name]",
                 "desc": {
-                    "en": "Merges fix-name into master and develop"
+                    "en": "Merges fix-name into master and develop",
+                    "tr": "Açılan hotfix branşını master ve develop'a gömer"
                 }
             }
         ]
@@ -726,7 +817,8 @@
         "category": "administration",
         "keywords": "administration config",
         "desc": {
-            "en": "Get and set repository or global options"
+            "en": "Get and set repository or global options",
+            "tr": "Depo ya da global git ayarlarını değiştir"
         },
         "url": "https://git-scm.com/docs/git-config",
         "options": [
@@ -734,28 +826,32 @@
                 "advanced": true,
                 "code": "config -e",
                 "desc": {
-                    "en": "Edit repository config file"
+                    "en": "Edit repository config file",
+                    "tr": "Depo ayarlarını değiştir"
                 }
             },
             {
                 "advanced": true,
                 "code": "config --global -e",
                 "desc": {
-                    "en": "Edit global config file"
+                    "en": "Edit global config file",
+                    "tr": "Global ayarları değiştir"
                 }
             },
             {
                 "advanced": true,
                 "code": "config --global user.name 'Your Name'",
                 "desc": {
-                    "en": "Define your user name in global settings"
+                    "en": "Define your user name in global settings",
+                    "tr": "Global kullanıcı adını güncelle"
                 }
             },
             {
                 "advanced": true,
                 "code": "config --global user.email you@mail.com",
                 "desc": {
-                    "en": "Define your mail in global settings"
+                    "en": "Define your mail in global settings",
+                    "tr": "Global mail adresini güncelle"
                 }
             }
         ]
@@ -766,7 +862,8 @@
         "category": "administration",
         "keywords": "administration gc garbage collection",
         "desc": {
-            "en": "Cleanup unnecessary files and optimize the local repository"
+            "en": "Cleanup unnecessary files and optimize the local repository",
+            "tr": "Kullanılmayan tüm dosyaların referanslarını silerek depoyu optimize et"
         },
         "url": "https://git-scm.com/docs/git-gc",
         "options": [
@@ -774,14 +871,16 @@
                 "advanced": true,
                 "code": "gc",
                 "desc": {
-                    "en": "Runs a garbage collection for your local repository"
+                    "en": "Runs a garbage collection for your local repository",
+                    "tr": "Lokal depoda garbage collection çalıştırır"
                 }
             },
             {
                 "advanced": true,
                 "code": "gc --aggressive",
                 "desc": {
-                    "en": "Runs gc more aggressively to optimize your local repository"
+                    "en": "Runs gc more aggressively to optimize your local repository",
+                    "tr": "gc komutunu daha detaylı bir şekilde çalıştırır"
                 }
             }
         ]
@@ -792,7 +891,8 @@
         "category": "administration",
         "keywords": "administration prune",
         "desc": {
-            "en": "Prune all unreachable objects from the object database"
+            "en": "Prune all unreachable objects from the object database",
+            "tr": "Sunucuda referansı olmayan tüm objeleri siler"
         },
         "url": "https://git-scm.com/docs/git-prune",
         "options": [
@@ -800,21 +900,24 @@
                 "advanced": true,
                 "code": "prune",
                 "desc": {
-                    "en": "Removes objects that are no longer pointed to any object in reachable branch"
+                    "en": "Removes objects that are no longer pointed to any object in reachable branch",
+                    "tr": "Sunucuda referansı olmayan tüm objeleri siler"
                 }
             },
             {
                 "advanced": true,
                 "code": "prune -n",
                 "desc": {
-                    "en": "Do not remove anything; just report what it would remove"
+                    "en": "Do not remove anything; just report what it would remove",
+                    "tr": "Silinecek tüm dosyaları gösterir"
                 }
             },
             {
                 "advanced": true,
                 "code": "prune --progress",
                 "desc": {
-                    "en": "Shows prune progress"
+                    "en": "Shows prune progress",
+                    "tr": "Silme işlemini gösterir"
                 }
             }
         ]
@@ -825,7 +928,8 @@
         "category": "debug",
         "keywords": "debug",
         "desc": {
-            "en": "Use binary search to find the commit that introduced a bug"
+            "en": "Use binary search to find the commit that introduced a bug",
+            "tr": "Hata oluşturan commit'i bulmaya yardımcı olur"
         },
         "url": "https://git-scm.com/docs/git-bisect",
         "options": [
@@ -833,28 +937,32 @@
                 "advanced": true,
                 "code": "bisect start",
                 "desc": {
-                    "en": "Start up the git bisect wizard"
+                    "en": "Start up the git bisect wizard",
+                    "tr": "Bisect işlemini başlatır"
                 }
             },
             {
                 "advanced": true,
                 "code": "bisect good [commit]",
                 "desc": {
-                    "en": "Let the git bisect wizard know of a good commit"
+                    "en": "Let the git bisect wizard know of a good commit",
+                    "tr": "İşleme düzgün çalışan bir commit'i tanımlar"
                 }
             },
             {
                 "advanced": true,
                 "code": "bisect bad [commit]",
                 "desc": {
-                    "en": "Let the git bisect wizard know of a bad commit"
+                    "en": "Let the git bisect wizard know of a bad commit",
+                    "tr": "İşleme hata içeren bir commit'i tanımlar"
                 }
             },
             {
                 "advanced": true,
                 "code": "bisect reset",
                 "desc": {
-                    "en": "End your git bisect wizard"
+                    "en": "End your git bisect wizard",
+                    "tr": "Bisect işlemini sonlandırır"
                 }
             }
         ]
@@ -865,7 +973,8 @@
         "category": "debug",
         "keywords": "debug",
         "desc": {
-            "en": "Display author metadata attached to specific committed lines in a file"
+            "en": "Display author metadata attached to specific committed lines in a file",
+            "tr": "Bir dosyaya tüm kullanıcıların yaptığı değişiklikleri gösterir"
         },
         "url": "https://git-scm.com/docs/git-blame",
         "options": [
@@ -873,35 +982,32 @@
                 "advanced": true,
                 "code": "blame [source]",
                 "desc": {
-                    "en": "Show each author worked on the source including date, time and line numbers"
+                    "en": "Show each author worked on the source including date, time and line numbers",
+                    "tr": "Tüm kullanıcıların değişiklikleri zaman ve satır numarası ile gösterir"
                 }
             },
             {
                 "advanced": true,
                 "code": "blame -L x,y [source]",
                 "desc": {
-                    "en": "Restrict the output of source between x and y lines"
+                    "en": "Restrict the output of source between x and y lines",
+                    "tr": "İlgili dosyadaki x ve y satırları arasındaki değişiklikleri gösterir"
                 }
             },
             {
                 "advanced": true,
                 "code": "blame -e [source]",
                 "desc": {
-                    "en": "Show author email address instead of username"
+                    "en": "Show author email address instead of username",
+                    "tr": "Kullanıcı adı yerine mail adresi gösterir"
                 }
             },
             {
                 "advanced": true,
                 "code": "blame -w [source]",
                 "desc": {
-                    "en": "Ignore whitespace changes"
-                }
-            },
-            {
-                "advanced": true,
-                "code": "blame -M [source]",
-                "desc": {
-                    "en": "Ignore whitespace changes"
+                    "en": "Ignore whitespace changes",
+                    "tr": "Beyaz boşlukları görmezden gerir"
                 }
             }
         ]
