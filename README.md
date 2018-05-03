@@ -1,5 +1,5 @@
-# Interactive Git Cheatsheet
-Interactive Git Cheatsheet is a small project for people who wants to get into git using commands but don't know where to start. It started as a side-project to help my friends / colleagues check commands easily, but it turned out it has been shared through my friends lots of times and it is being used on a daily basis. Suprising enough, I wanted to create a repository for this. Maybe someone finds it useful and / or wants to contribute!
+# Git Cheats - *Cheatsheet For Git Commands*
+**Git Cheats** is a small project for people who wants to get into git using commands but don't know where to start. It started as a side-project to help my friends / colleagues check commands easily, but it turned out it has been shared through my friends lots of times and it is being used on a daily basis. Suprising enough, I wanted to create a repository for this. Maybe someone finds it useful and / or wants to contribute!
 
 ### [Try The App Here](http://gitcheats.com/)
 
@@ -11,15 +11,7 @@ Please feel free to contribute any way you can. Just keep in mind that you shoul
 That being said, you can;
 * Create issues for feature requests and issues
 * Create pull requests for any fixes / additions
-
-## Change Log
-#### v1.1.0
-* Add New Domain [gitcheats.com](http://gitcheats.com/)
-* Add Language Support (Currently it is only English)
-* Add Support For Filtering Out Advanced Commands (Currently there are no advanced commands)
-
-#### v1.0.0
-* Initial Release
+* Create pull requests for localizations
 
 ## Contributors
 * [excalith](https://github.com/excalith)
