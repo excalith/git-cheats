@@ -132,7 +132,7 @@
                         };
 
                         // git-scm link for more info
-                        $item.append("<a href='" + json[i].url + "'>(Read More)</a></div>");
+                        $item.append("<a href='" + json[i].url + "'>(" + json[0].readMore[lang] + ")</a></div>");
                         $grid.append($item)
                             .isotope('appended', $item);
                     }
