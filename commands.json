@@ -15,6 +15,10 @@
         "readMore": {
             "en": "Read More",
             "tr": "Devamını Oku"
+        },
+        "options": {
+            "en": "Options",
+            "tr": "Seçenekler"
         }
     },
     {

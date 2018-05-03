@@ -120,7 +120,7 @@
                             "<p class='title'>" + json[i].title + "</p>" +
                             "<p class='category " + json[i].category + "'>" + json[i].category + "</p>" +
                             "<p class='main-desc'>" + json[i].desc[!json[i].desc[lang].length ? "en" : lang] + "</p>" +
-                            "<p class='options-title'>Options:</p>");
+                            "<p class='options-title'>" + json[0].options[lang] + ":</p>");
 
                         // command options
                         for (j = 0; j < json[i].options.length; j++) {
