@@ -1,7 +1,7 @@
 # Interactive Git Cheatsheet
 Interactive Git Cheatsheet is a small project for people who wants to get into git using commands but don't know where to start. It started as a side-project to help my friends / colleagues check commands easily, but it turned out it has been shared through my friends lots of times and it is being used on a daily basis. Suprising enough, I wanted to create a repository for this. Maybe someone finds it useful and / or wants to contribute!
 
-### [Try The App Here](https://excalith.github.io/Interactive-Git-Cheatsheet)
+Currently we are working on a custom domain. You can check the older version from [here](http://gitsheet.ml/) (Thanks [kanna6501](https://github.com/kanna6501)!)
 
 ![Anim](/images/anim.gif)
 
@@ -21,7 +21,7 @@ That being said, you can;
 * Initial Release
 
 ## Contributors
-* [Can Cellek](https://github.com/excalith)
+* [excalith](https://github.com/excalith)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
