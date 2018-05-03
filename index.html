@@ -2,38 +2,39 @@
 <html>
 
 <head>
-<!-- COMMON TAGS -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Git Cheats - Cheatsheet For Git Commands</title>
-<!-- Search Engine -->
-<meta name="description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
-<meta name="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
-<meta name="keywords" content="git,cheatsheet,commands,github,bitbucket,gitlab,open,source">
-<meta name="robots" content="index, nofollow">
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="Git Cheats - Cheatsheet For Git Commands">
-<meta itemprop="description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
-<meta itemprop="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git Cheats - Cheatsheet For Git Commands">
-<meta name="twitter:description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
-<meta name="twitter:image:src" content="http://gitcheats.com/">
-<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="Git Cheats - Cheatsheet For Git Commands">
-<meta name="og:description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
-<meta name="og:image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
-<meta name="og:url" content="http://gitcheats.com/">
-<meta name="og:site_name" content="Git Cheats - Cheatsheet For Git Commands">
-<meta name="og:type" content="website">
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cheats - Cheatsheet For Git Commands</title>
+    <!-- Search Engine -->
+    <meta name="description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
+    <meta name="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
+    <meta name="keywords" content="git,cheatsheet,commands,github,bitbucket,gitlab,open,source">
+    <meta name="robots" content="index, nofollow">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Git Cheats - Cheatsheet For Git Commands">
+    <meta itemprop="description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
+    <meta itemprop="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Git Cheats - Cheatsheet For Git Commands">
+    <meta name="twitter:description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
+    <meta name="twitter:image:src" content="http://gitcheats.com/">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Git Cheats - Cheatsheet For Git Commands">
+    <meta name="og:description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
+    <meta name="og:image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
+    <meta name="og:url" content="http://gitcheats.com/">
+    <meta name="og:site_name" content="Git Cheats - Cheatsheet For Git Commands">
+    <meta name="og:type" content="website">
 
-<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-<link rel="stylesheet" href="css/master.css" />
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-    crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/master.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -59,7 +60,7 @@
             <div class="dropdown-content">
                 <label class="checkbox">
                     <span class="advanced-label"></span>
-                    <input id="ShowAdvanced" type="checkbox" checked="checked">
+                    <input id="ShowAdvanced" type="checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <hr>
@@ -73,17 +74,24 @@
     </div>
 
     <script>
-        // init isotope
+        // Cookies
+        var isAdvanced = false;
         var lang = "en";
+
+        if (Cookies.get('language'))
+            lang = Cookies.get('language');
+
+        if (Cookies.get('showAdvanced')) {
+            isAdvanced = Cookies.get('showAdvanced') == "true" ? true : false;
+            $('#ShowAdvanced').prop('checked', isAdvanced);
+        };
+
+        // init isotope
         var qsRegex;
         var $grid = $('.grid').isotope({
             itemSelector: '.grid-item',
             layoutMode: 'fitRows',
             filter: function () {
-                // This allows user to find all text within grid-items. Disabled for request
-                //return qsRegex ? $(this).text().match(qsRegex) : true;
-
-                // This allows user to find only keywords within keywords attribute.
                 return qsRegex ? $(this).attr('keywords').match(qsRegex) : true;
             }
         });
@@ -132,13 +140,15 @@
 
                 $('input[name="lang"]').change(function () {
                     lang = $('input[name=lang]:checked').val();
+                    Cookies.set('language', lang);
+
                     refreshList();
                 });
 
                 // commands (skip first index for ui localization)
                 for (i = 1; i < json.length; i++) {
                     // if command is advanced check ShowAdvanced
-                    if (json[i].advanced == true && $('#ShowAdvanced').prop('checked') || json[i].advanced == false) {
+                    if (json[i].advanced == true && isAdvanced || json[i].advanced == false) {
                         var $item = $(
                             "<div class='grid-item " + json[i].category + "' keywords='" + json[i].keywords + "'>" +
                             "<p class='title'>" + json[i].title + "</p>" +
@@ -149,7 +159,7 @@
                         // command options
                         for (j = 0; j < json[i].options.length; j++) {
                             // if command option is advanced check ShowAdvanced
-                            if (json[i].options[j].advanced == true && $('#ShowAdvanced').prop('checked') || json[i].options[j].advanced == false) {
+                            if (json[i].options[j].advanced == true && isAdvanced || json[i].options[j].advanced == false) {
                                 $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
                                 $item.append("<p class='desc'>" + json[i].options[j].desc[!json[i].options[j].desc[lang].length ? "en" : lang] + "</p>");
                             }
@@ -190,8 +200,11 @@
         });
 
         $('#ShowAdvanced').change(function () {
+            isAdvanced = $('#ShowAdvanced').prop('checked');
+            Cookies.set('showAdvanced', isAdvanced);
             refreshList();
         });
+
 
     </script>
 
