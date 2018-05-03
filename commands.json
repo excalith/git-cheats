@@ -16,7 +16,7 @@
         "category": "create",
         "keywords": "create init start",
         "desc": {
-            "en" : "Create an empty Git repository or reinitialize an existing one"
+            "en": "Create an empty Git repository or reinitialize an existing one"
         },
         "url": "https://git-scm.com/docs/git-init",
         "options": [
@@ -58,38 +58,38 @@
         "title": "add",
         "category": "changes",
         "keywords": "changes add",
-         "desc": {
-             "en": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit"
-         },
+        "desc": {
+            "en": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit"
+        },
         "url": "https://git-scm.com/docs/git-add",
         "options": [
             {
                 "advanced": false,
                 "code": "add [source]",
-                 "desc": {
-                     "en": "Adds given file to stage area"
-                 }
+                "desc": {
+                    "en": "Adds given file to stage area"
+                }
             },
             {
                 "advanced": false,
                 "code": "add --patch [source]",
-                 "desc": {
-                     "en": "Interactively choose hunks of patch between the index and the work tree and add them to the index"
-                 }
+                "desc": {
+                    "en": "Interactively choose hunks of patch between the index and the work tree and add them to the index"
+                }
             },
             {
                 "advanced": false,
                 "code": "add folder/*",
-                 "desc": {
-                     "en": "Adds all files within given folder"
-                 }
+                "desc": {
+                    "en": "Adds all files within given folder"
+                }
             },
             {
                 "advanced": false,
                 "code": "add *.extension",
-                 "desc": {
-                      "en": "Adds all extension files to stage area"
-                 }
+                "desc": {
+                    "en": "Adds all extension files to stage area"
+                }
             }
         ]
     },
@@ -98,31 +98,31 @@
         "title": "status",
         "category": "changes",
         "keywords": "changes status",
-         "desc": {
-             "en": "Changed files on your working directory"
-         },
+        "desc": {
+            "en": "Changed files on your working directory"
+        },
         "url": "https://git-scm.com/docs/git-status",
         "options": [
             {
                 "advanced": false,
                 "code": "status",
-                 "desc": {
-                     "en": "Changed files on your working directory"
-                     }
+                "desc": {
+                    "en": "Changed files on your working directory"
+                }
             },
             {
                 "advanced": false,
                 "code": "status -s",
-                 "desc": {
-                     "en": "Give the output in the short-format"
-                     }
+                "desc": {
+                    "en": "Give the output in the short-format"
+                }
             },
             {
                 "advanced": false,
                 "code": "status -b",
-                 "desc": {
-                     "en": "Show the branch and tracking info even in short-format"
-                     }
+                "desc": {
+                    "en": "Show the branch and tracking info even in short-format"
+                }
             }
         ]
     },
@@ -131,24 +131,24 @@
         "title": "diff",
         "category": "changes",
         "keywords": "changes diff",
-         "desc": {
-             "en": "Show changes between the working tree and the index or a tree, changes between the index and a tree"
-            },
+        "desc": {
+            "en": "Show changes between the working tree and the index or a tree, changes between the index and a tree"
+        },
         "url": "https://git-scm.com/docs/git-diff",
         "options": [
             {
                 "advanced": false,
                 "code": "diff",
-                 "desc": {
-                     "en": "Show changes all changes between the working tree and the index"
-                     }
+                "desc": {
+                    "en": "Show changes all changes between the working tree and the index"
+                }
             },
             {
                 "advanced": false,
                 "code": "diff [source]",
-                 "desc": {
-                     "en": "Show changes to a file between the working tree and the index"
-                     }
+                "desc": {
+                    "en": "Show changes to a file between the working tree and the index"
+                }
             }
         ]
     },
@@ -157,38 +157,38 @@
         "title": "commit",
         "category": "changes",
         "keywords": "changes commit",
-         "desc": {
-             "en": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes"
-            },
+        "desc": {
+            "en": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes"
+        },
         "url": "https://git-scm.com/docs/git-commit",
         "options": [
             {
                 "advanced": false,
                 "code": "commit -m [message]",
-                 "desc": {
-                     "en": "Use the given msg as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs"
-                     }
+                "desc": {
+                    "en": "Use the given msg as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs"
+                }
             },
             {
                 "advanced": false,
                 "code": "commit --all",
-                 "desc": {
-                     "en": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected"
-                     }
+                "desc": {
+                    "en": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected"
+                }
             },
             {
                 "advanced": false,
                 "code": "commit --amend",
-                 "desc": {
-                     "en": "Changes / Updates the last commit"
-                     }
+                "desc": {
+                    "en": "Changes / Updates the last commit"
+                }
             },
             {
                 "advanced": false,
                 "code": "commit --squash",
-                 "desc": {
-                     "en": "Create a single commit on top of the current branch"
-                     }
+                "desc": {
+                    "en": "Create a single commit on top of the current branch"
+                }
             }
         ]
     },
@@ -197,52 +197,52 @@
         "title": "stash",
         "category": "changes",
         "keywords": "changes stash",
-         "desc": {
-             "en": "Stash the changes in a dirty working directory away"
-         },
+        "desc": {
+            "en": "Stash the changes in a dirty working directory away"
+        },
         "url": "https://git-scm.com/docs/git-stash",
         "options": [
             {
                 "advanced": false,
                 "code": "stash list",
-                 "desc": {
-                     "en": "Shows all your stashes"
-                     }
+                "desc": {
+                    "en": "Shows all your stashes"
+                }
             },
             {
                 "advanced": false,
                 "code": "stash save [Stash Message]",
-                 "desc": {
-                     "en": "Saves your local modifications to a new stash entry"
-                     }
+                "desc": {
+                    "en": "Saves your local modifications to a new stash entry"
+                }
             },
             {
                 "advanced": false,
                 "code": "stash apply stash@{index}",
-                 "desc": {
-                     "en": "Applies the stash in index"
-                     }
+                "desc": {
+                    "en": "Applies the stash in index"
+                }
             },
             {
                 "advanced": false,
                 "code": "stash pop stash@{index}",
-                 "desc": {
-                     "en": "Applies the stash in index and removes it from stash list"
-                     }
+                "desc": {
+                    "en": "Applies the stash in index and removes it from stash list"
+                }
             },
             {
                 "advanced": false,
                 "code": "stash drop stash@{index}",
-                 "desc": {
-                     "en": "Removes the index from stash list without applying"
-                     }
+                "desc": {
+                    "en": "Removes the index from stash list without applying"
+                }
             },
             {
                 "advanced": false,
                 "code": "stash clear",
-                 "desc": {
-                     "en": "Clears the stash list"
-                     }
+                "desc": {
+                    "en": "Clears the stash list"
+                }
             }
         ]
     },
@@ -251,17 +251,17 @@
         "title": "rm",
         "category": "changes",
         "keywords": "changes remove rm",
-         "desc": {
-             "en": "Remove files from the index"
-            },
+        "desc": {
+            "en": "Remove files from the index"
+        },
         "url": "https://git-scm.com/docs/git-rm",
         "options": [
             {
                 "advanced": false,
                 "code": "rm [source]",
-                 "desc": {
-                     "en": "Removes file from stage area"
-                    }
+                "desc": {
+                    "en": "Removes file from stage area"
+                }
             }
         ]
     },
@@ -270,24 +270,24 @@
         "title": "mv",
         "category": "changes",
         "keywords": "changes move mv",
-         "desc": {
-             "en": "Move or rename a file or a directory"
-            },
+        "desc": {
+            "en": "Move or rename a file or a directory"
+        },
         "url": "https://git-scm.com/docs/git-mv",
         "options": [
             {
                 "advanced": false,
                 "code": "mv [source] [destination]",
-                 "desc": {
-                     "en": "Moves or renames source"
-                     }
+                "desc": {
+                    "en": "Moves or renames source"
+                }
             },
             {
                 "advanced": false,
                 "code": "mv -f [source] [destination]",
-                 "desc": {
-                     "en": "Forces to move or rename the source even if it exists in destination"
-                     }
+                "desc": {
+                    "en": "Forces to move or rename the source even if it exists in destination"
+                }
             }
         ]
     },
@@ -296,31 +296,31 @@
         "title": "tag",
         "category": "changes",
         "keywords": "changes tag",
-         "desc": {
-             "en": "Marks the current commit with a tag"
-            },
+        "desc": {
+            "en": "Marks the current commit with a tag"
+        },
         "url": "https://git-scm.com/docs/git-tag",
         "options": [
             {
                 "advanced": false,
                 "code": "tag --list",
-                 "desc": {
-                     "en": "Lists all tags"
-                     }
+                "desc": {
+                    "en": "Lists all tags"
+                }
             },
             {
                 "advanced": false,
                 "code": "tag [name]",
-                 "desc": {
-                     "en": "Marks the current commit with a tag"
-                     }
+                "desc": {
+                    "en": "Marks the current commit with a tag"
+                }
             },
             {
                 "advanced": false,
                 "code": "tag --delete [name]",
-                 "desc": {
-                     "en": "Delete existing tags with the given names"
-                     }
+                "desc": {
+                    "en": "Delete existing tags with the given names"
+                }
             }
         ]
     },
@@ -329,38 +329,38 @@
         "title": "branch",
         "category": "branch",
         "keywords": "branch",
-         "desc": {
-             "en": "List, create, or delete branches"
-            },
+        "desc": {
+            "en": "List, create, or delete branches"
+        },
         "url": "https://git-scm.com/docs/git-branch",
         "options": [
             {
                 "advanced": false,
                 "code": "branch [name]",
-                 "desc": {
-                     "en": "Creates a new branch from HEAD called branch-name"
-                     }
+                "desc": {
+                    "en": "Creates a new branch from HEAD called branch-name"
+                }
             },
             {
                 "advanced": false,
                 "code": "branch -b [name]",
-                 "desc": {
-                     "en": "Creates and checks out to a new branch from HEAD called branch-name"
-                     }
+                "desc": {
+                    "en": "Creates and checks out to a new branch from HEAD called branch-name"
+                }
             },
             {
                 "advanced": false,
                 "code": "branch --all",
-                 "desc": {
-                     "en": "List both remote-tracking branches and local branches"
-                     }
+                "desc": {
+                    "en": "List both remote-tracking branches and local branches"
+                }
             },
             {
                 "advanced": false,
                 "code": "branch --delete",
-                 "desc": {
-                     "en": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream"
-                     }
+                "desc": {
+                    "en": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream"
+                }
             }
         ]
     },
@@ -369,39 +369,38 @@
         "title": "checkout",
         "category": "branch",
         "keywords": "branch checkout",
-         "desc": {
-             "en": "Switch branches or restore working tree files"
-            },
+        "desc": {
+            "en": "Switch branches or restore working tree files"
+        },
         "url": "https://git-scm.com/docs/git-checkout",
         "options": [
             {
                 "advanced": false,
                 "code": "checkout [name]",
-                 "desc": {
-                     "en": "Switch branches or restore working tree files"
-                     }
+                "desc": {
+                    "en": "Switch branches or restore working tree files"
+                }
             },
             {
                 "advanced": false,
                 "code": "checkout --track [origin/name]",
-                 "desc": {
-                     "en": "Checkout and track a remote branch"
-                     }
+                "desc": {
+                    "en": "Checkout and track a remote branch"
+                }
             },
             {
                 "advanced": false,
                 "code": "checkout .",
-                 "desc": {
-                     "en": "Discard all tracked local changes in HEAD"
-                     }
-            }
-            ,
+                "desc": {
+                    "en": "Discard all tracked local changes in HEAD"
+                }
+            },
             {
                 "advanced": false,
                 "code": "checkout HEAD [source]",
-                 "desc": {
-                     "en": "Resets a tracked file"
-                     }
+                "desc": {
+                    "en": "Resets a tracked file"
+                }
             }
         ]
     },
@@ -410,24 +409,24 @@
         "title": "fetch",
         "category": "update",
         "keywords": "update fetch",
-         "desc": {
-             "en": "Download objects and refs from another repository"
-            },
+        "desc": {
+            "en": "Download objects and refs from another repository"
+        },
         "url": "https://git-scm.com/docs/git-fetch",
         "options": [
             {
                 "advanced": false,
                 "code": "fetch --all",
-                 "desc": {
-                     "en": "Fetch all remotes"
-                     }
+                "desc": {
+                    "en": "Fetch all remotes"
+                }
             },
             {
                 "advanced": false,
                 "code": "fetch --prune",
-                 "desc": {
-                     "en": "Before fetching, remove any remote-tracking references that no longer exist on the remote"
-                     }
+                "desc": {
+                    "en": "Before fetching, remove any remote-tracking references that no longer exist on the remote"
+                }
             }
         ]
     },
@@ -436,17 +435,17 @@
         "title": "pull",
         "category": "update",
         "keywords": "update pull",
-         "desc": {
-             "en": "Fetch from and integrate with another repository or a local branch"
-            },
+        "desc": {
+            "en": "Fetch from and integrate with another repository or a local branch"
+        },
         "url": "https://git-scm.com/docs/git-pull",
         "options": [
             {
                 "advanced": false,
                 "code": "pull",
-                 "desc": {
-                     "en": "Fetch from and integrate with another repository or a local branch"
-                    }
+                "desc": {
+                    "en": "Fetch from and integrate with another repository or a local branch"
+                }
             }
         ]
     },
@@ -455,17 +454,17 @@
         "title": "push",
         "category": "update",
         "keywords": "update push",
-         "desc": {
-             "en": "Update remote refs along with associated objects"
-            },
+        "desc": {
+            "en": "Update remote refs along with associated objects"
+        },
         "url": "https://git-scm.com/docs/git-push",
         "options": [
             {
                 "advanced": false,
                 "code": "push",
-                 "desc": {
-                     "en": "Update remote refs along with associated objects"
-                    }
+                "desc": {
+                    "en": "Update remote refs along with associated objects"
+                }
             }
         ]
     },
@@ -474,17 +473,17 @@
         "title": "merge",
         "category": "merge",
         "keywords": "merge",
-         "desc": {
-             "en": "Merges a branch to your current HEAD"
-            },
+        "desc": {
+            "en": "Merges a branch to your current HEAD"
+        },
         "url": "https://git-scm.com/docs/git-merge",
         "options": [
             {
                 "advanced": false,
                 "code": "merge [branch-name]",
-                 "desc": {
-                     "en": "Merges a branch to your current HEAD"
-                    }
+                "desc": {
+                    "en": "Merges a branch to your current HEAD"
+                }
             }
         ]
     },
@@ -493,38 +492,38 @@
         "title": "rebase",
         "category": "patch",
         "keywords": "patch rebase",
-         "desc": {
-             "en": "Rebase your current HEAD onto branch-name"
-            },
+        "desc": {
+            "en": "Rebase your current HEAD onto branch-name"
+        },
         "url": "https://git-scm.com/docs/git-rebase",
         "options": [
             {
                 "advanced": false,
                 "code": "rebase [branch-name]",
-                 "desc": {
-                     "en": "Rebase your current HEAD onto branch-name"
-                     }
+                "desc": {
+                    "en": "Rebase your current HEAD onto branch-name"
+                }
             },
             {
                 "advanced": false,
                 "code": "rebase --interactive",
-                 "desc": {
-                     "en": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing."
-                     }
+                "desc": {
+                    "en": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing."
+                }
             },
             {
                 "advanced": false,
                 "code": "rebase --continue",
-                 "desc": {
-                     "en": "Continue a rebase after resolving conflicts"
-                     }
+                "desc": {
+                    "en": "Continue a rebase after resolving conflicts"
+                }
             },
             {
                 "advanced": false,
                 "code": "rebase --abort",
-                 "desc": {
-                     "en": "Abort a rebase"
-                     }
+                "desc": {
+                    "en": "Abort a rebase"
+                }
             }
         ]
     },
@@ -533,17 +532,17 @@
         "title": "cherry-pick",
         "category": "patch",
         "keywords": "patch cherry-pick",
-         "desc": {
-             "en": "Apply the changes from a different commit to your current HEAD"
-            },
+        "desc": {
+            "en": "Apply the changes from a different commit to your current HEAD"
+        },
         "url": "https://git-scm.com/docs/git-cherry-pick",
         "options": [
             {
                 "advanced": false,
                 "code": "cherry-pick [commit]",
-                 "desc": {
-                     "en": "Pick and apply changes from commit hash to your current HEAD"
-                    }
+                "desc": {
+                    "en": "Pick and apply changes from commit hash to your current HEAD"
+                }
             }
         ]
     },
@@ -552,38 +551,38 @@
         "title": "reset",
         "category": "undo",
         "keywords": "reset undo",
-         "desc": {
-             "en": "This form resets the index entries for all paths to their state"
-             },
+        "desc": {
+            "en": "This form resets the index entries for all paths to their state"
+        },
         "url": "https://git-scm.com/docs/git-reset",
         "options": [
             {
                 "advanced": false,
                 "code": "reset",
-                 "desc": {
-                     "en": "Resets the index entries for all paths to their state"
-                     }
+                "desc": {
+                    "en": "Resets the index entries for all paths to their state"
+                }
             },
             {
                 "advanced": false,
                 "code": "reset --soft",
-                 "desc": {
-                     "en": "Does not touch the index file or the working tree at all"
-                     }
+                "desc": {
+                    "en": "Does not touch the index file or the working tree at all"
+                }
             },
             {
                 "advanced": false,
                 "code": "reset --mixed",
-                 "desc": {
-                     "en": "Resets the index but not the working tree and reports what has not been updated"
-                     }
+                "desc": {
+                    "en": "Resets the index but not the working tree and reports what has not been updated"
+                }
             },
             {
                 "advanced": false,
                 "code": "reset --hard",
-                 "desc": {
-                     "en": "Resets the index and working tree. Any changes to tracked files in the working tree since commit are discarded"
-                     }
+                "desc": {
+                    "en": "Resets the index and working tree. Any changes to tracked files in the working tree since commit are discarded"
+                }
             }
         ]
     },
@@ -592,24 +591,24 @@
         "title": "clean",
         "category": "undo",
         "keywords": "reset undo clean",
-         "desc": {
-             "en": "Shows untracked files about to be removed"
-             },
+        "desc": {
+            "en": "Shows untracked files about to be removed"
+        },
         "url": "https://git-scm.com/docs/git-clean",
         "options": [
             {
                 "advanced": false,
                 "code": "clean -n",
-                 "desc": {
-                     "en": "Shows untracked files about to be removed"
-                     }
+                "desc": {
+                    "en": "Shows untracked files about to be removed"
+                }
             },
             {
                 "advanced": false,
                 "code": "clean -f",
-                 "desc": {
-                     "en": "Removes all untracked files"
-                     }
+                "desc": {
+                    "en": "Removes all untracked files"
+                }
             }
         ]
     },
@@ -618,31 +617,31 @@
         "title": "log",
         "category": "history",
         "keywords": "history log",
-         "desc": {
-             "en": "Show all commits"
-            },
+        "desc": {
+            "en": "Show all commits"
+        },
         "url": "https://git-scm.com/docs/git-log",
         "options": [
             {
                 "advanced": false,
                 "code": "log",
-                 "desc": {
-                     "en": "Show all commits"
-                     }
+                "desc": {
+                    "en": "Show all commits"
+                }
             },
             {
                 "advanced": false,
                 "code": "log -p [source]",
-                 "desc": {
-                     "en": "Show changes to file"
-                     }
+                "desc": {
+                    "en": "Show changes to file"
+                }
             },
             {
                 "advanced": false,
                 "code": "log --graph",
-                 "desc": {
-                     "en": "Shows all commits as graph"
-                     }
+                "desc": {
+                    "en": "Shows all commits as graph"
+                }
             }
         ]
     },
@@ -651,113 +650,259 @@
         "title": "flow",
         "category": "extensions",
         "keywords": "extensions flow init feature release hotfix start finish",
-         "desc": {
-             "en": "A git extension for feature branch workflow"
-            },
+        "desc": {
+            "en": "A git extension for feature branch workflow"
+        },
         "url": "https://git-scm.com/docs/git-init",
         "options": [
             {
                 "advanced": false,
                 "code": "flow init",
-                 "desc": {
-                     "en": "Initialize flow inside an existing repository"
-                     }
+                "desc": {
+                    "en": "Initialize flow inside an existing repository"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow feature start [name]",
-                 "desc": {
-                     "en": "Create a new branch from latest develop as feature/feature-name"
-                     }
+                "desc": {
+                    "en": "Create a new branch from latest develop as feature/feature-name"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow feature finish [name]",
-                 "desc": {
-                     "en": "Merges feature-name into develop and removes branch"
-                     }
+                "desc": {
+                    "en": "Merges feature-name into develop and removes branch"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow feature publish [name]",
-                 "desc": {
-                     "en": "Publishes a feature to the remote"
-                     }
+                "desc": {
+                    "en": "Publishes a feature to the remote"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow feature pull origin [name]",
-                 "desc": {
-                     "en": "Pull a feature from remote to your local repository"
-                     }
+                "desc": {
+                    "en": "Pull a feature from remote to your local repository"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow release start [name]",
-                 "desc": {
-                     "en": "Creates a release branch from latest develop"
-                     }
+                "desc": {
+                    "en": "Creates a release branch from latest develop"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow release finish [name]",
-                 "desc": {
-                     "en": "Merges release branch into master and develop"
-                     }
+                "desc": {
+                    "en": "Merges release branch into master and develop"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow hotfix start [name]",
-                 "desc": {
-                     "en": "Creates a hotfix/fix-name branch from master"
-                     }
+                "desc": {
+                    "en": "Creates a hotfix/fix-name branch from master"
+                }
             },
             {
                 "advanced": false,
                 "code": "flow hotfix finish [name]",
-                 "desc": {
-                     "en": "Merges fix-name into master and develop"
-                     }
+                "desc": {
+                    "en": "Merges fix-name into master and develop"
+                }
             }
         ]
     },
     {
-        "advanced": false,
+        "advanced": true,
         "title": "config",
-        "category": "config",
-        "keywords": "config",
-         "desc": {
-             "en": "Get and set repository or global options"
-            },
+        "category": "administration",
+        "keywords": "administration config",
+        "desc": {
+            "en": "Get and set repository or global options"
+        },
         "url": "https://git-scm.com/docs/git-config",
         "options": [
             {
-                "advanced": false,
+                "advanced": true,
                 "code": "config -e",
-                 "desc": {
-                     "en": "Edit repository config file"
-                     }
+                "desc": {
+                    "en": "Edit repository config file"
+                }
             },
             {
-                "advanced": false,
+                "advanced": true,
                 "code": "config --global -e",
-                 "desc": {
-                     "en": "Edit global config file"
-                     }
+                "desc": {
+                    "en": "Edit global config file"
+                }
             },
             {
-                "advanced": false,
+                "advanced": true,
                 "code": "config --global user.name 'Your Name'",
-                 "desc": {
-                     "en": "Define your user name in global settings"
-                     }
+                "desc": {
+                    "en": "Define your user name in global settings"
+                }
             },
             {
-                "advanced": false,
+                "advanced": true,
                 "code": "config --global user.email you@mail.com",
-                 "desc": {
-                     "en": "Define your mail in global settings"
-                     }
+                "desc": {
+                    "en": "Define your mail in global settings"
+                }
+            }
+        ]
+    },
+    {
+        "advanced": true,
+        "title": "gc",
+        "category": "administration",
+        "keywords": "administration gc garbage collection",
+        "desc": {
+            "en": "Cleanup unnecessary files and optimize the local repository"
+        },
+        "url": "https://git-scm.com/docs/git-gc",
+        "options": [
+            {
+                "advanced": true,
+                "code": "gc",
+                "desc": {
+                    "en": "Runs a garbage collection for your local repository"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "gc --aggressive",
+                "desc": {
+                    "en": "Runs gc more aggressively to optimize your local repository"
+                }
+            }
+        ]
+    },
+    {
+        "advanced": true,
+        "title": "prune",
+        "category": "administration",
+        "keywords": "administration prune",
+        "desc": {
+            "en": "Prune all unreachable objects from the object database"
+        },
+        "url": "https://git-scm.com/docs/git-prune",
+        "options": [
+            {
+                "advanced": true,
+                "code": "prune",
+                "desc": {
+                    "en": "Removes objects that are no longer pointed to any object in reachable branch"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "prune -n",
+                "desc": {
+                    "en": "Do not remove anything; just report what it would remove"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "prune --progress",
+                "desc": {
+                    "en": "Shows prune progress"
+                }
+            }
+        ]
+    },
+    {
+        "advanced": true,
+        "title": "bisect",
+        "category": "debug",
+        "keywords": "debug",
+        "desc": {
+            "en": "Use binary search to find the commit that introduced a bug"
+        },
+        "url": "https://git-scm.com/docs/git-bisect",
+        "options": [
+            {
+                "advanced": true,
+                "code": "bisect start",
+                "desc": {
+                    "en": "Start up the git bisect wizard"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "bisect good [commit]",
+                "desc": {
+                    "en": "Let the git bisect wizard know of a good commit"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "bisect bad [commit]",
+                "desc": {
+                    "en": "Let the git bisect wizard know of a bad commit"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "bisect reset",
+                "desc": {
+                    "en": "End your git bisect wizard"
+                }
+            }
+        ]
+    },
+    {
+        "advanced": true,
+        "title": "blame",
+        "category": "debug",
+        "keywords": "debug",
+        "desc": {
+            "en": "Display author metadata attached to specific committed lines in a file"
+        },
+        "url": "https://git-scm.com/docs/git-blame",
+        "options": [
+            {
+                "advanced": true,
+                "code": "blame [source]",
+                "desc": {
+                    "en": "Show each author worked on the source including date, time and line numbers"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "blame -L x,y [source]",
+                "desc": {
+                    "en": "Restrict the output of source between x and y lines"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "blame -e [source]",
+                "desc": {
+                    "en": "Show author email address instead of username"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "blame -w [source]",
+                "desc": {
+                    "en": "Ignore whitespace changes"
+                }
+            },
+            {
+                "advanced": true,
+                "code": "blame -M [source]",
+                "desc": {
+                    "en": "Ignore whitespace changes"
+                }
             }
         ]
     }

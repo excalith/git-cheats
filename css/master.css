@@ -293,13 +293,14 @@ hr {
 
 /* ---- CATEGORY COLORS ---- */
 .grid-item.create   { border-left: 4px solid #8bc34a; color: #8bc34a;}
-.grid-item.changes, .grid-item.config  { border-left: 4px solid #ff8800; color: #ff8800;}
+.grid-item.changes, .grid-item.administration  { border-left: 4px solid #ff8800; color: #ff8800;}
 .grid-item.branch, .grid-item.checkout   { border-left: 4px solid #774aff; color: #774aff;}
 .grid-item.update   { border-left: 4px solid #00bcd4; color: #00bcd4;}
 .grid-item.merge, .grid-item.rebase, .grid-item.patch, .grid-item.cherry-pick   { border-left: 4px solid #c2185b; color: #c2185b;}
 .grid-item.undo  { border-left: 4px solid #ff5252; color: #ff5252;}
 .grid-item.extensions  { border-left: 4px solid #8fffa7; color: #8fffa7;}
 .grid-item.history   { border-left: 4px solid #5270f5; color: #5270f5;}
+.grid-item.debug   { border-left: 4px solid #9c0000; color: #9c0000;}
 
 /* ---- OCTOCAT! ---- */
 .github-corner:hover .octo-arm {
