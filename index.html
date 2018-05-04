@@ -74,17 +74,29 @@
     </div>
 
     <script>
-        // Cookies
+
         var isAdvanced = false;
         var lang = "en";
+        var browserLang = (navigator.language || navigator.userLanguage).substring(0, 2);
 
-        if (Cookies.get('language'))
-            lang = Cookies.get('language');
-
+        // Cookies
         if (Cookies.get('showAdvanced')) {
             isAdvanced = Cookies.get('showAdvanced') == "true" ? true : false;
             $('#ShowAdvanced').prop('checked', isAdvanced);
         };
+
+        if (Cookies.get('language')) {
+            lang = Cookies.get('language');
+        }
+        else {
+            $.getJSON("commands.json", function (json) {
+                for (key in json[0].languages) {
+                    if (key == browserLang) {
+                        lang = browserLang;
+                    }
+                }
+            });
+        }
 
         // init isotope
         var qsRegex;
@@ -95,12 +107,6 @@
                 return qsRegex ? $(this).attr('keywords').match(qsRegex) : true;
             }
         });
-
-        // use value of search field to filter
-        var $quicksearch = $('.quicksearch').keyup(debounce(function () {
-            qsRegex = new RegExp($quicksearch.val(), 'gi');
-            $grid.isotope();
-        }, 200));
 
         refreshList();
 
@@ -116,16 +122,11 @@
                 $(".quicksearch").attr("placeholder", json[0].search[lang]).focus();
                 $(".advanced-label").text(json[0].advancedCommands[lang]);
 
-
                 jQuery('.languages').html('');
                 for (key in json[0].languages) {
                     if (json[0].languages.hasOwnProperty(key)) {
                         var value = json[0].languages[key];
-                        var checkedVal = "";
-
-                        if (lang == key) {
-                            checkedVal = "checked='checked'";
-                        }
+                        var checkedVal = lang == key ? "checked='checked'" : "";
 
                         var $language = $(
                             "<label class='checkbox'>" + value +
@@ -153,7 +154,7 @@
                             "<div class='grid-item " + json[i].category + "' keywords='" + json[i].keywords + "'>" +
                             "<p class='title'>" + json[i].title + "</p>" +
                             "<p class='category " + json[i].category + "'>" + json[i].category + "</p>" +
-                            "<p class='main-desc'>" + json[i].desc[!json[i].desc[lang].length ? "en" : lang] + "</p>" +
+                            "<p class='main-desc'>" + json[i].desc[hasTranslation(json[i].desc[lang])] + "</p>" +
                             "<p class='options-title'>" + json[0].options[lang] + ":</p>");
 
                         // command options
@@ -161,12 +162,12 @@
                             // if command option is advanced check ShowAdvanced
                             if (json[i].options[j].advanced == true && isAdvanced || json[i].options[j].advanced == false) {
                                 $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
-                                $item.append("<p class='desc'>" + json[i].options[j].desc[!json[i].options[j].desc[lang].length ? "en" : lang] + "</p>");
+                                $item.append("<p class='desc'>" + json[i].options[j].desc[hasTranslation(json[i].options[j].desc[lang])] + "</p>");
                             }
                         };
 
                         // git-scm link for more info
-                        $item.append("<a href='" + json[i].url + "'>(" + json[0].readMore[lang] + ")</a></div>");
+                        $item.append("<a href='" + json[i].url + "'>(" + json[0].readMore[hasTranslation(json[0].readMore[lang])] + ")</a></div>");
                         $grid.append($item)
                             .isotope('appended', $item);
                     }
@@ -189,6 +190,16 @@
                 }
                 timeout = setTimeout(delayed, threshold || 100);
             }
+        }
+
+        // use value of search field to filter
+        var $quicksearch = $('.quicksearch').keyup(debounce(function () {
+            qsRegex = new RegExp($quicksearch.val(), 'gi');
+            $grid.isotope();
+        }, 200));
+
+        function hasTranslation(value) {
+            return !value || value == undefined || value == "" || value.length == 0 ? "en" : lang;
         }
 
         $(".dropdown").hover(function () {
