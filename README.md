@@ -24,4 +24,5 @@ ___
 #### Other Useful Projects
 If you think there should be more, please create an issue labeled as `enhancement` and give direct link to the project.
 * [Git Init](https://pel-daniel.github.io/git-init) - Great learning tool for learning how to use commands
+* [Git - The Simple Guide](https://rogerdudler.github.io/git-guide) - Simple guide for getting started with git
 * [Learn Git Branching](https://learngitbranching.js.org) - Learn how to use branches properly
