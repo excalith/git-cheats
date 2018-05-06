@@ -24,7 +24,11 @@
     {
         "advanced": false,
         "title": "init",
-        "category": "create",
+        "type": "create",
+        "category": {
+            "en": "Create",
+            "tr": "Yarat"
+        },
         "keywords": "create init start",
         "desc": {
             "en": "Create an empty Git repository or reinitialize an existing one",
@@ -45,7 +49,11 @@
     {
         "advanced": false,
         "title": "clone",
-        "category": "create",
+        "type": "create",
+        "category": {
+            "en": "Create",
+            "tr": "Yarat"
+        },
         "keywords": "create clone new",
         "desc": {
             "en": "Creates a local copy of a project that already exists remotely",
@@ -74,7 +82,11 @@
     {
         "advanced": false,
         "title": "add",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes add",
         "desc": {
             "en": "Stages changes in the working tree",
@@ -119,7 +131,11 @@
     {
         "advanced": false,
         "title": "status",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes status",
         "desc": {
             "en": "Shows the status of changes as untracked, modified, or staged",
@@ -156,7 +172,11 @@
     {
         "advanced": false,
         "title": "diff",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes diff",
         "desc": {
             "en": "Shows file differences not yet staged",
@@ -185,7 +205,11 @@
     {
         "advanced": false,
         "title": "commit",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes commit",
         "desc": {
             "en": "Saves the snapshot to the project history",
@@ -230,7 +254,11 @@
     {
         "advanced": false,
         "title": "stash",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes stash",
         "desc": {
             "en": "Stash and restore incomplete changes",
@@ -291,7 +319,11 @@
     {
         "advanced": false,
         "title": "rm",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes remove rm",
         "desc": {
             "en": "Remove files from the index",
@@ -312,7 +344,11 @@
     {
         "advanced": false,
         "title": "mv",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes move mv",
         "desc": {
             "en": "Move or rename a file or a directory",
@@ -341,7 +377,11 @@
     {
         "advanced": false,
         "title": "tag",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes tag",
         "desc": {
             "en": "Marks the current commit with a tag",
@@ -378,7 +418,11 @@
     {
         "advanced": false,
         "title": "branch",
-        "category": "branch",
+        "type": "branch",
+        "category": {
+            "en": "Branch",
+            "tr": "Ağaç"
+        },
         "keywords": "branch",
         "desc": {
             "en": "List, create, or delete branches",
@@ -423,7 +467,11 @@
     {
         "advanced": false,
         "title": "checkout",
-        "category": "branch",
+        "type": "branch",
+        "category": {
+            "en": "Branch",
+            "tr": "Ağaç"
+        },
         "keywords": "branch checkout",
         "desc": {
             "en": "Switch branches or restore working tree files",
@@ -468,7 +516,11 @@
     {
         "advanced": false,
         "title": "fetch",
-        "category": "update",
+        "type": "update",
+        "category": {
+            "en": "Update",
+            "tr": "Güncelleme"
+        },
         "keywords": "update fetch",
         "desc": {
             "en": "Downloads all history from the remote repository",
@@ -497,7 +549,11 @@
     {
         "advanced": false,
         "title": "pull",
-        "category": "update",
+        "type": "update",
+        "category": {
+            "en": "Update",
+            "tr": "Güncelleme"
+        },
         "keywords": "update pull",
         "desc": {
             "en": "Updates the local branch from its remote counterpart",
@@ -518,7 +574,11 @@
     {
         "advanced": false,
         "title": "push",
-        "category": "update",
+        "type": "update",
+        "category": {
+            "en": "Update",
+            "tr": "Güncelleme"
+        },
         "keywords": "update push",
         "desc": {
             "en": "Uploads all local branch commits to its remote counterpart",
@@ -539,7 +599,11 @@
     {
         "advanced": false,
         "title": "merge",
-        "category": "merge",
+        "type": "merge",
+        "category": {
+            "en": "Merge",
+            "tr": "Birleştirme"
+        },
         "keywords": "merge",
         "desc": {
             "en": "Combines the specified branch’s history into the current branch",
@@ -560,7 +624,11 @@
     {
         "advanced": false,
         "title": "rebase",
-        "category": "patch",
+        "type": "patch",
+        "category": {
+            "en": "Patch",
+            "tr": "Yama"
+        },
         "keywords": "patch rebase",
         "desc": {
             "en": "Rebase your current HEAD onto target branch",
@@ -605,7 +673,11 @@
     {
         "advanced": false,
         "title": "cherry-pick",
-        "category": "patch",
+        "type": "patch",
+        "category": {
+            "en": "Patch",
+            "tr": "Yama"
+        },
         "keywords": "patch cherry-pick",
         "desc": {
             "en": "Apply the changes from a different commit to your current HEAD",
@@ -626,7 +698,11 @@
     {
         "advanced": false,
         "title": "reset",
-        "category": "undo",
+        "type": "undo",
+        "category": {
+            "en": "Undo",
+            "tr": "Geri Al"
+        },
         "keywords": "reset undo",
         "desc": {
             "en": "Undoes all commits after [commit], preserving changes locally",
@@ -671,7 +747,11 @@
     {
         "advanced": false,
         "title": "clean",
-        "category": "undo",
+        "type": "undo",
+        "category": {
+            "en": "Undo",
+            "tr": "Geri Al"
+        },
         "keywords": "reset undo clean",
         "desc": {
             "en": "Shows untracked files about to be removed",
@@ -700,7 +780,11 @@
     {
         "advanced": false,
         "title": "log",
-        "category": "history",
+        "type": "history",
+        "category": {
+            "en": "History",
+            "tr": "Geçmiş"
+        },
         "keywords": "history log",
         "desc": {
             "en": "Lists version history for the current branch",
@@ -737,7 +821,11 @@
     {
         "advanced": false,
         "title": "flow",
-        "category": "extensions",
+        "type": "extensions",
+        "category": {
+            "en": "Extensions",
+            "tr": "Eklentiler"
+        },
         "keywords": "extensions flow init feature release hotfix start finish",
         "desc": {
             "en": "A git extension for feature branch workflow",
@@ -822,7 +910,11 @@
     {
         "advanced": true,
         "title": "config",
-        "category": "administration",
+        "type": "administration",
+        "category": {
+            "en": "Administration",
+            "tr": "Yönetim"
+        },
         "keywords": "administration config",
         "desc": {
             "en": "Get and set repository or global options",
@@ -867,7 +959,11 @@
     {
         "advanced": true,
         "title": "gc",
-        "category": "administration",
+        "type": "administration",
+        "category": {
+            "en": "Administration",
+            "tr": "Yönetim"
+        },
         "keywords": "administration gc garbage collection",
         "desc": {
             "en": "Cleanup unnecessary files and optimize the local repository",
@@ -896,7 +992,11 @@
     {
         "advanced": true,
         "title": "prune",
-        "category": "administration",
+        "type": "administration",
+        "category": {
+            "en": "Administration",
+            "tr": "Yönetim"
+        },
         "keywords": "administration prune",
         "desc": {
             "en": "Prune all unreachable objects from the object database",
@@ -933,7 +1033,11 @@
     {
         "advanced": true,
         "title": "bisect",
-        "category": "debug",
+        "type": "debug",
+        "category": {
+            "en": "Debug",
+            "tr": "Hata Ayıklama"
+        },
         "keywords": "debug",
         "desc": {
             "en": "Use binary search to find the commit that introduced a bug",
@@ -978,7 +1082,11 @@
     {
         "advanced": true,
         "title": "blame",
-        "category": "debug",
+        "type": "debug",
+        "category": {
+            "en": "Debug",
+            "tr": "Hata Ayıklama"
+        },
         "keywords": "debug",
         "desc": {
             "en": "Display author metadata attached to specific committed lines in a file",
