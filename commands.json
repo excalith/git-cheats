@@ -48,7 +48,7 @@
         "category": "create",
         "keywords": "create clone new",
         "desc": {
-            "en": "Clone a repository into a new directory",
+            "en": "Creates a local copy of a project that already exists remotely",
             "tr": "Klasöre depo klonla"
         },
         "url": "https://git-scm.com/docs/git-clone",
@@ -57,7 +57,7 @@
                 "advanced": false,
                 "code": "clone ssh://user@domain.com/repo.git",
                 "desc": {
-                    "en": "Clone a repository",
+                    "en": "Clone target repository",
                     "tr": "İlgili depoyu klonla"
                 }
             },
@@ -77,7 +77,7 @@
         "category": "changes",
         "keywords": "changes add",
         "desc": {
-            "en": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit",
+            "en": "Stages changes in the working tree",
             "tr": "Index'e değişiklik yapılan içeriği ekleyip bir sonraki commit işlemi için hazır hale getirir."
         },
         "url": "https://git-scm.com/docs/git-add",
@@ -122,7 +122,7 @@
         "category": "changes",
         "keywords": "changes status",
         "desc": {
-            "en": "Changed files on your working directory",
+            "en": "Shows the status of changes as untracked, modified, or staged",
             "tr": "Commit edilmemiş tüm değişmiş dosyaları gösterir"
         },
         "url": "https://git-scm.com/docs/git-status",
@@ -159,7 +159,7 @@
         "category": "changes",
         "keywords": "changes diff",
         "desc": {
-            "en": "Show changes between the working tree and the index or a tree, changes between the index and a tree",
+            "en": "Shows file differences not yet staged",
             "tr": "Değişiklikleri karşılaştır"
         },
         "url": "https://git-scm.com/docs/git-diff",
@@ -188,7 +188,7 @@
         "category": "changes",
         "keywords": "changes commit",
         "desc": {
-            "en": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes",
+            "en": "Saves the snapshot to the project history",
             "tr": "Eklenen tüm değişiklikleri kaydet"
         },
         "url": "https://git-scm.com/docs/git-commit",
@@ -213,7 +213,7 @@
                 "advanced": false,
                 "code": "commit --amend",
                 "desc": {
-                    "en": "Changes / Updates the last commit",
+                    "en": "Updates the last commit without creating a new commit",
                     "tr": "Son commit'e ekleme ya da düzenleme yapar"
                 }
             },
@@ -233,7 +233,7 @@
         "category": "changes",
         "keywords": "changes stash",
         "desc": {
-            "en": "Stash the changes in a dirty working directory away",
+            "en": "Stash and restore incomplete changes",
             "tr": "Değişiklikleri sonra kullanılmak üzere kasaya atar"
         },
         "url": "https://git-scm.com/docs/git-stash",
@@ -471,7 +471,7 @@
         "category": "update",
         "keywords": "update fetch",
         "desc": {
-            "en": "Download objects and refs from another repository",
+            "en": "Downloads all history from the remote repository",
             "tr": "Sunucudaki objeleri ve referansları günceller"
         },
         "url": "https://git-scm.com/docs/git-fetch",
@@ -500,7 +500,7 @@
         "category": "update",
         "keywords": "update pull",
         "desc": {
-            "en": "Fetch from and integrate with another repository or a local branch",
+            "en": "Updates the local branch from its remote counterpart",
             "tr": "Sunucudan lokalinize commit edilmiş güncel verileri çeker"
         },
         "url": "https://git-scm.com/docs/git-pull",
@@ -521,7 +521,7 @@
         "category": "update",
         "keywords": "update push",
         "desc": {
-            "en": "Update remote refs along with associated objects",
+            "en": "Uploads all local branch commits to its remote counterpart",
             "tr": "Yapmış olduğunuz tüm commitleri sunucuya gönderir"
         },
         "url": "https://git-scm.com/docs/git-push",
@@ -542,7 +542,7 @@
         "category": "merge",
         "keywords": "merge",
         "desc": {
-            "en": "Merges a branch to your current HEAD",
+            "en": "Combines the specified branch’s history into the current branch",
             "tr": "Bir branşı, aktif branşınıza gömer"
         },
         "url": "https://git-scm.com/docs/git-merge",
@@ -563,7 +563,7 @@
         "category": "patch",
         "keywords": "patch rebase",
         "desc": {
-            "en": "Rebase your current HEAD onto branch-name",
+            "en": "Rebase your current HEAD onto target branch",
             "tr": "Aktif branşınızı başka bir branşa aktarır"
         },
         "url": "https://git-scm.com/docs/git-rebase",
@@ -629,7 +629,7 @@
         "category": "undo",
         "keywords": "reset undo",
         "desc": {
-            "en": "This form resets the index entries for all paths to their state",
+            "en": "Undoes all commits after [commit], preserving changes locally",
             "tr": "İlgili branşı istediğiniz bir commit'e geri çevirir"
         },
         "url": "https://git-scm.com/docs/git-reset",
@@ -703,7 +703,7 @@
         "category": "history",
         "keywords": "history log",
         "desc": {
-            "en": "Show all commits",
+            "en": "Lists version history for the current branch",
             "tr": "Tüm commitleri listeler"
         },
         "url": "https://git-scm.com/docs/git-log",
@@ -743,7 +743,7 @@
             "en": "A git extension for feature branch workflow",
             "tr": "Feature branşlaşma metoduyla çalışan bir eklenti"
         },
-        "url": "https://git-scm.com/docs/git-init",
+        "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
         "options": [
             {
                 "advanced": false,
