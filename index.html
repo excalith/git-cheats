@@ -152,9 +152,9 @@
                     // if command is advanced check ShowAdvanced
                     if (json[i].advanced == true && isAdvanced || json[i].advanced == false) {
                         var $item = $(
-                            "<div class='grid-item " + json[i].category + "' keywords='" + json[i].keywords + "'>" +
+                            "<div class='grid-item " + json[i].type + "' keywords='" + json[i].keywords + "'>" +
                             "<p class='title'>" + json[i].title + "</p>" +
-                            "<p class='category " + json[i].category + "'>" + json[i].category + "</p>" +
+                            "<p class='category'>" + json[i].category[hasTranslation(json[i].category[lang])] + "</p>" +
                             "<p class='main-desc'>" + json[i].desc[hasTranslation(json[i].desc[lang])] + "</p>" +
                             "<p class='options-title'>" + json[0].options[lang] + ":</p>");
 
