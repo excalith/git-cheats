@@ -59,6 +59,7 @@
                 <i class="fas fa-cog"></i>
             </button>
             <div class="dropdown-content">
+                <span class="settings"><span class="settings-label">Settings</span><i class="fas fa-cog"></i></span>
                 <label class="checkbox">
                     <span class="advanced-label"></span>
                     <input id="ShowAdvanced" type="checkbox">
@@ -122,6 +123,7 @@
                 // gui localization
                 $(".quicksearch").attr("placeholder", json[0].search[lang]).focus();
                 $(".advanced-label").text(json[0].advancedCommands[lang]);
+                $(".settings-label").text(json[0].settings[lang]);
 
                 jQuery('.languages').html('');
                 for (key in json[0].languages) {
