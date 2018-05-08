@@ -20,7 +20,9 @@
         },
         "settings": {
             "en": "Settings",
-            "tr": "Ayarlar"
+            "tr": "Ayarlar",
+            "tel": "సెట్టింగులు",
+            "hin": "सेटिंग्स"
         },
         "readMore": {
             "en": "Read More",
@@ -41,7 +43,9 @@
         "type": "create",
         "category": {
             "en": "Create",
-            "tr": "Yarat"
+            "tr": "Yarat",
+            "tel": "సృష్టించడానికి",
+            "hin": "सर्जन करना"
         },
         "keywords": "create init start",
         "desc": {
@@ -70,7 +74,9 @@
         "type": "create",
         "category": {
             "en": "Create",
-            "tr": "Yarat"
+            "tr": "Yarat",
+            "tel": "సృష్టించడానికి",
+            "hin": "सर्जन करना"
         },
         "keywords": "create clone new",
         "desc": {
@@ -109,7 +115,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes add",
         "desc": {
@@ -168,7 +176,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes status",
         "desc": {
@@ -217,7 +227,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes diff",
         "desc": {
@@ -256,7 +268,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes commit",
         "desc": {
@@ -315,7 +329,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes stash",
         "desc": {
@@ -394,7 +410,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes remove rm",
         "desc": {
@@ -423,7 +441,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes move mv",
         "desc": {
@@ -462,7 +482,9 @@
         "type": "changes",
         "category": {
             "en": "Changes",
-            "tr": "Değişiklikler"
+            "tr": "Değişiklikler",
+            "tel": "మార్పులు",
+            "hin": "परिवर्तन"
         },
         "keywords": "changes tag",
         "desc": {
@@ -511,7 +533,9 @@
         "type": "branch",
         "category": {
             "en": "Branch",
-            "tr": "Ağaç"
+            "tr": "Ağaç",
+            "tel": "శాఖ",
+            "hin": "डाली"
         },
         "keywords": "branch",
         "desc": {
@@ -570,7 +594,9 @@
         "type": "branch",
         "category": {
             "en": "Branch",
-            "tr": "Ağaç"
+            "tr": "Ağaç",
+            "tel": "శాఖ",
+            "hin": "डाली"
         },
         "keywords": "branch checkout",
         "desc": {
@@ -629,7 +655,9 @@
         "type": "update",
         "category": {
             "en": "Update",
-            "tr": "Güncelleme"
+            "tr": "Güncelleme",
+            "tel": "నవీకరణ",
+            "hin": "अद्यतन करें"
         },
         "keywords": "update fetch",
         "desc": {
@@ -668,7 +696,9 @@
         "type": "update",
         "category": {
             "en": "Update",
-            "tr": "Güncelleme"
+            "tr": "Güncelleme",
+            "tel": "నవీకరణ",
+            "hin": "अद्यतन करें"
         },
         "keywords": "update pull",
         "desc": {
@@ -697,7 +727,9 @@
         "type": "update",
         "category": {
             "en": "Update",
-            "tr": "Güncelleme"
+            "tr": "Güncelleme",
+            "tel": "నవీకరణ",
+            "hin": "अद्यतन करें"
         },
         "keywords": "update push",
         "desc": {
@@ -726,7 +758,9 @@
         "type": "merge",
         "category": {
             "en": "Merge",
-            "tr": "Birleştirme"
+            "tr": "Birleştirme",
+            "tel": "విలీనం",
+            "hin": "मर्ज"
         },
         "keywords": "merge",
         "desc": {
@@ -755,7 +789,9 @@
         "type": "patch",
         "category": {
             "en": "Patch",
-            "tr": "Yama"
+            "tr": "Yama",
+            "tel": "పాచ్",
+            "hin": "पैच"
         },
         "keywords": "patch rebase",
         "desc": {
@@ -814,7 +850,9 @@
         "type": "patch",
         "category": {
             "en": "Patch",
-            "tr": "Yama"
+            "tr": "Yama",
+            "tel": "పాచ్",
+            "hin": "पैच"
         },
         "keywords": "patch cherry-pick",
         "desc": {
@@ -843,7 +881,9 @@
         "type": "undo",
         "category": {
             "en": "Undo",
-            "tr": "Geri Al"
+            "tr": "Geri Al",
+            "tel": "దిద్దుబాటు రద్దుచెయ్యి",
+            "hin": "पूर्ववत"
         },
         "keywords": "reset undo",
         "desc": {
@@ -902,7 +942,9 @@
         "type": "undo",
         "category": {
             "en": "Undo",
-            "tr": "Geri Al"
+            "tr": "Geri Al",
+            "tel": "దిద్దుబాటు రద్దుచెయ్యి",
+            "hin": "पूर्ववत"
         },
         "keywords": "reset undo clean",
         "desc": {
@@ -941,7 +983,9 @@
         "type": "history",
         "category": {
             "en": "History",
-            "tr": "Geçmiş"
+            "tr": "Geçmiş",
+            "tel": "చరిత్ర",
+            "hin": "इतिहास"
         },
         "keywords": "history log",
         "desc": {
@@ -990,7 +1034,9 @@
         "type": "extensions",
         "category": {
             "en": "Extensions",
-            "tr": "Eklentiler"
+            "tr": "Eklentiler",
+            "tel": "పొడిగింపులు",
+            "hin": "एक्सटेंशन"
         },
         "keywords": "extensions flow init feature release hotfix start finish",
         "desc": {
@@ -1097,7 +1143,9 @@
         "type": "administration",
         "category": {
             "en": "Administration",
-            "tr": "Yönetim"
+            "tr": "Yönetim",
+            "tel": "అడ్మినిస్ట్రేషన్",
+            "hin": "शासन प्रबंध"
         },
         "keywords": "administration config",
         "desc": {
@@ -1156,7 +1204,9 @@
         "type": "administration",
         "category": {
             "en": "Administration",
-            "tr": "Yönetim"
+            "tr": "Yönetim",
+            "tel": "అడ్మినిస్ట్రేషన్",
+            "hin": "शासन प्रबंध"
         },
         "keywords": "administration gc garbage collection",
         "desc": {
@@ -1195,7 +1245,9 @@
         "type": "administration",
         "category": {
             "en": "Administration",
-            "tr": "Yönetim"
+            "tr": "Yönetim",
+            "tel": "అడ్మినిస్ట్రేషన్",
+            "hin": "शासन प्रबंध"
         },
         "keywords": "administration prune",
         "desc": {
@@ -1242,7 +1294,9 @@
         "type": "debug",
         "category": {
             "en": "Debug",
-            "tr": "Hata Ayıklama"
+            "tr": "Hata Ayıklama",
+            "tel": "డీబగ్",
+            "hin": "डिबग"
         },
         "keywords": "debug",
         "desc": {
@@ -1301,7 +1355,10 @@
         "type": "debug",
         "category": {
             "en": "Debug",
-            "tr": "Hata Ayıklama"
+            "tr": "Hata Ayıklama",
+            "tel": "డీబగ్",
+            "hin": "डिबग"
+
         },
         "keywords": "debug",
         "desc": {
