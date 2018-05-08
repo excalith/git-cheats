@@ -18,6 +18,10 @@
             "tel": "అధునాతన ఆదేశాలు",
             "hin": "उन्नत आदेश"
         },
+        "settings": {
+            "en": "Settings",
+            "tr": "Ayarlar"
+        },
         "readMore": {
             "en": "Read More",
             "tr": "Devamını Oku",
@@ -70,7 +74,7 @@
         },
         "keywords": "create clone new",
         "desc": {
-            "en": "Clone a repository into a new directory",
+            "en": "Creates a local copy of a project that already exists remotely",
             "tr": "Klasöre depo klonla",
             "tel": "కొత్త డైరెక్టరీలో రిపోజిటరీను క్లోన్ చేయండి",
             "hin": "एक नई निर्देशिका में एक भंडार क्लोन करें"
@@ -81,7 +85,7 @@
                 "advanced": false,
                 "code": "clone ssh://user@domain.com/repo.git",
                 "desc": {
-                    "en": "Clone a repository",
+                    "en": "Clone target repository",
                     "tr": "İlgili depoyu klonla",
                     "tel": "రిపోజిటరీ క్లోన్",
                     "hin": "एक भंडार क्लोन करें"
@@ -109,7 +113,7 @@
         },
         "keywords": "changes add",
         "desc": {
-            "en": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit",
+            "en": "Stages changes in the working tree",
             "tr": "Index'e değişiklik yapılan içeriği ekleyip bir sonraki commit işlemi için hazır hale getirir.",
             "tel": "తదుపరి చందా కోసం నిర్వహించిన కంటెంట్ను సిద్ధం చేయడానికి, పని చెట్టులో ఉన్న ప్రస్తుత కంటెంట్ను ఉపయోగించి ఇండెక్స్ను నవీకరించడం",
             "hin": "अगली प्रतिबद्धता के लिए आयोजित सामग्री तैयार करने के लिए, कार्यरत पेड़ में पाए गए वर्तमान सामग्री का उपयोग करके इंडेक्स को अपडेट करता है"
@@ -168,7 +172,7 @@
         },
         "keywords": "changes status",
         "desc": {
-            "en": "Changed files on your working directory",
+            "en": "Shows the status of changes as untracked, modified, or staged",
             "tr": "Commit edilmemiş tüm değişmiş dosyaları gösterir",
             "tel": "మీ పని డైరెక్టరీలో మార్చబడిన ఫైల్లు",
             "hin": "आपकी कार्यशील निर्देशिका पर बदली गई फाइलें"
@@ -217,7 +221,7 @@
         },
         "keywords": "changes diff",
         "desc": {
-            "en": "Show changes between the working tree and the index or a tree, changes between the index and a tree",
+            "en": "Shows file differences not yet staged",
             "tr": "Değişiklikleri karşılaştır",
             "tel": "పని చెట్టు మరియు ఇండెక్స్ లేదా చెట్టు మధ్య మార్పులను చూపించు, ఇండెక్స్ మరియు చెట్టు మధ్య మార్పులు",
             "hin": "काम करने वाले पेड़ और सूचकांक या पेड़, सूचकांक और पेड़ के बीच परिवर्तन के बीच परिवर्तन दिखाएं"
@@ -256,7 +260,7 @@
         },
         "keywords": "changes commit",
         "desc": {
-            "en": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes",
+            "en": "Saves the snapshot to the project history",
             "tr": "Eklenen tüm değişiklikleri kaydet",
             "tel": "మార్పులను వివరిస్తున్న వినియోగదారు నుండి లాగ్ మెసేజ్తో పాటు ఇండెక్స్ యొక్క ప్రస్తుత విషయాలను ఒక నూతన కమిట్ లో నిల్వ చేస్తుంది",
             "hin": "परिवर्तनों का वर्णन करने वाले उपयोगकर्ता से लॉग संदेश के साथ एक नई प्रतिबद्धता में इंडेक्स की वर्तमान सामग्री को स्टोर करता है"
@@ -267,9 +271,9 @@
                 "advanced": false,
                 "code": "commit -m [message]",
                 "desc": {
-                    "en": "Use the given msg as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs",
+                    "en": "Use the given message as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs",
                     "tr": "Eklenen değişiklikleri commit mesajıyla kaydet",
-                    "tel": "ఇవ్వబడిన msg ను నిబద్ధత సందేశం వలె ఉపయోగించండి. బహుళ -m ఎంపికలు ఇచ్చినట్లయితే, వారి విలువలు ప్రత్యేక పేరాలుగా జతచేయబడతాయి",
+                    "tel": "ఇవ్వబడిన message ను నిబద్ధత సందేశం వలె ఉపయోగించండి. బహుళ -m ఎంపికలు ఇచ్చినట్లయితే, వారి విలువలు ప్రత్యేక పేరాలుగా జతచేయబడతాయి",
                     "hin": "दिए गए संदेश का प्रयोग प्रतिबद्ध संदेश के रूप में करें। यदि एकाधिक-एम विकल्प दिए जाते हैं, तो उनके मान अलग-अलग पैराग्राफ के रूप में समेकित होते हैं"
                 }
             },
@@ -287,7 +291,7 @@
                 "advanced": false,
                 "code": "commit --amend",
                 "desc": {
-                    "en": "Changes / Updates the last commit",
+                    "en": "Updates the last commit without creating a new commit",
                     "tr": "Son commit'e ekleme ya da düzenleme yapar",
                     "tel": "చివరి నిబద్ధత మార్పులు / నవీకరణలు",
                     "hin": "आखिरी प्रतिबद्धता बदलता / अपडेट करता है"
@@ -315,9 +319,9 @@
         },
         "keywords": "changes stash",
         "desc": {
-            "en": "Stash the changes in a dirty working directory away",
+            "en": "Stash and restore incomplete changes",
             "tr": "Değişiklikleri sonra kullanılmak üzere kasaya atar",
-            "tel":"మురికి పని డైరెక్టరీలో మార్పులను దూరం చేయండి",
+            "tel": "మురికి పని డైరెక్టరీలో మార్పులను దూరం చేయండి",
             "hin": "एक गंदे कामकाजी निर्देशिका में परिवर्तन को दूर करें"
         },
         "url": "https://git-scm.com/docs/git-stash",
@@ -535,7 +539,7 @@
                     "en": "Creates and checks out to a new branch from HEAD called branch-name",
                     "tr": "Yeni bir branş yaratır ve ilgili branşa geçer",
                     "tel": "బ్రాడ్-నేమ్ అని పిలవబడే HEAD నుండి కొత్త బ్రాంచ్కి వెతుకుతుంది మరియు తనిఖీ చేస్తుంది",
-                    "hin": "शाखा-नाम नामक HEAD से एक नई शाखा में बनाता है और जांचता है"              
+                    "hin": "शाखा-नाम नामक HEAD से एक नई शाखा में बनाता है और जांचता है"
                 }
             },
             {
@@ -629,7 +633,7 @@
         },
         "keywords": "update fetch",
         "desc": {
-            "en": "Download objects and refs from another repository",
+            "en": "Downloads all history from the remote repository",
             "tr": "Sunucudaki objeleri ve referansları günceller",
             "tel": "మరొక రిపోజిటరీ నుండి వస్తువులు మరియు రిఫరెన్సులను డౌన్లోడ్ చేయండి",
             "hin": "वस्तुओं को डाउनलोड करें और एक और भंडार से refs"
@@ -668,7 +672,7 @@
         },
         "keywords": "update pull",
         "desc": {
-            "en": "Fetch from and integrate with another repository or a local branch",
+            "en": "Updates the local branch from its remote counterpart",
             "tr": "Sunucudan lokalinize commit edilmiş güncel verileri çeker",
             "tel": "మరొక రిపోజిటరీ లేదా స్థానిక బ్రాంచ్తో కలిపి ఇంటిగ్రేట్ చేయండి",
             "hin": "एक और भंडार या स्थानीय शाखा के साथ लाने और एकीकृत करने के लिए"
@@ -697,7 +701,7 @@
         },
         "keywords": "update push",
         "desc": {
-            "en": "Update remote refs along with associated objects",
+            "en": "Uploads all local branch commits to its remote counterpart",
             "tr": "Yapmış olduğunuz tüm commitleri sunucuya gönderir",
             "tel": "అనుబంధ వస్తువులతో రిమోట్ రిఫాంలను అప్డేట్ చేయండి",
             "hin": "संबंधित वस्तुओं के साथ रिमोट रेफरी अपडेट करें"
@@ -726,7 +730,7 @@
         },
         "keywords": "merge",
         "desc": {
-            "en": "Merges a branch to your current HEAD",
+            "en": "Combines the specified branch’s history into the current branch",
             "tr": "Bir branşı, aktif branşınıza gömer",
             "tel": "మీ ప్రస్తుత HEAD కి శాఖను విలీనం చేస్తుంది",
             "hin": "एक शाखा को आपके वर्तमान सिर में विलीन कर देता है"
@@ -755,7 +759,7 @@
         },
         "keywords": "patch rebase",
         "desc": {
-            "en": "Rebase your current HEAD onto branch-name",
+            "en": "Rebase your current HEAD onto target branch",
             "tr": "Aktif branşınızı başka bir branşa aktarır",
             "tel": "మీ ప్రస్తుత HEAD ను బ్రాంచ్-పేరుకు మార్చండి",
             "hin": "शाखा के नाम पर अपने वर्तमान हेड को रीबेस करें"
@@ -843,7 +847,7 @@
         },
         "keywords": "reset undo",
         "desc": {
-            "en": "This form resets the index entries for all paths to their state",
+            "en": "Undoes all commits after [commit], preserving changes locally",
             "tr": "İlgili branşı istediğiniz bir commit'e geri çevirir",
             "tel": "ఈ ఫారమ్ వారి స్థితికి అన్ని మార్గాల కోసం ఇండెక్స్ ఎంట్రీలను రీసెట్ చేస్తుంది",
             "hin": "यह फॉर्म इंडेक्स प्रविष्टियों को अपने राज्य के सभी पथों के लिए रीसेट करता है"
@@ -941,9 +945,9 @@
         },
         "keywords": "history log",
         "desc": {
-            "en": "Show all commits",
+            "en": "Lists version history for the current branch",
             "tr": "Tüm commitleri listeler",
-            "tel":"అన్ని పనులను చూపించు",
+            "tel": "అన్ని పనులను చూపించు",
             "hin": "सभी काम दिखाएं"
         },
         "url": "https://git-scm.com/docs/git-log",
@@ -954,7 +958,7 @@
                 "desc": {
                     "en": "Show all commits",
                     "tr": "Tüm commitleri listeler",
-                    "tel":"అన్ని పనులను చూపించు",
+                    "tel": "అన్ని పనులను చూపించు",
                     "hin": "सभी काम दिखाएं"
                 }
             },
