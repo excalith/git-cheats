@@ -15,6 +15,7 @@ That being said, you can;
 
 ## Contributors
 * [excalith](https://github.com/excalith)
+* [kanna6501](https://github.com/kanna6501)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

@@ -43,9 +43,9 @@ function refreshList() {
     // read json data
     $.getJSON("assets/commands.json", function (json) {
         // gui localization
-        $(".quicksearch").attr("placeholder", json[0].search[lang]).focus();
-        $(".advanced-label").text(json[0].advancedCommands[lang]);
-        $(".settings-label").text(json[0].settings[lang]);
+        $(".quicksearch").attr("placeholder", json[0].search[hasTranslation(json[0].search[lang])]).focus();
+        $(".advanced-label").text(json[0].advancedCommands[hasTranslation(json[0].advancedCommands[lang])]);
+        $(".settings-label").text(json[0].settings[hasTranslation(json[0].advancedCommands[lang])]);
 
         jQuery('.languages').html('');
         for (key in json[0].languages) {
