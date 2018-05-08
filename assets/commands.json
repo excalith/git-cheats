@@ -34,7 +34,11 @@
     {
         "advanced": false,
         "title": "init",
-        "category": "create",
+        "type": "create",
+        "category": {
+            "en": "Create",
+            "tr": "Yarat"
+        },
         "keywords": "create init start",
         "desc": {
             "en": "Create an empty Git repository or reinitialize an existing one",
@@ -59,7 +63,11 @@
     {
         "advanced": false,
         "title": "clone",
-        "category": "create",
+        "type": "create",
+        "category": {
+            "en": "Create",
+            "tr": "Yarat"
+        },
         "keywords": "create clone new",
         "desc": {
             "en": "Clone a repository into a new directory",
@@ -94,7 +102,11 @@
     {
         "advanced": false,
         "title": "add",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes add",
         "desc": {
             "en": "Updates the index using the current content found in the working tree, to prepare the content staged for the next commit",
@@ -149,7 +161,11 @@
     {
         "advanced": false,
         "title": "status",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes status",
         "desc": {
             "en": "Changed files on your working directory",
@@ -194,7 +210,11 @@
     {
         "advanced": false,
         "title": "diff",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes diff",
         "desc": {
             "en": "Show changes between the working tree and the index or a tree, changes between the index and a tree",
@@ -229,7 +249,11 @@
     {
         "advanced": false,
         "title": "commit",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes commit",
         "desc": {
             "en": "Stores the current contents of the index in a new commit along with a log message from the user describing the changes",
@@ -284,7 +308,11 @@
     {
         "advanced": false,
         "title": "stash",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes stash",
         "desc": {
             "en": "Stash the changes in a dirty working directory away",
@@ -359,7 +387,11 @@
     {
         "advanced": false,
         "title": "rm",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes remove rm",
         "desc": {
             "en": "Remove files from the index",
@@ -384,7 +416,11 @@
     {
         "advanced": false,
         "title": "mv",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes move mv",
         "desc": {
             "en": "Move or rename a file or a directory",
@@ -419,7 +455,11 @@
     {
         "advanced": false,
         "title": "tag",
-        "category": "changes",
+        "type": "changes",
+        "category": {
+            "en": "Changes",
+            "tr": "Değişiklikler"
+        },
         "keywords": "changes tag",
         "desc": {
             "en": "Marks the current commit with a tag",
@@ -464,7 +504,11 @@
     {
         "advanced": false,
         "title": "branch",
-        "category": "branch",
+        "type": "branch",
+        "category": {
+            "en": "Branch",
+            "tr": "Ağaç"
+        },
         "keywords": "branch",
         "desc": {
             "en": "List, create, or delete branches",
@@ -519,7 +563,11 @@
     {
         "advanced": false,
         "title": "checkout",
-        "category": "branch",
+        "type": "branch",
+        "category": {
+            "en": "Branch",
+            "tr": "Ağaç"
+        },
         "keywords": "branch checkout",
         "desc": {
             "en": "Switch branches or restore working tree files",
@@ -574,7 +622,11 @@
     {
         "advanced": false,
         "title": "fetch",
-        "category": "update",
+        "type": "update",
+        "category": {
+            "en": "Update",
+            "tr": "Güncelleme"
+        },
         "keywords": "update fetch",
         "desc": {
             "en": "Download objects and refs from another repository",
@@ -609,7 +661,11 @@
     {
         "advanced": false,
         "title": "pull",
-        "category": "update",
+        "type": "update",
+        "category": {
+            "en": "Update",
+            "tr": "Güncelleme"
+        },
         "keywords": "update pull",
         "desc": {
             "en": "Fetch from and integrate with another repository or a local branch",
@@ -634,7 +690,11 @@
     {
         "advanced": false,
         "title": "push",
-        "category": "update",
+        "type": "update",
+        "category": {
+            "en": "Update",
+            "tr": "Güncelleme"
+        },
         "keywords": "update push",
         "desc": {
             "en": "Update remote refs along with associated objects",
@@ -659,7 +719,11 @@
     {
         "advanced": false,
         "title": "merge",
-        "category": "merge",
+        "type": "merge",
+        "category": {
+            "en": "Merge",
+            "tr": "Birleştirme"
+        },
         "keywords": "merge",
         "desc": {
             "en": "Merges a branch to your current HEAD",
@@ -684,7 +748,11 @@
     {
         "advanced": false,
         "title": "rebase",
-        "category": "patch",
+        "type": "patch",
+        "category": {
+            "en": "Patch",
+            "tr": "Yama"
+        },
         "keywords": "patch rebase",
         "desc": {
             "en": "Rebase your current HEAD onto branch-name",
@@ -739,7 +807,11 @@
     {
         "advanced": false,
         "title": "cherry-pick",
-        "category": "patch",
+        "type": "patch",
+        "category": {
+            "en": "Patch",
+            "tr": "Yama"
+        },
         "keywords": "patch cherry-pick",
         "desc": {
             "en": "Apply the changes from a different commit to your current HEAD",
@@ -764,7 +836,11 @@
     {
         "advanced": false,
         "title": "reset",
-        "category": "undo",
+        "type": "undo",
+        "category": {
+            "en": "Undo",
+            "tr": "Geri Al"
+        },
         "keywords": "reset undo",
         "desc": {
             "en": "This form resets the index entries for all paths to their state",
@@ -819,7 +895,11 @@
     {
         "advanced": false,
         "title": "clean",
-        "category": "undo",
+        "type": "undo",
+        "category": {
+            "en": "Undo",
+            "tr": "Geri Al"
+        },
         "keywords": "reset undo clean",
         "desc": {
             "en": "Shows untracked files about to be removed",
@@ -854,7 +934,11 @@
     {
         "advanced": false,
         "title": "log",
-        "category": "history",
+        "type": "history",
+        "category": {
+            "en": "History",
+            "tr": "Geçmiş"
+        },
         "keywords": "history log",
         "desc": {
             "en": "Show all commits",
@@ -899,7 +983,11 @@
     {
         "advanced": false,
         "title": "flow",
-        "category": "extensions",
+        "type": "extensions",
+        "category": {
+            "en": "Extensions",
+            "tr": "Eklentiler"
+        },
         "keywords": "extensions flow init feature release hotfix start finish",
         "desc": {
             "en": "A git extension for feature branch workflow",
@@ -907,7 +995,7 @@
             "tel": "ఫీచర్ శాఖ వర్క్ఫ్లో ఒక జిట్ పొడిగింపు",
             "hin": "फीचर शाखा वर्कफ़्लो के लिए एक गिट एक्सटेंशन"
         },
-        "url": "https://git-scm.com/docs/git-init",
+        "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
         "options": [
             {
                 "advanced": false,
@@ -1002,7 +1090,11 @@
     {
         "advanced": true,
         "title": "config",
-        "category": "administration",
+        "type": "administration",
+        "category": {
+            "en": "Administration",
+            "tr": "Yönetim"
+        },
         "keywords": "administration config",
         "desc": {
             "en": "Get and set repository or global options",
@@ -1057,7 +1149,11 @@
     {
         "advanced": true,
         "title": "gc",
-        "category": "administration",
+        "type": "administration",
+        "category": {
+            "en": "Administration",
+            "tr": "Yönetim"
+        },
         "keywords": "administration gc garbage collection",
         "desc": {
             "en": "Cleanup unnecessary files and optimize the local repository",
@@ -1092,7 +1188,11 @@
     {
         "advanced": true,
         "title": "prune",
-        "category": "administration",
+        "type": "administration",
+        "category": {
+            "en": "Administration",
+            "tr": "Yönetim"
+        },
         "keywords": "administration prune",
         "desc": {
             "en": "Prune all unreachable objects from the object database",
@@ -1135,7 +1235,11 @@
     {
         "advanced": true,
         "title": "bisect",
-        "category": "debug",
+        "type": "debug",
+        "category": {
+            "en": "Debug",
+            "tr": "Hata Ayıklama"
+        },
         "keywords": "debug",
         "desc": {
             "en": "Use binary search to find the commit that introduced a bug",
@@ -1190,7 +1294,11 @@
     {
         "advanced": true,
         "title": "blame",
-        "category": "debug",
+        "type": "debug",
+        "category": {
+            "en": "Debug",
+            "tr": "Hata Ayıklama"
+        },
         "keywords": "debug",
         "desc": {
             "en": "Display author metadata attached to specific committed lines in a file",

@@ -32,6 +32,7 @@ hr {
   background: #282c34;
   border-radius: 5px 0 0 5px;
   border-style: none;
+  outline: none;
 }
 
 .dropbtn {
@@ -49,6 +50,7 @@ hr {
   border-style: none;
   cursor: pointer;
   z-index: 20;
+  outline: none;
 }
 
 .dropdown:hover .dropbtn {
@@ -65,12 +67,35 @@ hr {
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 0px;
   right: 0px;
   background: #282c34;
   color: #fff;
   min-width: 220px;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   z-index: 20;
+}
+
+.settings span{
+  font-size: 24px;
+  width: 100%;
+  line-height: 55px;
+  text-align: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.settings i {
+  position: absolute;
+  right: 0px;
+  width:55px;
+  height: 55px;
+  line-height: 57px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
 }
 
 .dropdown-content a {
