@@ -35,14 +35,20 @@ Unsure where to begin contributing? You can start by looking through these `begi
 * [Help wanted issues](https://github.com/excalith/Interactive-Git-Cheatsheet/labels/help%20wanted) - issues which should be a bit more involved than `beginner` issues.
 
 ### Localization
-In order to localize this app, you only need to modify [commands.json](../commands.json) file.
+In order to localize this app, you only need to modify [commands.json](../assets/commands.json) file.
 
 To start localization;
 * Declare your language in `languages` with key / value first and use this convention for your localization.
-* Translations are needed only in keys:
+* Translations are needed in keys:
+##### GUI
   * `search` : Search Bar placeholder
   * `advancedCommands` : Dropdown checkbox for advanced commands
-  * `desc` : Throughout the entire json, you will see desc keys where they explains each command
+  * `readMore` : Read More links for documentations
+  * `settings` : Settings title
+  * `options` : Command options title within cards
+ ##### Cards (throughout all json file)
+  * `category` : Category title for command card
+  * `desc` : Both command and command option descriptions
 
 ### Pull Requests
 While creating a Pull Request, fill out the [the required template](PULL_REQUEST_TEMPLATE.md)
