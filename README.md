@@ -3,7 +3,7 @@
 
 ### [Try The App Here](http://gitcheats.com/)
 
-![Anim](/images/anim.gif)
+![Anim](/assets/images/anim.gif)
 
 ## How To Contribute:
 Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [CONTRIBUTE.md](.github/CONTRIBUTING.md) before contributing.

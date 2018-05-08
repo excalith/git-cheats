@@ -2,34 +2,34 @@
 <html>
 
 <head>
-    <!-- COMMON TAGS -->
+    <!-- PAGE TAGS -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Can Cellek">
     <title>Git Cheats - Cheatsheet For Git Commands</title>
-    <!-- Search Engine -->
+    <!-- SEARCH ENGINE -->
     <meta name="description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
-    <meta name="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
+    <meta name="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/assets/images/card.png">
     <meta name="keywords" content="git,cheatsheet,commands,github,bitbucket,gitlab,open,source">
     <meta name="robots" content="index, nofollow">
-    <!-- Schema.org for Google -->
+    <!-- GOOGLE SCHEMA -->
     <meta itemprop="name" content="Git Cheats - Cheatsheet For Git Commands">
     <meta itemprop="description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
-    <meta itemprop="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
-    <!-- Twitter -->
+    <meta itemprop="image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/assets/images/card.png">
+    <!-- TWITTER -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Git Cheats - Cheatsheet For Git Commands">
     <meta name="twitter:description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
     <meta name="twitter:image:src" content="http://gitcheats.com/">
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <!-- OOPEN GRAPH -->
     <meta name="og:title" content="Git Cheats - Cheatsheet For Git Commands">
     <meta name="og:description" content="Git Cheats is an open source project which aims to save you time from searching for git commands through the web by filtering and categorizing.">
-    <meta name="og:image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/images/card.png">
+    <meta name="og:image" content="https://raw.githubusercontent.com/excalith/Git-Cheats/master/assets/images/card.png">
     <meta name="og:url" content="http://gitcheats.com/">
     <meta name="og:site_name" content="Git Cheats - Cheatsheet For Git Commands">
     <meta name="og:type" content="website">
-
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/master.css" />
+    <!-- SOURCES -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/app.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
@@ -39,6 +39,7 @@
 </head>
 
 <body>
+    <!-- GITHUB -->
     <a href="https://github.com/excalith/Git-Cheats" class="github-corner" aria-label="View Source On Github">
         <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#21252b; position: absolute; top: 0; border: 0; right: 0; z-index: 20;"
             aria-hidden="true">
@@ -50,7 +51,10 @@
         </svg>
     </a>
 
+    <!-- OVERLAY -->
     <div id="overlay"></div>
+
+    <!-- FORM -->
     <div id="form">
         <input type="text" class="quicksearch" placeholder="" autofocus="" />
         <div class="dropdown">
@@ -59,7 +63,10 @@
                 <i class="fas fa-cog"></i>
             </button>
             <div class="dropdown-content">
-                <span class="settings"><span class="settings-label">Settings</span><i class="fas fa-cog"></i></span>
+                <span class="settings">
+                    <span class="settings-label">Settings</span>
+                    <i class="fas fa-cog"></i>
+                </span>
                 <label class="checkbox">
                     <span class="advanced-label"></span>
                     <input id="ShowAdvanced" type="checkbox">
@@ -72,156 +79,11 @@
         </div>
     </div>
 
+    <!-- GRID -->
     <div class="grid">
     </div>
 
-    <script>
-
-        var isAdvanced = false;
-        var lang = "en";
-        var browserLang = (navigator.language || navigator.userLanguage).substring(0, 2);
-
-        // Cookies
-        if (Cookies.get('showAdvanced')) {
-            isAdvanced = Cookies.get('showAdvanced') == "true" ? true : false;
-            $('#ShowAdvanced').prop('checked', isAdvanced);
-        };
-
-        if (Cookies.get('language')) {
-            lang = Cookies.get('language');
-        }
-        else {
-            $.getJSON("commands.json", function (json) {
-                for (key in json[0].languages) {
-                    if (key == browserLang) {
-                        lang = browserLang;
-                    }
-                }
-            });
-        }
-
-        // init isotope
-        var qsRegex;
-        var $grid = $('.grid').isotope({
-            itemSelector: '.grid-item',
-            layoutMode: 'fitRows',
-            filter: function () {
-                return qsRegex ? $(this).attr('keywords').match(qsRegex) : true;
-            }
-        });
-
-        refreshList();
-
-        function refreshList() {
-            // clear grid first
-            jQuery('.grid').html('');
-
-            $grid.isotope('reloadItems')
-
-            // read json data
-            $.getJSON("commands.json", function (json) {
-                // gui localization
-                $(".quicksearch").attr("placeholder", json[0].search[lang]).focus();
-                $(".advanced-label").text(json[0].advancedCommands[lang]);
-                $(".settings-label").text(json[0].settings[lang]);
-
-                jQuery('.languages').html('');
-                for (key in json[0].languages) {
-                    if (json[0].languages.hasOwnProperty(key)) {
-                        var value = json[0].languages[key];
-                        var checkedVal = lang == key ? "checked='checked'" : "";
-
-                        var $language = $(
-                            "<label class='checkbox'>" + value +
-                            "<input type='radio' name='lang' value='" + key + "' " + checkedVal + ">" +
-                            "<span class='checkmark'></span>" +
-                            "</label>"
-                        );
-
-                        $(".languages").append($language)
-                    }
-                }
-
-                $('input[name="lang"]').change(function () {
-                    lang = $('input[name=lang]:checked').val();
-                    Cookies.set('language', lang);
-
-                    refreshList();
-                });
-
-                // commands (skip first index for ui localization)
-                for (i = 1; i < json.length; i++) {
-                    // if command is advanced check ShowAdvanced
-                    if (json[i].advanced == true && isAdvanced || json[i].advanced == false) {
-                        var $item = $(
-                            "<div class='grid-item " + json[i].type + "' keywords='" + json[i].keywords + "'>" +
-                            "<p class='title'>" + json[i].title + "</p>" +
-                            "<p class='category'>" + json[i].category[hasTranslation(json[i].category[lang])] + "</p>" +
-                            "<p class='main-desc'>" + json[i].desc[hasTranslation(json[i].desc[lang])] + "</p>" +
-                            "<p class='options-title'>" + json[0].options[lang] + ":</p>");
-
-                        // command options
-                        for (j = 0; j < json[i].options.length; j++) {
-                            // if command option is advanced check ShowAdvanced
-                            if (json[i].options[j].advanced == true && isAdvanced || json[i].options[j].advanced == false) {
-                                $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
-                                $item.append("<p class='desc'>" + json[i].options[j].desc[hasTranslation(json[i].options[j].desc[lang])] + "</p>");
-                            }
-                        };
-
-                        // git-scm link for more info
-                        $item.append("<a href='" + json[i].url + "'>(" + json[0].readMore[hasTranslation(json[0].readMore[lang])] + ")</a></div>");
-                        $grid.append($item)
-                            .isotope('appended', $item);
-                    }
-                }
-            });
-            $grid.isotope('updateSortData').isotope();
-            $grid.isotope('reloadItems')
-        }
-
-        // debounce so filtering doesn't happen every millisecond
-        function debounce(fn, threshold) {
-            var timeout;
-            return function debounced() {
-                if (timeout) {
-                    clearTimeout(timeout);
-                }
-                function delayed() {
-                    fn();
-                    timeout = null;
-                }
-                timeout = setTimeout(delayed, threshold || 100);
-            }
-        }
-
-        // use value of search field to filter
-        var $quicksearch = $('.quicksearch').keyup(debounce(function () {
-            qsRegex = new RegExp($quicksearch.val(), 'gi');
-            $grid.isotope();
-        }, 200));
-
-        function hasTranslation(value) {
-            return !value || value == undefined || value == "" || value.length == 0 ? "en" : lang;
-        }
-
-        $(".dropdown").hover(function () {
-            $("#overlay").fadeIn("fast", function () { });
-        });
-
-        $("#overlay").hover(function () {
-            $("#overlay").fadeOut("fast", function () { });
-        });
-
-        $('#ShowAdvanced').change(function () {
-            isAdvanced = $('#ShowAdvanced').prop('checked');
-            Cookies.set('showAdvanced', isAdvanced);
-            refreshList();
-        });
-
-
-    </script>
-
+    <script src="assets/app.js"></script>
 </body>
 
 </html>
