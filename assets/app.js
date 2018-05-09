@@ -44,8 +44,11 @@ function refreshList() {
     $.getJSON("assets/commands.json", function (json) {
         // gui localization
         $(".quicksearch").attr("placeholder", json[0].search[hasTranslation(json[0].search[lang])]).focus();
+
         $(".advanced-label").text(json[0].advancedCommands[hasTranslation(json[0].advancedCommands[lang])]);
         $(".settings-label").text(json[0].settings[hasTranslation(json[0].advancedCommands[lang])]);
+
+        checkGUIFonts();
 
         jQuery('.languages').html('');
         for (key in json[0].languages) {
@@ -78,21 +81,21 @@ function refreshList() {
                 var $item = $(
                     "<div class='grid-item " + json[i].type + "' keywords='" + json[i].keywords + "'>" +
                     "<p class='title'>" + json[i].title + "</p>" +
-                    "<p class='category'>" + json[i].category[hasTranslation(json[i].category[lang])] + "</p>" +
-                    "<p class='main-desc'>" + json[i].desc[hasTranslation(json[i].desc[lang])] + "</p>" +
-                    "<p class='options-title'>" + json[0].options[lang] + ":</p>");
+                    "<p class='category' " + checkFont() + ">" + json[i].category[hasTranslation(json[i].category[lang])] + "</p>" +
+                    "<p class='main-desc' " + checkFont() + ">" + json[i].desc[hasTranslation(json[i].desc[lang])] + "</p>" +
+                    "<p class='options-title' " + checkFont() + ">" + json[0].options[lang] + ":</p>");
 
                 // command options
                 for (j = 0; j < json[i].options.length; j++) {
                     // if command option is advanced check ShowAdvanced
                     if (json[i].options[j].advanced == true && isAdvanced || json[i].options[j].advanced == false) {
                         $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
-                        $item.append("<p class='desc'>" + json[i].options[j].desc[hasTranslation(json[i].options[j].desc[lang])] + "</p>");
+                        $item.append("<p class='desc' " + checkFont() + ">" + json[i].options[j].desc[hasTranslation(json[i].options[j].desc[lang])] + "</p>");
                     }
                 };
 
                 // git-scm link for more info
-                $item.append("<a href='" + json[i].url + "'>(" + json[0].readMore[hasTranslation(json[0].readMore[lang])] + ")</a></div>");
+                $item.append("<a href='" + json[i].url + "' " + checkFont() + ">(" + json[0].readMore[hasTranslation(json[0].readMore[lang])] + ")</a></div>");
                 $grid.append($item)
                     .isotope('appended', $item);
             }
@@ -125,6 +128,32 @@ var $quicksearch = $('.quicksearch').keyup(debounce(function () {
 
 function hasTranslation(value) {
     return !value || value == undefined || value == "" || value.length == 0 ? "en" : lang;
+}
+
+function checkFont()
+{
+    if (lang == "kli")
+    {
+        return "style='font-family: kli; font-size:20px;'";
+    }
+    else
+        return "";
+}
+
+function checkGUIFonts()
+{
+    if (lang == "kli")
+    {
+        $(".quicksearch").css("font-family", lang);
+        $(".advanced-label").css("font-family", lang);
+        $(".settings-label").css("font-family", lang);
+    }
+    else
+    {
+        $(".quicksearch").css("font-family", "Fira Sans");
+        $(".advanced-label").css("font-family", "Fira Sans");
+        $(".settings-label").css("font-family", "Fira Sans");
+    }
 }
 
 $(".dropdown").hover(function () {

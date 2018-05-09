@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@font-face {
+  font-family: 'kli';
+  src:url('fonts/Klingon.ttf.woff') format('woff'),
+      url('fonts/Klingon.ttf.svg#Klingon') format('svg'),
+      url('fonts/Klingon.ttf.eot'),
+      url('fonts/Klingon.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * { box-sizing: border-box; }
 
