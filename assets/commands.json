@@ -1428,7 +1428,7 @@
             "hin": "डिबग",
             "kli": "Say'"
         },
-        "keywords": "debug",
+        "keywords": "debug bisect",
         "desc": {
             "en": "Use binary search to find the commit that introduced a bug",
             "tr": "Hata oluşturan kaydı bulmaya yardımcı olur",
@@ -1496,7 +1496,7 @@
             "kli": "Say'"
 
         },
-        "keywords": "debug",
+        "keywords": "debug blame",
         "desc": {
             "en": "Display author metadata attached to specific committed lines in a file",
             "tr": "Bir dosyaya tüm kullanıcıların yaptığı değişiklikleri gösterir",
