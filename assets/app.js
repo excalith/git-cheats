@@ -80,7 +80,7 @@ function refreshList() {
             if (json[i].advanced == true && isAdvanced || json[i].advanced == false) {
                 var $item = $(
                     "<div class='grid-item " + json[i].type + "' keywords='" + json[i].keywords + "'>" +
-                    "<p class='title'>" + json[i].title + "</p>" +
+                    "<p class='title' onclick='copyLink(\"" + json[i].title + "\")'>" + json[i].title + "</p>" +
                     "<p class='category' " + checkFont() + ">" + json[i].category[hasTranslation(json[i].category[lang])] + "</p>" +
                     "<p class='main-desc' " + checkFont() + ">" + json[i].desc[hasTranslation(json[i].desc[lang])] + "</p>" +
                     "<p class='options-title' " + checkFont() + ">" + json[0].options[lang] + ":</p>");
@@ -101,6 +101,7 @@ function refreshList() {
             }
         }
     });
+
     $grid.isotope('updateSortData').isotope();
     $grid.isotope('reloadItems')
 }
@@ -130,26 +131,21 @@ function hasTranslation(value) {
     return !value || value == undefined || value == "" || value.length == 0 ? "en" : lang;
 }
 
-function checkFont()
-{
-    if (lang == "kli")
-    {
+function checkFont() {
+    if (lang == "kli") {
         return "style='font-family: kli; font-size:20px;'";
     }
     else
         return "";
 }
 
-function checkGUIFonts()
-{
-    if (lang == "kli")
-    {
+function checkGUIFonts() {
+    if (lang == "kli") {
         $(".quicksearch").css("font-family", lang);
         $(".advanced-label").css("font-family", lang);
         $(".settings-label").css("font-family", lang);
     }
-    else
-    {
+    else {
         $(".quicksearch").css("font-family", "Fira Sans");
         $(".advanced-label").css("font-family", "Fira Sans");
         $(".settings-label").css("font-family", "Fira Sans");
@@ -170,6 +166,7 @@ $('#ShowAdvanced').change(function () {
     refreshList();
 });
 
+
 function getURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split('&');
@@ -182,8 +179,19 @@ function getURLParameter(sParam) {
     }
 }
 
-if (getURLParameter('c') != null)
-{
+function copyLink(value) {
+    var link = "gitcheats.com/?c=" + value
+
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(link).select();
+    document.execCommand("copy");
+    $temp.remove();
+
+    alert(value.charAt(0).toUpperCase() + value.slice(1) + " Link Copied!");
+}
+
+if (getURLParameter('c') != null) {
     isAdvanced = $('#ShowAdvanced').prop('checked', true);
     Cookies.set('showAdvanced', true);
 
