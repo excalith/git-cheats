@@ -184,8 +184,11 @@ function getURLParameter(sParam) {
 
 if (getURLParameter('c') != null)
 {
+    isAdvanced = $('#ShowAdvanced').prop('checked', true);
+    Cookies.set('showAdvanced', true);
+
     $('.quicksearch').focus();
     $('.quicksearch').val(getURLParameter('c'));
+
     qsRegex = new RegExp($quicksearch.val(), 'gi');
-    $grid.isotope();
 }
