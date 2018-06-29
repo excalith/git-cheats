@@ -14,7 +14,7 @@ if (Cookies.get('language')) {
 }
 else {
     $.getJSON("assets/commands.json", function (json) {
-        for (key in json[0].languages) {
+        for (key in json.settings.languages) {
             if (key == browserLang) {
                 lang = browserLang;
             }
@@ -33,6 +33,7 @@ var $grid = $('.grid').isotope({
 });
 
 refreshList();
+var test;
 
 function refreshList() {
     // clear grid first
@@ -42,18 +43,19 @@ function refreshList() {
 
     // read json data
     $.getJSON("assets/commands.json", function (json) {
+        test = json;
         // gui localization
-        $(".quicksearch").attr("placeholder", json[0].search[hasTranslation(json[0].search[lang])]).focus();
+        $(".quicksearch").attr("placeholder", json.settings.search[hasTranslation(json.settings.search[lang])]).focus();
 
-        $(".advanced-label").text(json[0].advancedCommands[hasTranslation(json[0].advancedCommands[lang])]);
-        $(".settings-label").text(json[0].settings[hasTranslation(json[0].advancedCommands[lang])]);
+        $(".advanced-label").text(json.settings.advancedCommands[hasTranslation(json.settings.advancedCommands[lang])]);
+        $(".settings-label").text(json.settings.settings[hasTranslation(json.settings.advancedCommands[lang])]);
 
         checkGUIFonts();
 
         jQuery('.languages').html('');
-        for (key in json[0].languages) {
-            if (json[0].languages.hasOwnProperty(key)) {
-                var value = json[0].languages[key];
+        for (key in json.settings.languages) {
+            if (json.settings.languages.hasOwnProperty(key)) {
+                var value = json.settings.languages[key];
                 var checkedVal = lang == key ? "checked='checked'" : "";
 
                 var $language = $(
@@ -74,28 +76,33 @@ function refreshList() {
             refreshList();
         });
 
-        // commands (skip first index for ui localization)
-        for (i = 1; i < json.length; i++) {
-            // if command is advanced check ShowAdvanced
-            if (json[i].advanced == true && isAdvanced || json[i].advanced == false) {
+        console.log(json.commands)
+        console.log(Object.keys(json.commands))
+        var commandList = Object.keys(json.commands);
+
+        for (let index = 0; index < commandList.length; index++) {
+            var command = json.commands[commandList[index]];
+            console.log(command)
+
+            if (command.advanced == true && isAdvanced || command.advanced == false) {
                 var $item = $(
-                    "<div class='grid-item " + json[i].type + "' keywords='" + json[i].keywords + "'>" +
-                    "<p class='title' onclick='copyLink(\"" + json[i].title + "\")'>" + json[i].title + "</p>" +
-                    "<p class='category' " + checkFont() + ">" + json[i].category[hasTranslation(json[i].category[lang])] + "</p>" +
-                    "<p class='main-desc' " + checkFont() + ">" + json[i].desc[hasTranslation(json[i].desc[lang])] + "</p>" +
-                    "<p class='options-title' " + checkFont() + ">" + json[0].options[lang] + ":</p>");
+                    "<div class='grid-item " + command.type + "' keywords='" + command.keywords + "'>" +
+                    "<p class='title' onclick='copyLink(\"" + commandList[index] + "\")'>" + commandList[index] + "</p>" +
+                    "<p class='category' " + checkFont() + ">" + command.category[hasTranslation(command.category[lang])] + "</p>" +
+                    "<p class='main-desc' " + checkFont() + ">" + command.desc[hasTranslation(command.desc[lang])] + "</p>" +
+                    "<p class='options-title' " + checkFont() + ">" + json.settings.options[lang] + ":</p>");
 
                 // command options
-                for (j = 0; j < json[i].options.length; j++) {
+                for (j = 0; j < command.options.length; j++) {
                     // if command option is advanced check ShowAdvanced
-                    if (json[i].options[j].advanced == true && isAdvanced || json[i].options[j].advanced == false) {
-                        $item.append("<p class='code'>" + json[i].options[j].code + "</p>");
-                        $item.append("<p class='desc' " + checkFont() + ">" + json[i].options[j].desc[hasTranslation(json[i].options[j].desc[lang])] + "</p>");
+                    if (command.options[j].advanced == true && isAdvanced || command.options[j].advanced == false) {
+                        $item.append("<p class='code'>" + command.options[j].code + "</p>");
+                        $item.append("<p class='desc' " + checkFont() + ">" + command.options[j].desc[hasTranslation(command.options[j].desc[lang])] + "</p>");
                     }
                 };
 
                 // git-scm link for more info
-                $item.append("<a href='" + json[i].url + "' " + checkFont() + ">(" + json[0].readMore[hasTranslation(json[0].readMore[lang])] + ")</a></div>");
+                $item.append("<a href='" + command.url + "' " + checkFont() + ">(" + json.settings.readMore[hasTranslation(json.settings.readMore[lang])] + ")</a></div>");
                 $grid.append($item)
                     .isotope('appended', $item);
             }
