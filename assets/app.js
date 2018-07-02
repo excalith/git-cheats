@@ -1,9 +1,5 @@
 let isAdvanced = false;
 let lang = "en";
-let browserLang = (navigator.language || navigator.userLanguage).substring(
-  0,
-  2
-);
 
 // Cookies
 if (Cookies.get("showAdvanced")) {
@@ -13,14 +9,7 @@ if (Cookies.get("showAdvanced")) {
 
 if (Cookies.get("language")) {
   lang = Cookies.get("language");
-} else {
-  $.getJSON("assets/commands.json", function(json) {
-    for (key in json.settings.languages) {
-      if (key == browserLang) {
-        lang = browserLang;
-      }
-    }
-  });
+  console.log(lang);
 }
 
 // init isotope
@@ -93,6 +82,8 @@ function refreshList() {
     $('input[name="lang"]').change(function() {
       lang = $("input[name=lang]:checked").val();
       Cookies.set("language", lang);
+      console.log("Language Set: " + lang);
+      console.log("Language: " + lang);
 
       refreshList();
     });
