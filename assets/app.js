@@ -9,7 +9,6 @@ if (Cookies.get("showAdvanced")) {
 
 if (Cookies.get("language")) {
   lang = Cookies.get("language");
-  console.log(lang);
 }
 
 // init isotope
@@ -82,8 +81,6 @@ function refreshList() {
     $('input[name="lang"]').change(function() {
       lang = $("input[name=lang]:checked").val();
       Cookies.set("language", lang);
-      console.log("Language Set: " + lang);
-      console.log("Language: " + lang);
 
       refreshList();
     });
