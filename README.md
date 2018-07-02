@@ -1,6 +1,8 @@
 <p align="center">
 	<h1 align="center">Git Cheats - <i>Cheatsheet For Git Commands</i></h1>
-<img src="assets/images/anim.gif">
+</p>
+<p align="center">
+    <img src="assets/images/anim.gif">
 </p>
 <p align="center">
 	<a href="http://gitcheats.com/">
