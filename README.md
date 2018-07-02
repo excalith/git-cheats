@@ -1,11 +1,26 @@
-# Git Cheats - *Cheatsheet For Git Commands*
-**Git Cheats** is a small project for people who wants to get into git using commands but don't know where to start. It started as a side-project to help my friends / colleagues check commands easily, but it turned out it has been shared through my friends lots of times and it is being used on a daily basis. Suprising enough, I wanted to create a repository for this. Maybe someone finds it useful and / or wants to contribute!
-
-## Links
-* [GitCheats App:](http://gitcheats.com/) Original GitCheats App
-* [GitCheats CLI:](https://github.com/excalith/Git-Cheats-Cli) GitCheats CLI Companion
+<p align="center">
+	<h1 align="center">Git Cheats - <i>Cheatsheet For Git Commands</i></h1>
+</p>
 
 ![Anim](/assets/images/anim.gif)
+<p align="center">
+	<a href="http://gitcheats.com/">
+    <img src="https://img.shields.io/badge/GitCheats-APP-orange.svg?longCache=true&style=for-the-badge">
+	</a>
+	<a href="https://github.com/excalith/Git-Cheats-Cli">
+    <img src="https://img.shields.io/badge/GitCheats-CLI-brightgreen.svg??longCache=true&style=for-the-badge">
+	</a>
+</p>
+
+
+**Git Cheats** is a small project for people who wants to get into git using commands but don't know where to start. It started as a side-project to help my friends / colleagues check commands easily, but it turned out it has been shared through my friends lots of times and it is being used on a daily basis. Suprising enough, I wanted to create a repository for this. Maybe someone finds it useful and / or wants to contribute!
+
+### GitCheats App
+A simple web-based app where you can filter out commands in need easily. You can find the app here: [GitCheats APP](http://gitcheats.com)
+
+### GitCheats CLI
+A CLI app as a companion to GitCheats to fetch and retrieve commands right into your beloved terminal. You can find the app here: [GitCheats CLI](https://github.com/excalith/Git-Cheats-Cli)
+
 
 ## How To Contribute:
 Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [CONTRIBUTE.md](.github/CONTRIBUTING.md) before contributing.
