@@ -107,6 +107,40 @@ hr {
   color: #fff;
 }
 
+.git-cheats-cli {
+  background-color: #21252b;
+  color: #fff;
+  padding: 14px 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.git-cheats-cli span {
+    width: 100%;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+
+    margin-left: 20px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .git-cheats-cli i {
+    font-size: 14px;
+    color: #8bc34a;
+    margin-right: 5px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
