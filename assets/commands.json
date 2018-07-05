@@ -1517,7 +1517,7 @@
                     "code": "blame -w [source]",
                     "desc": {
                         "en": "Ignore whitespace changes",
-                        "tr": "Beyaz boşlukları görmezden gerir",
+                        "tr": "Boşlukları görmezden gelir",
                         "tel": "తెల్లని మార్పులు విస్మరించండి",
                         "hin": "व्हाइटस्पेस परिवर्तनों को अनदेखा करें",
                         "kli": "chIm logh choH buSHa'"
