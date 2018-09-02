@@ -107,40 +107,6 @@ hr {
   color: #fff;
 }
 
-.git-cheats-cli {
-  background-color: #21252b;
-  color: #fff;
-  padding: 14px 14px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.git-cheats-cli span {
-    width: 100%;
-    font-size: 14px;
-    line-height: 25px;
-    color: #fff;
-
-    margin-left: 20px;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .git-cheats-cli i {
-    font-size: 14px;
-    color: #8bc34a;
-    margin-right: 5px;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -412,4 +378,45 @@ hr {
   .github-corner .octo-arm {
       animation: octocat-wave 560ms ease-in-out
   }
+}
+
+.bmc-button img {
+  padding-left:10px;
+  width: 40px !important;
+  margin-bottom: 1px !important;
+  box-shadow: none !important;
+  border: none !important;
+  vertical-align: middle !important;
+}
+
+.bmc-button {
+  margin-top: 10px;
+  line-height: 36px !important;
+  width: 200px;
+  height: 37px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  color: #ffffff !important;
+  background-color: #8bc34a !important;
+  border: 1px solid transparent !important;
+  padding: 0px 9px !important;
+  font-size: 17px !important;
+  letter-spacing: -0.08px !important;
+  margin: 0 auto !important;
+  font-family: 'Lato', sans-serif !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  -o-transition: 0.3s all linear !important;
+  -webkit-transition: 0.3s all linear !important;
+  -moz-transition: 0.3s all linear !important;
+  -ms-transition: 0.3s all linear !important;
+  transition: 0.3s all linear !important;
+}
+
+.bmc-button:hover,
+.bmc-button:active,
+.bmc-button:focus {
+  text-decoration: none !important;
+  opacity: 0.85 !important;
+  color: #ffffff !important;
 }

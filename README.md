@@ -8,7 +8,7 @@
 	<a href="http://gitcheats.com/">
     <img src="https://img.shields.io/badge/GitCheats-APP-orange.svg?longCache=true&style=for-the-badge">
 	</a>
-	<a href="https://github.com/excalith/Git-Cheats-Cli">
+	<a href="https://github.com/excalith/git-cheats-cli">
     <img src="https://img.shields.io/badge/GitCheats-CLI-brightgreen.svg??longCache=true&style=for-the-badge">
 	</a>
 </p>
@@ -23,13 +23,16 @@ A simple web-based app where you can filter out commands in need easily.
 A CLI app as a companion to GitCheats to fetch and retrieve commands right into your beloved terminal.
 
 
-## How To Contribute:
+## How To Contribute
 Please feel free to contribute any way you can. Just keep in mind that you should pay attention to [CONTRIBUTE.md](.github/CONTRIBUTING.md) before contributing.
 
 That being said, you can;
 * Create issues for feature requests and issues
 * Create pull requests for any fixes / additions
 * Create pull requests for localizations
+
+## Support
+If you find this project useful, please consider <a href="https://www.buymeacoffee.com/excalith" target="_blank">supporting</a> it. This will help further domain registrations and improvements.
 
 ## Contributors
 * [excalith](https://github.com/excalith)
