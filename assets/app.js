@@ -1,6 +1,9 @@
 let isAdvanced = false;
 let lang = "en";
+let showGDPR = true;
+let gdprBanner;
 
+//Cookies.remove("showGDPR")
 // Cookies
 if (Cookies.get("showAdvanced")) {
   isAdvanced = Cookies.get("showAdvanced") == "true" ? true : false;
@@ -10,6 +13,14 @@ if (Cookies.get("showAdvanced")) {
 if (Cookies.get("language")) {
   lang = Cookies.get("language");
 }
+
+if (Cookies.get("showGDPR")) {
+  showGDPR = Cookies.get("showGDPR");
+}
+
+$(document).ready(function() {
+  toggleGDPR(showGDPR);
+});
 
 // init isotope
 let qsRegex;
@@ -222,6 +233,21 @@ $("#ShowAdvanced").change(function() {
   isAdvanced = $("#ShowAdvanced").prop("checked");
   Cookies.set("showAdvanced", isAdvanced);
   refreshList();
+});
+
+function toggleGDPR(isShow) {
+  console.log("ShowGDPR: " + isShow);
+
+  if (isShow === true)
+    $(".gdpr-wrapper").show();
+  // else 
+  //   $(".gdpr-wrapper").hide();
+  //
+}
+
+$(".gdpr-close").click(function() {
+  Cookies.set("showGDPR", false);
+  $(".gdpr-wrapper").hide();
 });
 
 function getURLParameter(sParam) {
