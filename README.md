@@ -35,8 +35,9 @@ That being said, you can;
 If you find this project useful, please consider <a href="https://www.buymeacoffee.com/excalith" target="_blank">supporting</a> it. This will help further domain registrations and improvements.
 
 ## Contributors
-* [excalith](https://github.com/excalith)
-* [kanna6501](https://github.com/kanna6501)
+* [excalith](https://github.com/excalith) - Maintainer / English, Turkish & Klingon
+* [aemmadi](https://github.com/aemmadi) - Telugu & Hindi
+* [aladhims](https://github.com/aladhims) - Indonesian
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
