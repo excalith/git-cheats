@@ -143,7 +143,8 @@
                 "tel": "మార్పులు",
                 "hin": "परिवर्तन",
                 "kli": "choH",
-                "id": "Perubahan"
+                "id": "Perubahan",
+                "ud": "شامل کریں"
             },
             "keywords": "changes add",
             "desc": {
@@ -152,7 +153,8 @@
                 "tel": "తదుపరి చందా కోసం నిర్వహించిన కంటెంట్ను సిద్ధం చేయడానికి, పని చెట్టులో ఉన్న ప్రస్తుత కంటెంట్ను ఉపయోగించి ఇండెక్స్ను నవీకరించడం",
                 "hin": "अगली प्रतिबद्धता के लिए आयोजित सामग्री तैयार करने के लिए, कार्यरत पेड़ में पाए गए वर्तमान सामग्री का उपयोग करके इंडेक्स को अपडेट करता है",
                 "kli": "mIw choH neH Sor",
-                "id": "Perubahan stage di working tree"
+                "id": "Perubahan stage di working tree",
+                "ud":"ورکنگ ٹری میں تبدیلیاں شامل کریں"
             },
             "url": "https://git-scm.com/docs/git-add",
             "options": [
@@ -165,7 +167,8 @@
                         "tel": "ఇచ్చిన ఫైల్ను వేదిక ప్రాంతానికి జోడిస్తుంది",
                         "hin": "चरण क्षेत्र में दी गई फ़ाइल जोड़ता है",
                         "kli": "chel nob teywI' mIw mIchHom",
-                        "id": "Tambahkan file ke bagian stage"
+                        "id": "Tambahkan file ke bagian stage",
+                        "ud": "دی گئی فائل کو اسٹیج ایریا میں جوڑتا ہے"
                     }
                 },
                 {
@@ -177,7 +180,8 @@
                         "tel": "ఇంటరాక్టివ్గా ఇండెక్స్ మరియు పని ట్రీ మధ్య పాచ్ యొక్క hunks ఎంచుకోండి మరియు ఇండెక్స్ వాటిని జోడించండి",
                         "hin": "इंटरैक्टिव रूप से इंडेक्स और कार्य पेड़ के बीच पैच के शिकारी चुनें और उन्हें इंडेक्स में जोड़ें",
                         "kli": "'ay' DuqIppu'chugh Qu'mey potlh Qap Sor wutlh 'ej chaHvaD chel Qu'mey potlh",
-                        "id": "Pilih secara interaktif potongan patch antara indeks dan pohon kerja dan menambahkannya ke indeks"
+                        "id": "Pilih secara interaktif potongan patch antara indeks dan pohon kerja dan menambahkannya ke indeks",
+                        "ud": "انٹرایکٹو کے ساتھ انڈیکس اور ورک ٹری کے درمیان پیچ کے ہنکس کا انتخاب کریں اور انہیں انڈیکس میں شامل کریں"
                     }
                 },
                 {
@@ -189,7 +193,8 @@
                         "tel": "ఇచ్చిన ఫోల్డర్లోని అన్ని ఫైళ్లను జోడిస్తుంది",
                         "hin": "दिए गए फ़ोल्डर के भीतर सभी फाइलें जोड़ता है",
                         "kli": "Hoch teywI' 'emvo' chel ngevwI' nob",
-                        "id": "Menambahkan semua file dalam folder yang diberikan"
+                        "id": "Menambahkan semua file dalam folder yang diberikan",
+                        "ud": "دیئے گئے فولڈر میں تمام فائلوں کو جوڑتا ہے"
                     }
                 },
                 {
@@ -201,7 +206,8 @@
                         "tel": "దశ విస్తరణకు అన్ని పొడిగింపు ఫైళ్లను జోడిస్తుంది",
                         "hin": "चरण क्षेत्र में सभी एक्सटेंशन फ़ाइलों को जोड़ता है",
                         "kli": "Hoch teywI' Segh teywI' chel mIw mIchHom",
-                        "id": "Menambahkan semua file ekstensi ke area panggung"
+                        "id": "Menambahkan semua file ekstensi ke area panggung",
+                        "ud" : "اسٹیج ایریا میں تمام ایکسٹینشن فائلوں کو جوڑتا ہے"
                     }
                 }
             ]
