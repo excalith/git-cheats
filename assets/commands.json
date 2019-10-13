@@ -6,7 +6,8 @@
             "tel": "తెలుగు",
             "hin": "हिंदी",
             "kli": "Klingon",
-            "id": "Indonesia"
+            "id": "Indonesia",
+            "ud": "Urdu"
         },
         "search": {
             "en": "Search Command",
@@ -14,7 +15,8 @@
             "tel": "శోధన ఆదేశం",
             "hin": "खोज कमांड",
             "kli": "tu'",
-            "id": "Cari Perintah"
+            "id": "Cari Perintah",
+            "ud: "تلاش کمانڈ"
         },
         "advancedCommands": {
             "en": "Advanced Commands",
@@ -22,7 +24,8 @@
             "tel": "అధునాతన ఆదేశాలు",
             "hin": "उन्नत आदेश",
             "kli": "'Itlh",
-            "id": "Perintah Lanjutan"
+            "id": "Perintah Lanjutan",
+            "ud" : "ایڈوانسڈ کمانڈز"
         },
         "settings": {
             "en": "Settings",
