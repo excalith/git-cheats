@@ -95,7 +95,8 @@
                 "tel": "సృష్టించడానికి",
                 "hin": "सर्जन करना",
                 "kli": "chenmoH",
-                "id": "Buat"
+                "id": "Buat",
+                "ud" : "بنائیں"
             },
             "keywords": "create clone new",
             "desc": {
@@ -104,7 +105,8 @@
                 "tel": "కొత్త డైరెక్టరీలో రిపోజిటరీను క్లోన్ చేయండి",
                 "hin": "एक नई निर्देशिका में एक भंडार क्लोन करें",
                 "kli": "lutu'lu'bej jInmol 'e' chonayta' nIv'e' pa' chenmoH",
-                "id": "Buat salinan lokal dari proyek yang sudah ada secara remote" 
+                "id": "Buat salinan lokal dari proyek yang sudah ada secara remote",
+                "ud": "کسی پروجیکٹ کی مقامی کاپی تیار کرتی ہے جو دور سے موجود ہے"
             },
             "url": "https://git-scm.com/docs/git-clone",
             "options": [
@@ -117,7 +119,9 @@
                         "tel": "రిపోజిటరీ క్లోన్",
                         "hin": "एक भंडार क्लोन करें",
                         "kli": "DoS ngevwI' chenmoH",
-                        "id": "Klon target tempat penyimpanan"
+                        "id": "Klon target tempat penyimpanan",
+                        "ud": "کلون ہدف ذخیرہ"
+       
                     }
                 },
                 {
