@@ -30,7 +30,8 @@
             "tel": "సెట్టింగులు",
             "hin": "सेटिंग्स",
             "kli": "HIjmeH",
-            "id": "Pengaturan"
+            "id": "Pengaturan",
+            "ud:  "ترتیبات"
         },
         "readMore": {
             "en": "Read More",
@@ -39,6 +40,7 @@
             "hin": "और पढो",
             "kli": "laD",
             "id": "Baca Selengkapnya"
+            "ud": "مزید پڑھ"
         },
         "options": {
             "en": "Options",
@@ -46,7 +48,8 @@
             "tel": "ఎంపికలు",
             "hin": "विकल्प",
             "kli": "DuH",
-            "id": "Pilihan"
+            "id": "Pilihan",
+            "ud": "اختیارات"
         }
     },
     "commands": {
