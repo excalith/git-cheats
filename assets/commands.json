@@ -62,7 +62,8 @@
                 "tel": "సృష్టించడానికి",
                 "hin": "सर्जन करना",
                 "kli": "chenmoH",
-                "id": "Buat"
+                "id": "Buat",
+                "ud": "تخلیق" 
             },
             "keywords": "create init start",
             "desc": {
@@ -71,7 +72,8 @@
                 "tel": "ఒక ఖాళీ గిట్ పోజిటరీను సృష్టించండి లేదా ఇప్పటికే ఉన్న ఒకటిని పునఃప్రారంభించండి",
                 "hin": "एक खाली गिट भंडार बनाएँ या मौजूदा एक को फिर से शुरू करें",
                 "kli": "chIm git ngevwI' chenmoH pagh nIv'e' chenmoH wa'",
-                "id": "Buat tempat penyimpanan Git kosong atau mulai ulang yang sudah ada"
+                "id": "Buat tempat penyimpanan Git kosong atau mulai ulang yang sudah ada",
+                "ud": "ایک خالی گٹ ذخیرہ بنائیں یا موجودہ وجود کو دوبارہ بنائیں"
             },
             "url": "https://git-scm.com/docs/git-init",
             "options": [
@@ -84,7 +86,8 @@
                         "tel": "ఒక ఖాళీ గిట్ పోజిటరీను సృష్టించండి లేదా ఇప్పటికే ఉన్న ఒకటిని పునఃప్రారంభించండి",
                         "hin": "एक खाली गिट भंडार बनाएँ या मौजूदा एक को फिर से शुरू करें",
                         "kli": "chIm git ngevwI' chenmoH pagh nIv'e' chenmoH wa'",
-                        "id": "Buat tempat penyimpanan Git kosong atau mulai ulang yang sudah ada"                     
+                        "id": "Buat tempat penyimpanan Git kosong atau mulai ulang yang sudah ada",
+                        "ud": "ایک خالی گٹ ذخیرہ بنائیں یا موجودہ وجود کو دوبارہ بنائیں",
                     }
                 }
             ]
