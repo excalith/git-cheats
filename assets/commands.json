@@ -1023,8 +1023,7 @@
                 "tel": "మీ ప్రస్తుత HEAD ను బ్రాంచ్-పేరుకు మార్చండి",
                 "hin": "शाखा के नाम पर अपने वर्तमान हेड को रीबेस करें",
                 "kli": "Qu'mey potlh nach onto DoS Sor waw' jatlhqa'",
-                "id": "Rebase HEAD Anda saat ini ke cabang target",
-				
+                "id": "Rebase HEAD Anda saat ini ke cabang target"
             },
             "url": "https://git-scm.com/docs/git-rebase",
             "options": [
@@ -1768,7 +1767,7 @@
                         "tel": "X మరియు y లైన్ల మధ్య మూలం యొక్క అవుట్పుట్ను పరిమితం చేయండి",
                         "hin": "एक्स और वाई लाइनों के बीच स्रोत के आउटपुट को प्रतिबंधित करें",
                         "kli": "tI' Hal SabtaHbogh x 'ej y tlhegh",
-                        "id": "Batasi keluaran sumber antara garis x dan y"
+                        "id": "Batasi keluaran sumber antara garis x dan y",
 						"de": "Beschränkt Ausgabe der Quelle auf die Zeilen x bis y"
                     }
                 },
