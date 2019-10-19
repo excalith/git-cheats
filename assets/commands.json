@@ -9,7 +9,8 @@
             "id": "Indonesia",
             "de": "Deutsch",
             "ja": "Japanese",
-            "es": "Spanish"
+            "es": "Spanish",
+            "ptBR": "Portuguese"
         },
         "search": {
             "en": "Search Command",
@@ -20,7 +21,8 @@
             "id": "Cari Perintah",
             "de": "Suchen",
             "ja": "コマンドを検索する",
-            "es": "Comando de Búsqueda"
+            "es": "Comando de Búsqueda",
+            "ptBR": "Comando de Pesquisa"
         },
         "advancedCommands": {
             "en": "Advanced Commands",
@@ -31,7 +33,8 @@
             "id": "Perintah Lanjutan",
             "de": "Erweiterte Befehle",
             "ja": "高度なコマンド",
-            "es": "Comandos Avanzados"
+            "es": "Comandos Avanzados",
+            "ptBR": "Comandos Avançados"
         },
         "settings": {
             "en": "Settings",
@@ -42,7 +45,8 @@
             "id": "Pengaturan",
             "de": "Einstellungen",
             "ja": "設定",
-            "es": "Configuración"
+            "es": "Configuración",
+            "ptBR": "Configuração"
         },
         "readMore": {
             "en": "Read More",
@@ -53,7 +57,8 @@
             "id": "Baca Selengkapnya",
             "de": "Weiterlesen",
             "ja": "もっと読む",
-            "es": "Leer más"
+            "es": "Leer más",
+            "ptBR": "Leia Mais"
         },
         "options": {
             "en": "Options",
@@ -64,7 +69,8 @@
             "id": "Pilihan",
             "de": "Optionen",
             "ja": "オプション",
-            "es": "Opciones"
+            "es": "Opciones",
+            "ptBR": "Opções"
         }
     },
     "commands": {
@@ -80,7 +86,8 @@
                 "id": "Buat",
                 "de": "Erstellen",
                 "ja": "作成",
-                "es": "Crear"
+                "es": "Crear",
+                "ptBR": "Criar"
             },
             "keywords": "create init start",
             "desc": {
@@ -92,7 +99,8 @@
                 "id": "Buat tempat penyimpanan Git kosong atau mulai ulang yang sudah ada",
                 "de": "Ein leeres Git Repository erstellen oder ein bestehendes initialisieren",
                 "ja": "空のGitリポジトリを作成するか、既存のものを再初期化します",
-                "es": "Crea un repositorio Git vacío o reinizaliza uno nuevo"
+                "es": "Crea un repositorio Git vacío o reinizaliza uno nuevo",
+                "ptBR": "Cria um repositório Git novo ou rinicializa um existente"
             },
             "url": "https://git-scm.com/docs/git-init",
             "options": [
@@ -107,8 +115,9 @@
                         "kli": "chIm git ngevwI' chenmoH pagh nIv'e' chenmoH wa'",
                         "id": "Buat tempat penyimpanan Git kosong atau mulai ulang yang sudah ada",
                         "de": "Ein leeres Git Repository erstellen oder ein bestehendes initialisieren",
-                        "ja": "空のGitリポジトリを作成するか、既存のものを再初期化します",
-                        "es": "Crear un repositorio Git vacío o reinicializar uno existente"                 
+                        "ja": "空のGitリポジトリを作成するか、既存のものを再初期化します",  
+                        "es": "Crear un repositorio Git vacío o reinicializar uno existente",
+                        "ptBR": "Cria um repositório Git novo ou rinicializa um existente"    
                     }
                 }
             ]
@@ -125,7 +134,8 @@
                 "id": "Buat",
                 "de": "Erstellen",
                 "ja": "作成",
-                "es": "Crear"
+                "es": "Crear",
+                "ptBR": "Criar"
             },
             "keywords": "create clone new",
             "desc": {
@@ -136,8 +146,9 @@
                 "kli": "lutu'lu'bej jInmol 'e' chonayta' nIv'e' pa' chenmoH",
                 "id": "Buat salinan lokal dari proyek yang sudah ada secara remote",
                 "de": "Eine lokale Kopie eines Projektes erstellen, welches remote bereits existiert",
-                "ja": "リモートリポジトリに既に存在するプロジェクトのローカルコピーを作成します",
-                "es": "Crea una copia local de un proyecto que existe remotamente"				
+                "ja": "リモートリポジトリに既に存在するプロジェクトのローカルコピーを作成します",	
+                "es": "Crea una copia local de un proyecto que existe remotamente",
+                "ptBR": "Cria uma cópia local de um projeto que existe remotamente"	
             },
             "url": "https://git-scm.com/docs/git-clone",
             "options": [
@@ -153,7 +164,8 @@
                         "id": "Klon target tempat penyimpanan",
                         "de": "Ziel Repository klonen",
                         "ja": "対象のリポジトリをクローンします",
-                        "es": "Clona un determinado repositorio"
+                        "es": "Clona un determinado repositorio",
+                        "ptBR": "Clona um determinado repositório"
                     }
                 },
                 {
@@ -168,7 +180,8 @@
                         "id": "Klon sebuah repository dengan nama cabang yang diperiksa",
                         "de": "Repository mit ausgechecktem Branch Namen klonen",
                         "ja": "対象のリポジトリをクローンし、branch-nameでチェックアウトします",
-                        "es": "Clona un respositorio y se mueve a la rama branch-name"
+                        "es": "Clona un respositorio y se mueve a la rama branch-name",
+                        "ptBR": "Clona um repostisório já checado para a Branch especificada"
                     }
                 }
             ]
@@ -185,7 +198,8 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR": "Mudanças"
             },
             "keywords": "changes add",
             "desc": {
@@ -197,7 +211,8 @@
                 "id": "Perubahan stage di working tree",
                 "de": "Änderungen im Arbeitsbaum hinzufügen",
                 "ja": "作業ツリーにある変更をステージします",
-                "es": "Area de preparación para el arbol de trabajo"
+                "es": "Area de preparación para el arbol de trabajo",
+                "ptBR": "Área de preparação para a árvore de trabalho"
             },
             "url": "https://git-scm.com/docs/git-add",
             "options": [
@@ -213,7 +228,8 @@
                         "id": "Tambahkan file ke bagian stage",
                         "de": "Datei zur Stage Area hinzufügen",
                         "ja": "指定したファイルをステージングエリアに追加します",
-                        "es": "Añade los ficheros al área de trabajo"
+                        "es": "Añade los ficheros al área de trabajo",
+                        "ptBR": "Adiciona o arquivo determinado na área de trabalho"
                     }
                 },
                 {
@@ -228,7 +244,8 @@
                         "id": "Pilih secara interaktif potongan patch antara indeks dan pohon kerja dan menambahkannya ke indeks",
                         "de": "Hunks auswählen und dem Index hinzufügen",
                         "ja": "インデックスと作業ツリー間のパッチのハンクを対話形式で選択し、インデックスへ追加します",
-                        "es": "Escoge interactivamente trozos de parche entre el índice y el árbol de trabajo y agréguelos al índice"
+                        "es": "Escoge interactivamente trozos de parche entre el índice y el árbol de trabajo y agréguelos al índice",
+                        "ptBR": "Escolhe interativamente pedaços de patch entre o índice e a árvore de trabalho e adicione-os ao índice"
                     }
                 },
                 {
@@ -243,7 +260,8 @@
                         "id": "Menambahkan semua file dalam folder yang diberikan",
                         "de": "Alle Dateien eines bestimmten Ordners hinzufügen",
                         "ja": "指定されたフォルダ内の全てのファイルを追加します",
-                        "es": "Añade archivos de un directorio"
+                        "es": "Añade archivos de un directorio",
+                        "ptBR": "Adiciona todos os arquivos do diretório especificado"
                     }
                 },
                 {
@@ -258,7 +276,8 @@
                         "id": "Menambahkan semua file ekstensi ke area panggung",
                         "de": "Alle Dateien eines bestimmten Types hinzufügen",
                         "ja": "すべての拡張ファイルをステージングエリアに追加します",
-                        "es": "escoge todos los ficheros con -extension- dada"
+                        "es": "escoge todos los ficheros con -extension- dada",
+                        "ptBR": "Adiciona todos os arquivos com a estensão passada"
                     }
                 }
             ]
@@ -275,7 +294,9 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR": "Mudanças"
+
             },
             "keywords": "changes status",
             "desc": {
@@ -287,7 +308,8 @@
                 "id": "Memperlihatkan status perubahan sebagai tidak terlacak, dimodifikasi, atau dipentaskan",
                 "de": "Status der Änderungen anzeigen",
                 "ja": "追跡、変更やステージしていない変更の状態を表示します",
-                "es": "Muestra los cambios como sin seguimiento, modificados y preaprados"
+                "es": "Muestra los cambios como sin seguimiento, modificados y preaprados",
+                "ptBR": "Mostra o status das mudanças como não rastreadas, modificadas ou preparadas"
             },
             "url": "https://git-scm.com/docs/git-status",
             "options": [
@@ -303,7 +325,8 @@
                         "id": "File yang diubah pada direktori kerja Anda",
                         "de": "Geänderte Dateien in deinem Arbeits Verzeichnis",
                         "ja": "作業ディレクトリの変更されたファイル",
-                        "es": "Archivos modificados en tu directorio de trabajo"
+                        "es": "Archivos modificados en tu directorio de trabajo",
+                        "ptBR": "Arquivos modificados no seu diretório de trabalho"
                     }
                 },
                 {
@@ -318,7 +341,8 @@
                         "id": "Berikan output dalam format pendek",
                         "de": "Ausgabe im Kurzformat",
                         "ja": "簡易形式で出力します",
-                        "es": "Muestra la salida en formato abreviado"
+                        "es": "Muestra la salida en formato abreviado",
+                        "ptBR": "Mostra a saída em formato abreviado"
                     }
                 },
                 {
@@ -333,7 +357,8 @@
                         "id": "Tampilkan cabang dan info pelacakan bahkan dalam format pendek",
                         "de": "Zeige die Branch und Tracking Informationen im Kurzformat",
                         "ja": "簡易形式でも、ブランチと追跡情報を表示します",
-                        "es": "Muestra la rama y la información de seguimiento en formato abreviado"
+                        "es": "Muestra la rama y la información de seguimiento en formato abreviado",
+                        "ptBR": "Mostra a Branch e a informação de rastreamento em formato abreviado"
                     }
                 }
             ]
@@ -350,7 +375,8 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR": "Mudanças"
             },
             "keywords": "changes diff",
             "desc": {
@@ -362,7 +388,8 @@
                 "id": "Memperlihatkan perbedaan file yang belum dipentaskan",
                 "de": "Zeigt die nicht gestagden Änderungen",
                 "ja": "またステージしていないファイル差分を表示します",
-                "es": "Muestra la diferencias entre ficheros todavía no preparados"
+                "es": "Muestra la diferencias entre ficheros todavía no preparados",
+                "ptBR": "Mostra as diferenças dos arquivos que ainda não estão preparados"
             },
             "url": "https://git-scm.com/docs/git-diff",
             "options": [
@@ -378,7 +405,8 @@
                         "id": "Tampilkan perubahan semua perubahan antara pohon yang bekerja dan indeks",
                         "de": "Alle Änderungen zwischen dem Arbeitsbaum und dem Index anzeigen",
                         "ja": "作業ツリーとインデックス間で全ての変更を表示します",
-                        "es": "Muestra todas las diferencias entre el árbol de trabajo y el index(índice)"
+                        "es": "Muestra todas las diferencias entre el árbol de trabajo y el index(índice)",
+                        "ptBR": "Mostra todas as diferenças entre a árvore de trabalho e o índice"
                     }
                 },
                 {
@@ -393,7 +421,8 @@
                         "id": "Tampilkan perubahan pada file antara pohon kerja dan indeks",
                         "de": "Änderungen einer Quelle zwischen dem Arbeitsbaum und dem Index anzeigen",
                         "ja": "作業ツリーとインデックスの間でファイルの変更を表示します",
-                        "es": "Muestra todas las diferencias entre el árbol de trabajo y el index(índice)"
+                        "es": "Muestra todas las diferencias entre el árbol de trabajo y el index(índice)",
+                        "ptBR": "Mostra todas as diferenças entre a árvore de trabalho e o índice"
                     }
                 }
             ]
@@ -410,7 +439,8 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR": "Mudanças"
             },
             "keywords": "changes commit",
             "desc": {
@@ -422,7 +452,8 @@
                 "id": "Menyimpan snapshot ke riwayat proyek",
                 "de": "Speichert den Snapshot in der Projekt Geschichte",
                 "ja" : "プロジェクト履歴にスナップショットを保存します",
-                "es": "Guarda los cambios en la historia del proyecto"
+                "es": "Guarda los cambios en la historia del proyecto",
+                "ptBR": "Salva as alterações no historico do projeto"
             },
             "url": "https://git-scm.com/docs/git-commit",
             "options": [
@@ -438,7 +469,8 @@
                         "id": "Gunakan pesan yang diberikan sebagai pesan komit. Jika opsi multiple -m diberikan, nilainya akan digabungkan sebagai paragraf terpisah",
                         "de": "Die angegebene Nachricht als Commit Nachricht verwenden. Falls mehrere -m Optionen angegeben werden, werden die Werte als verschiedene Paragraphen zusammengehängt",
                         "ja": "与えられたメッセージをコミットメッセージとして使用します。もし複数の-mオプションが与えられた場合、それらは個別の段落として連結されます",
-                        "es": "Usa el [message] como mensaje descriptivo del commit. Si hay multimples -m opciones concadena el mensaje como párrafos separados"
+                        "es": "Usa el [message] como mensaje descriptivo del commit. Si hay multimples -m opciones concadena el mensaje como párrafos separados",
+                        "ptBR": "Usa a mensagem fornecida como a descrição do commit. Se vários -m forem informados, suas mensagens são concatenadas em parágrafos separados"
                     }
                 },
                 {
