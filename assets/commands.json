@@ -1802,7 +1802,8 @@
                 "kli": "joH",
                 "id": "Administrasi",
                 "de": "Administration",
-                "ja": "管理"
+                "ja": "管理",
+                "es": "Administración",
                 "ptBR": "Administração"
             },
             "keywords": "administration config",
@@ -1897,7 +1898,8 @@
                 "kli": "joH",
                 "id": "Administrasi",
                 "de": "Administration",
-                "ja": "管理"
+                "ja": "管理",
+                "es": "Administración",
                 "ptBR": "Administração"
             },
             "keywords": "administration gc garbage collection",
