@@ -1802,7 +1802,8 @@
                 "kli": "joH",
                 "id": "Administrasi",
                 "de": "Administration",
-                "ja": "管理"
+                "ja": "管理",
+                "es": "Administracion",
                 "ptBR": "Administração"
             },
             "keywords": "administration config",
