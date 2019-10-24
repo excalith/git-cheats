@@ -1282,7 +1282,7 @@
                         "id": "Rebase HEAD Anda saat ini ke nama cabang",
                         "ja": "現在のHEADを、対象のブランチにリベースします。",
                         "es": "Reorganiza tu actual rama HEAD en otra rama llamada branch-name",
-                        "ptBR": "Reorganiza seu HEAD atual na Branch especificada",
+                        "ptBR": "Reorganiza seu HEAD atual na Branch especificada"
                     }
                 },
                 {
@@ -1803,7 +1803,7 @@
                 "id": "Administrasi",
                 "de": "Administration",
                 "ja": "管理",
-                "es": "Administracion",
+                "es": "Administración",
                 "ptBR": "Administração"
             },
             "keywords": "administration config",
