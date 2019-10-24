@@ -485,7 +485,8 @@
                         "id": "Beri tahu perintah untuk secara otomatis membuat file yang telah dimodifikasi dan dihapus, tetapi file baru yang belum Anda beri tahu tentang Git tidak terpengaruh",
                         "de": "Dateien welche geändert oder gelöscht wurden stagen, alle Dateien welche Git noch nicht kennt bleiben unberührt",
                         "ja": "変更および削除されたファイルを自動的にステージングするようコマンドに指示します、Gitに通知していない新しいファイルは影響を受けません",
-                        "es": "Automaticamente prepara los archivos que han sido modificados y borrados, pero los nuevos archivos que no están preparados (staged) no son afectados"
+                        "es": "Automaticamente prepara los archivos que han sido modificados y borrados, pero los nuevos archivos que no están preparados (staged) no son afectados",
+                        "ptBR": "Automaticamente prepara os arquivos modificados e excluídos, mas novos arquivos que não tenham sido adicionados não são afetados"
                     }
                 },
                 {
@@ -500,7 +501,8 @@
                         "id": "Memperbarui komit terakhir tanpa membuat komit baru",
                         "de": "Änderungen im letzten Commit aktualisieren ohne einen neuen Commit anzulegen",
                         "ja": "新しいコミットを作成せずに、最新のコミットを更新します",
-                        "es": "Actualiza el último commit sin crear un nuevo commit"
+                        "es": "Actualiza el último commit sin crear un nuevo commit",
+                        "ptBR": "Atualiza o último commit sem criar um novo commit"
                     }
                 },
                 {
@@ -515,7 +517,8 @@
                         "id": "Buat komit tunggal di atas cabang saat ini",
                         "de": "Einen neuen Commit auf der aktuellen Branch anlegen",
                         "ja": "現在のブランチのトップに単一のコミットとして作成します",
-                        "es": "Agrupa todos los commit en uno al principo de la rama"
+                        "es": "Agrupa todos los commit en uno al principo de la rama",
+                        "ptBR": "Agrupa todos os commits no topo da branch atual"
                     }
                 }
             ]
@@ -532,7 +535,8 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR": "Mudanças"
             },
             "keywords": "changes stash",
             "desc": {
@@ -544,7 +548,9 @@
                 "id": "Menyimpan dan mengembalikan perubahan yang tidak lengkap",
                 "de": "Vestauen und inkomplette Änderungen wiederherstellen",
                 "ja": "不完全な変更を退避し、復元します",
-                "es": "Guardado rápido y provisional de los cambios"
+				"de": "Vestauen und inkomplette Änderungen wiederherstellen",
+                "es": "Guardado rápido y provisional de los cambios",
+                "ptBR": "Guarda e recupera alterações incompletas"
             },
             "url": "https://git-scm.com/docs/git-stash",
             "options": [
@@ -560,7 +566,9 @@
                         "id": "Menunjukkan semua simpanan Anda",
                         "de": "Alle Stashes anzeigen",
                         "ja": "退避した変更をすべて表示します",
-                        "es": "Muestra todos los guardados rápidos(stash)"
+						"de": "Alle Stashes anzeigen",
+                        "es": "Muestra todos los guardados rápidos(stash)",
+                        "ptBR": "Mostra todos os arquivos guardados no Stash"
                     }
                 },
                 {
@@ -575,7 +583,9 @@
                         "id": "Simpan modifikasi lokal Anda ke entri simpanan baru",
                         "de": "Lokale Änderungen in neuem Stash speichern",
                         "ja": "ローカルの変更を新しい退避エントリーに保存します",
-                        "es": "Guarda tus cambios locales en una nueva entrada de stash"
+						"de": "Lokale Änderungen in neuem Stash speichern",
+                        "es": "Guarda tus cambios locales en una nueva entrada de stash",
+                        "ptBR": "Guarda todas as suas alterações em uma nova entrada no Stash"
                     }
                 },
                 {
@@ -590,7 +600,9 @@
                         "id": "Menerapkan simpanan dalam indeks",
                         "de": "Stash in Index anwenden",
                         "ja": "インデックスに退避した変更を適用します",
-                        "es": "Aplica los cambios de guardado rápido al índice"
+						"de": "Stash in Index anwenden",
+                        "es": "Aplica los cambios de guardado rápido al índice",
+                        "ptBR": "Aplica as alterações guardadas em um índice"
                     }
                 },
                 {
@@ -605,7 +617,9 @@
                         "id": "Terapkan indeks simpanan dan hapus dari daftar simpanan",
                         "de": "Stash in Index anwenden und aus Stash Liste entfernen",
                         "ja": "インデックスに退避した変更を適用し、退避リストから削除します",
-                        "es": "Aplica los cambios al índice y los borra de la lista de stash"
+						"de": "Stash in Index anwenden und aus Stash Liste entfernen",
+                        "es": "Aplica los cambios al índice y los borra de la lista de stash",
+                        "ptBR": "Aplica as alterações ao índice e exclui da lista de Stash"
                     }
                 },
                 {
@@ -620,7 +634,9 @@
                         "id": "Menghapus indeks dari daftar simpanan tanpa menerapkan",
                         "de": "Index aus Stash List entfernen ohne Änderungen anzuwenden",
                         "ja": "適用せずに退避リストから削除します",
-                        "es": "Borra el índice de cambios en stash sin aplicarlos"
+						"de": "Index aus Stash List entfernen ohne Änderungen anzuwenden",
+                        "es": "Borra el índice de cambios en stash sin aplicarlos",
+                        "ptBR": "Exclui o indice das alterações no Stash sem aplicá-los"
                     }
                 },
                 {
@@ -635,7 +651,9 @@
                         "id": "Membersihkan daftar simpanan",
                         "de": "Stash Liste löschen",
                         "ja": "退避リストをクリアします",
-                        "es": "Borra la lista de cambios de guardado rápido"
+						"de": "Stash Liste löschen",
+                        "es": "Borra la lista de cambios de guardado rápido",
+                        "ptBR": "Limpa a lista de alterações do Stash"
                     }
                 }
             ]
@@ -652,7 +670,8 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR": "Mudanças"
             },
             "keywords": "changes remove rm",
             "desc": {
@@ -664,7 +683,8 @@
                 "id": "Hapus file dari indeks",
                 "de": "Dateien aus Index entfernen",
                 "ja": "インデックスからファイルを削除します",
-                "es": "Borra los ficheros del índice"
+                "es": "Borra los ficheros del índice",
+                "ptBR": "Apaga os arquivos do índice"
             },
             "url": "https://git-scm.com/docs/git-rm",
             "options": [
@@ -680,7 +700,9 @@
                         "id": "Menghapus file dari area stage",
                         "de": "Dateien aus Stage Area entfernen",
                         "ja": "ステージングエリアからファイルを削除します",
-                        "es": "Borra los ficheros del área de preparación"
+						"de": "Dateien aus Stage Area entfernen",
+                        "es": "Borra los ficheros del área de preparación",
+                        "ptBR": "Apaga os arquivos da área de preparação"
                     }
                 }
             ]
@@ -697,7 +719,8 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR": "Mudanças"
             },
             "keywords": "changes move mv",
             "desc": {
@@ -709,7 +732,9 @@
                 "id": "Memindahkan atau mengganti nama file atau direktori",
                 "de": "Datei oder Verzeichnis verschieben oder entfernen",
                 "ja": "ファイルやディレクトリの移動、リネームを行います",
-                "es": "Mueve o renombra los ficheros o un directorio"
+				"de": "Datei oder Verzeichnis verschieben oder entfernen",
+                "es": "Mueve o renombra los ficheros o un directorio",
+                "ptBR": "Move ou renomeia um arquivo ou um diretório"
             },
             "url": "https://git-scm.com/docs/git-mv",
             "options": [
@@ -725,7 +750,9 @@
                         "id": "Memindahkan atau mengganti nama sumber",
                         "de": "Quelle verschieben oder entfernen",
                         "ja": "ソースの移動やリネームを行います",
-                        "es": "Mueve o renombra de un fichero o directorio (source) a un -destination-"
+						"de": "Quelle verschieben oder entfernen",
+                        "es": "Mueve o renombra de un fichero o directorio (source) a un -destination-",
+                        "ptBR": "Move ou renomeia a fonte (source) para o destino (destination) especificado"
                     }
                 },
                 {
@@ -740,7 +767,9 @@
                         "id": "Memaksa untuk memindahkan atau mengganti nama sumber meskipun ada di tujuan",
                         "de": "Quelle verschieben oder entfernen auch wenn sie im Ziel bereits existiert",
                         "ja": "もし変更先に存在していても、強制的に移動、リネームを行います",
-                        "es": "Fuerza el mover o renombra de un fichero o directorio (source)"
+						"de": "Quelle verschieben oder entfernen auch wenn sie im Ziel bereits existiert",
+                        "es": "Fuerza el mover o renombra de un fichero o directorio (source)",
+                        "ptBR": "Força mover ou renomear a fonte (source), mesmo que ela exista no destino (destination)"
                     }
                 }
             ]
@@ -757,7 +786,8 @@
                 "id": "Perubahan",
                 "de": "Änderungen",
                 "ja": "変更",
-                "es": "Cambios"
+                "es": "Cambios",
+                "ptBR" : "Mudanças"
             },
             "keywords": "changes tag",
             "desc": {
@@ -769,7 +799,9 @@
                 "id": "Menandai komit saat ini dengan tag",
                 "de": "Markiert den aktuellen Commit mit einem Tag",
                 "ja": "現在のコミットをタグでマークします",
-                "es": "Marca el commit con una etiqueta"
+				"de": "Markiert den aktuellen Commit mit einem Tag",
+                "es": "Marca el commit con una etiqueta",
+                "ptBR": "Marca o commit atual com uma Tag"
             },
             "url": "https://git-scm.com/docs/git-tag",
             "options": [
@@ -785,7 +817,9 @@
                         "id": "Daftar semua tag",
                         "de": "Liste aller Tags",
                         "ja": "全てのタグを表示します",
-                        "es": "Lista todas las etiquetas"
+						"de": "Liste aller Tags",
+                        "es": "Lista todas las etiquetas",
+                        "ptBR": "Lista todas as Tags"
                     }
                 },
                 {
@@ -800,7 +834,9 @@
                         "id": "Menandai komit saat ini dengan tag",
                         "de": "Markiert den aktuellen Commit mit einem Tag",
                         "ja": "現在のコミットにタグでマークします",
-                        "es": "Marca el commit actual con una etiqueta"
+						"de": "Markiert den aktuellen Commit mit einem Tag",
+                        "es": "Marca el commit actual con una etiqueta",
+                        "ptBR": "Marca o commit atual com uma Tag"
                     }
                 },
                 {
@@ -815,7 +851,9 @@
                         "id": "Hapus tag yang ada dengan nama yang diberikan",
                         "de": "Löscht Tags mit dem entsprechenden Namen",
                         "ja": "指定された名前で存在するタグを削除します",
-                        "es": "Borra una etiqueta con un nombre (name) dado"
+						"de": "Löscht Tags mit dem entsprechenden Namen",
+                        "es": "Borra una etiqueta con un nombre (name) dado",
+                        "ptBR": "Exclui uma Tag com o nome dado"
                     }
                 }
             ]
@@ -832,7 +870,8 @@
                 "id": "Cabang",
                 "de": "Branch",
                 "ja": "ブランチ",
-                "es": "Rama"
+                "es": "Rama",
+                "ptBR": "Branch"
             },
             "keywords": "branch",
             "desc": {
@@ -845,6 +884,9 @@
                 "de": "Erstellen, löschen oder auflisten der Branches",
                 "ja": "ブランチのリスト、作成もしくは削除",
                 "es": "Lista, crea o borra una rama"
+				"de": "Erstellen, löschen oder auflisten der Branches",
+                "es": "Lista, crea o borra una rama",
+                "ptBR": "Lista, cria ou exclui uma Branch"
             },
             "url": "https://git-scm.com/docs/git-branch",
             "options": [
@@ -860,7 +902,9 @@
                         "id": "Membuat cabang baru dari HEAD disebut nama cabang",
                         "de": "Neue Branch aus Head erstellen mit gegebenem Namen",
                         "ja": "branch-nameという新しいブランチをHEADから作成します",
-                        "es": "Crea una nueva rama desde HEAD llamada name"
+						"de": "Neue Branch aus Head erstellen mit gegebenem Namen",
+                        "es": "Crea una nueva rama desde HEAD llamada name",
+                        "ptBR": "Cria uma nova branch a partir do HEAD com o nome passado"
                     }
                 },
                 {
@@ -875,7 +919,9 @@
                         "id": "Membuat dan memeriksa ke cabang baru dari HEAD disebut nama-cabang",
                         "de": "Neue Branch aus Head erstellen und prüfen mit gegebenem Namen",
                         "ja": "branch-nameという新しいブランチをHEADから作成し、チェックアウトします",
-                        "es": "Crea y se posiciona en la nueva rama creada desde HEAD y llamada name"
+						"de": "Neue Branch aus Head erstellen und prüfen mit gegebenem Namen",
+                        "es": "Crea y se posiciona en la nueva rama creada desde HEAD y llamada name",
+                        "ptBR": "Cria e move para a nova branch a partir de HEAD com o nome passado"
                     }
                 },
                 {
@@ -890,7 +936,9 @@
                         "id": "Buat daftar cabang pelacakan jarak jauh dan cabang lokal",
                         "de": "Remote und lokale Branches auflisten",
                         "ja": "リモート追跡ブランチとローカルブランチの双方をリストします",
-                        "es": "Lista tanto las ramas remotas como las locales"
+						"de": "Remote und lokale Branches auflisten",
+                        "es": "Lista tanto las ramas remotas como las locales",
+                        "ptBR": "Lista tantos as Branches remotas quanto locais"
                     }
                 },
                 {
@@ -905,7 +953,9 @@
                         "id": "Hapus cabang. Cabang harus sepenuhnya digabung dalam cabang hulu, atau dalam HEAD jika tidak ada hulu ditetapkan dengan --track atau --set-upstream",
                         "de": "Branch löschen. Die Branch muss vollständig in die entsprechende upstream Branch gemerged sein oder in HEAD, falls mit --track oder --set-upstream gesetzt",
                         "ja": "ブランチを削除します。対象のブランチは、上流ブランチまたは--track及び--set-upstreamで設定していなければHEADへと、完全にマージされていなければなりません",
-                        "es": "Borra una rama. Esta debe estar completamente fusionada con la rama remota."
+						"de": "Branch löschen. Die Branch muss vollständig in die entsprechende upstream Branch gemerged sein oder in HEAD, falls mit --track oder --set-upstream gesetzt",
+                        "es": "Borra una rama. Esta debe estar completamente fusionada con la rama remota.",
+                        "ptBR": "Apaga uma Branch. Esta branch deve estar completamente integrada na Branch remota ou no HEAD se não houver nenhum remoto configurado"
                     }
                 }
             ]
@@ -922,7 +972,9 @@
                 "id": "Cabang",
                 "de": "Branch",
                 "ja": "ブランチ",
-                "es": "Rama"
+				"de": "Branch",
+                "es": "Rama",
+                "ptBR": "Branch"
             },
             "keywords": "branch checkout",
             "desc": {
@@ -934,7 +986,9 @@
                 "id": "Pindah cabang atau pulihkan file pohon yang berfungsi",
                 "de": "Branches wechseln oder Arbeitsbaum Dateien wiederherstellen",
                 "ja": "ブランチの切り替え、または作業ツリーファイルの復元を行います",
-                "es": "Cambia de rama o restaura los ficheros del árbol de trabajo"
+				"de": "Branches wechseln oder Arbeitsbaum Dateien wiederherstellen",
+                "es": "Cambia de rama o restaura los ficheros del árbol de trabajo",
+                "ptBR": "Muda de Branch ou rastaura os arquivos da árvore de trabalho"
             },
             "url": "https://git-scm.com/docs/git-checkout",
             "options": [
@@ -950,7 +1004,9 @@
                         "id": "Pindah cabang atau pulihkan file pohon yang berfungsi",
                         "de": "Branches wechseln oder Arbeitsbaum Dateien wiederherstellen",
                         "ja": "ブランチの切り替え、または作業ツリーファイルの復元を行います",
-                        "es": "Cambia de rama o restaura los ficheros del árbol de trabajo"
+						"de": "Branches wechseln oder Arbeitsbaum Dateien wiederherstellen",
+                        "es": "Cambia de rama o restaura los ficheros del árbol de trabajo",
+                        "ptBR": "Muda de Branch ou rastaura os arquivos da árvore de trabalho"
                     }
                 },
                 {
@@ -965,7 +1021,8 @@
                         "id": "Periksa dan lacak cabang jarak jauh",
                         "de": "Checkout und Tracken der Remote Branch",
                         "ja": "リモートブランチのチェックアウトと追跡を行います",
-                        "es": "Cambia y sigue una rama remota"
+                        "es": "Cambia y sigue una rama remota",
+                        "ptBR": "Muda para a Branch remota e mantém um rastreio dela"
                     }
                 },
                 {
@@ -980,7 +1037,9 @@
                         "id": "Buang semua perubahan lokal yang dilacak di HEAD",
                         "de": "Alle gerackten Änderungen in HEAD verwerfen",
                         "ja": "HEADで追跡されたすべてのローカルの変更を破棄します",
-                        "es": "Descarta todos los cambios local que están en HEAD"
+						"de": "Alle gerackten Änderungen in HEAD verwerfen",
+                        "es": "Descarta todos los cambios local que están en HEAD",
+                        "ptBR": "Descarta todas as alterações locais rastreadas para a versão do HEAD"
                     }
                 },
                 {
@@ -995,7 +1054,9 @@
                         "id": "Mereset file yang dilacak",
                         "de": "Alle tracked Dateien zurücksetzen",
                         "ja": "追跡したファイルをすべてリセットします",
-                        "es": "Resetea un fichero seguido a HEAD"
+						"de": "Alle tracked Dateien zurücksetzen",
+                        "es": "Resetea un fichero seguido a HEAD",
+                        "ptBR": "Reseta um arquivo rastreado para o HEAD"
                     }
                 }
             ]
@@ -1012,7 +1073,9 @@
                 "id": "Memperbarui",
                 "de": "Aktualisieren",
                 "ja": "更新",
-                "es": "Actualizar"
+				"de": "Aktualisieren",
+                "es": "Actualizar",
+                "ptBR": "Atualizar"
             },
             "keywords": "update fetch",
             "desc": {
@@ -1024,7 +1087,9 @@
                 "id": "Unduh semua riwayat dari repositori jarak jauh",
                 "de": "Komplette Remote Repository herunterladen",
                 "ja": "リモートリポジトリから全ての履歴をダウンロードします",
-                "es": "Descarga toda la historia del repositorio remoto"
+				"de": "Komplette Remote Repository herunterladen",
+                "es": "Descarga toda la historia del repositorio remoto",
+                "ptBR": "Baixa todo o histórico do rempositório remoto"
             },
             "url": "https://git-scm.com/docs/git-fetch",
             "options": [
@@ -1040,7 +1105,9 @@
                         "id": "Ambil semua remote",
                         "de": "Alle Remotes herunterladen",
                         "ja": "全てのリモートから全ての履歴を取得します",
-                        "es": "Hace fetch a todos los remotos"
+						"de": "Alle Remotes herunterladen",
+                        "es": "Hace fetch a todos los remotos",
+                        "ptBR": "Busca todos os remotos"
                     }
                 },
                 {
@@ -1056,6 +1123,9 @@
                         "de": "Vor dem Herunterladen alle Remote-Trackin Referenzen entfernen welche dort nicht mehr existieren",
                         "ja": "fetchする前に、リモートに存在しない追跡の参照を削除します",
                         "es": "Antes de hacer fetch, borra cualquier seguimiento remoto que no exista en el remoto"
+						"de": "Vor dem Herunterladen alle Remote-Trackin Referenzen entfernen welche dort nicht mehr existieren",
+                        "es": "Antes de hacer fetch, borra cualquier seguimiento remoto que no exista en el remoto",
+                        "ptBR": "Antes de buscar, remove qualquer qualquer rastreamento remoto que não exista mais no remoto"
                     }
                 }
             ]
@@ -1072,7 +1142,9 @@
                 "id": "Memperbarui",
                 "de": "Aktualisieren",
                 "ja": "更新",
-                "es": "Actualizar"
+				"de": "Aktualisieren",
+                "es": "Actualizar",
+                "ptBR": "Atualizar"
             },
             "keywords": "update pull",
             "desc": {
@@ -1084,7 +1156,9 @@
                 "id": "Memperbarui cabang lokal dari mitra jarak jauh",
                 "de": "Lokale Branch aus Remote Branch aktualisieren",
                 "ja": "対応するリモートブランチからローカルブランチを更新します",
-                "es": "Actualiza la rama local de su parte remota"
+				"de": "Lokale Branch aus Remote Branch aktualisieren",
+                "es": "Actualiza la rama local de su parte remota",
+                "ptBR": "Atualiza a Branch local com a sua contraparte remota"
             },
             "url": "https://git-scm.com/docs/git-pull",
             "options": [
@@ -1100,7 +1174,9 @@
                         "id": "Ambil dari dan integrasikan dengan repositori lain atau cabang lokal",
                         "de": "Herunterladen und Integrieren eines anderen Repository oder lokalen Branches",
                         "ja": "別のリポジトリまたはローカルブランチから取得して統合します",
-                        "es": "Actualiza la rama con los cambios del repositorio remoto"
+						"de": "Herunterladen und Integrieren eines anderen Repository oder lokalen Branches",
+                        "es": "Actualiza la rama con los cambios del repositorio remoto",
+                        "ptBR": "Atualiza a Branch atual com as alterações do repositório remoto"
                     }
                 }
             ]
@@ -1117,7 +1193,9 @@
                 "id": "Memperbarui",
                 "de": "Aktualisieren",
                 "ja": "更新",
-                "es": "Actualizar"
+				"de": "Aktualisieren",
+                "es": "Actualizar",
+                "ptBR": "Atualizar"
             },
             "keywords": "update push",
             "desc": {
@@ -1129,7 +1207,9 @@
                 "id": "Unggah semua cabang lokal yang berkomitmen ke mitra jarak jauh",
                 "de": "Alle lokalen Branch Commits in die entsprechenden Remote Versionen hochladen",
                 "ja": "全てのローカルブランチのコミットを、対応するリモートにアップロードします",
-                "es": "Sube todas las ramas locales y commits al remoto"
+				"de": "Alle lokalen Branch Commits in die entsprechenden Remote Versionen hochladen",
+                "es": "Sube todas las ramas locales y commits al remoto",
+                "ptBR": "Sobe todas os commits locais para o repositório remoto"
             },
             "url": "https://git-scm.com/docs/git-push",
             "options": [
@@ -1145,7 +1225,9 @@
                         "id": "Perbarui referensi jarak jauh bersama dengan objek terkait",
                         "de": "Remote Referenzen aktualisieren mit verknüpften Objekten",
                         "ja": "関連するオブジェクトとともにリモートの参照を更新します",
-                        "es": "Actualiza las referencias remotas con los cambios locales"
+						"de": "Remote Referenzen aktualisieren mit verknüpften Objekten",
+                        "es": "Actualiza las referencias remotas con los cambios locales",
+                        "ptBR": "Atualiza as referências remotas com os objetos locais relacionados"
                     }
                 }
             ]
@@ -1162,7 +1244,9 @@
                 "id": "Menggabungkan",
                 "de": "Zusammenführen",
                 "ja": "マージ",
-                "es": "Fusión"
+				"de": "Zusammenführen",
+                "es": "Fusión",
+                "ptBR": "Combinar"
             },
             "keywords": "merge",
             "desc": {
@@ -1174,7 +1258,9 @@
                 "id": "Combines the specified branch’s history into the current branch",
                 "de": "Zusammenführen der entsprechenden Branch in die aktuelle Branch",
                 "ja": "特定のブランチの履歴を、現在のブランチへ結合します",
-                "es": "Fusiona la historia de una rama específica en la actual"
+				"de": "Zusammenführen der entsprechenden Branch in die aktuelle Branch",
+                "es": "Fusiona la historia de una rama específica en la actual",
+                "ptBR": "Combina o hostórico da Branch especificada na Branch atual"
             },
             "url": "https://git-scm.com/docs/git-merge",
             "options": [
@@ -1190,7 +1276,9 @@
                         "id": "Menggabungkan cabang ke HEAD Anda saat ini",
                         "de": "Zusammenführen einer Branch in deine aktuelle HEAD",
                         "ja": "ブランチを現在のHEADへとマージします",
-                        "es": "Fusuiona una rama(branch-name) con el actual HEAD"
+						"de": "Zusammenführen einer Branch in deine aktuelle HEAD",
+                        "es": "Fusuiona una rama(branch-name) con el actual HEAD",
+                        "ptBR": "Combina a Branch especificada para o HEAD atual"
                     }
                 }
             ]
@@ -1206,7 +1294,8 @@
                 "kli": "DuD",
                 "id": "Tambalan",
                 "ja": "パッチ",
-                "es": "Parche"
+                "es": "Parche",
+                "ptBR": "Patch"
             },
             "keywords": "patch rebase",
             "desc": {
@@ -1217,7 +1306,8 @@
                 "kli": "Qu'mey potlh nach onto DoS Sor waw' jatlhqa'",
                 "id": "Rebase HEAD Anda saat ini ke cabang target",
                 "ja": "現在のHEADを、対象のブランチにリベースします",
-                "es": "Reorganiza tu actual Head en otra rama objetivo"
+                "es": "Reorganiza tu actual Head en otra rama objetivo",
+                "ptBR": "Reorganiza seu HEAD atual na Branch alvo"
             },
             "url": "https://git-scm.com/docs/git-rebase",
             "options": [
@@ -1232,7 +1322,8 @@
                         "kli": "Qu'mey potlh nach onto DoS Sor waw' jatlhqa'",
                         "id": "Rebase HEAD Anda saat ini ke nama cabang",
                         "ja": "現在のHEADを、対象のブランチにリベースします。",
-                        "es": "Reorganiza tu actual rama HEAD en otra rama llamada branch-name"
+                        "es": "Reorganiza tu actual rama HEAD en otra rama llamada branch-name",
+                        "ptBR": "Reorganiza seu HEAD atual na Branch especificada",
                     }
                 },
                 {
@@ -1246,7 +1337,8 @@
                         "kli": "tetlh HeS 'oH jIqapruppu': waw' jatlhqa' chenmoH. pa' waw' tetlh laH edit user jatlhqa'.",
                         "id": "Buat daftar komitmen yang akan direstrukturisasi. Pengguna dapat mengedit daftar itu sebelum rebasing.",
                         "ja": "リベースしようとしているコミットのリストを作成します。ユーザーはリベースする前にそのリストを編集できます",
-                        "es": "Hace una lista de commits que reorganizar. Puedes editar esta lista antes de reorganizar"
+                        "es": "Hace una lista de commits que reorganizar. Puedes editar esta lista antes de reorganizar",
+                        "ptBR": "Faz uma lista de commits que serão reorganizados. O Usuário pode editar esta lista antes de executar"
                     }
                 },
                 {
@@ -1260,7 +1352,8 @@
                         "kli": "waw' taH jatlhqa' qaSpu'DI' tI' yol",
                         "id": "Lanjutkan rebase setelah menyelesaikan konflik",
                         "ja": "コンフリクトを解決した後、リベースを継続します",
-                        "es": "Continúa la reoganización después de resolver los conflictos"
+                        "es": "Continúa la reoganización después de resolver los conflictos",
+                        "ptBR": "Continua a reorganização depois de resolver os conflitos"
                     }
                 },
                 {
@@ -1274,7 +1367,8 @@
                         "kli": "waw' abort jatlhqa'",
                         "id": "Batalkan rebase",
                         "ja" : "リベースを中止します",
-                        "es": "Aborta una reorganización (rebase)"
+                        "es": "Aborta una reorganización (rebase)",
+                        "ptBR": "Cancela uma reorganização (rebase)"
                     }
                 }
             ]
@@ -1290,7 +1384,8 @@
                 "kli": "DuD",
                 "id": "Tambalan",
                 "ja": "パッチ",
-                "es": "Parche"
+                "es": "Parche",
+                "ptBR": "Patch"
             },
             "keywords": "patch cherry-pick",
             "desc": {
@@ -1301,7 +1396,8 @@
                 "kli": "choH vo' HeS pIm Qu'mey potlh nach chenmoH",
                 "id": "Terapkan perubahan dari komit yang berbeda ke HEAD Anda saat ini",
                 "ja": "別のコミットからの変更を、現在のHEADに適用します",
-                "es": "Aplica los cambios de diferentes commit al actual HEAD"
+                "es": "Aplica los cambios de diferentes commit al actual HEAD",
+                "ptBR": "Aplica as alterações de um commit específico no HEAD atual"
             },
             "url": "https://git-scm.com/docs/git-cherry-pick",
             "options": [
@@ -1316,7 +1412,8 @@
                         "kli": "Suq 'ej choH vo' HeS hash Qu'mey potlh nach",
                         "id": "Pilih dan terapkan perubahan dari hash komit ke HEAD Anda saat ini",
                         "ja": "コミットハッシュから変更を選択し、現在のHEADに適用します",
-                        "es": "Selecciona y aplica los cambios de diferentes commits al actual HEAD"
+                        "es": "Selecciona y aplica los cambios de diferentes commits al actual HEAD",
+                        "ptBR": "Seleciona e aplica as alterações de um commit especificado no HEAD atual"
                     }
                 }
             ]
@@ -1333,7 +1430,9 @@
                 "id": "Batalkan",
                 "de": "Rückgängig",
                 "ja": "取り消し",
-                "es": "Deshacer"
+				"de": "Rückgängig",
+                "es": "Deshacer",
+                "ptBR": "Desfazer"
             },
             "keywords": "reset undo",
             "desc": {
@@ -1346,6 +1445,9 @@
                 "de": "Alle Commits nach dem letzten [commit] rückgängig machen, lokale Änderungen beibehalten",
                 "ja": "コミットの後に、すべてのコミットを取り消し、変更をローカルに保持します",
                 "es": "Deshace todos los commit después, preservando los cambios locales"
+				"de": "Alle Commits nach dem letzten [commit] rückgängig machen, lokale Änderungen beibehalten",
+                "es": "Deshace todos los commit después, preservando los cambios locales",
+                "ptBR": "Dessfaz todos os commits depois do commit especificado preservando as alterações localmente"
             },
             "url": "https://git-scm.com/docs/git-reset",
             "options": [
@@ -1361,7 +1463,9 @@
                         "id": "Mereset entri indeks untuk semua jalur ke statusnya",
                         "de": "Die Index Einträge für alle Pfade zurücksetzen",
                         "ja": "すべてのパスのインデックスエントリをリセットします",
-                        "es": "Reinicia la rama al último commit "
+						"de": "Die Index Einträge für alle Pfade zurücksetzen",
+                        "es": "Reinicia la rama al último commit ",
+                        "ptBR": "Reinicia o Branch para o último commit"
                     }
                 },
                 {
@@ -1376,7 +1480,9 @@
                         "id": "Tidak menyentuh file indeks atau pohon kerja sama sekali",
                         "de": "Index Datei und Arbeitsbaum werden nicht angepasst",
                         "ja": "インデックスファイルや作業ツリーには全く触れない",
-                        "es": "no toca el índice ni el árbol de trabajo"
+						"de": "Index Datei und Arbeitsbaum werden nicht angepasst",
+                        "es": "no toca el índice ni el árbol de trabajo",
+                        "ptBR": "Não altera o índice nem a árvore de trabalho"
                     }
                 },
                 {
@@ -1391,7 +1497,9 @@
                         "id": "Atur ulang indeks tetapi bukan pohon kerja dan laporkan apa yang belum diperbarui",
                         "de": "Setzt den Index zurück, jedoch nicht den Arbeitsbaum. Zeigt an was nicht aktualisiert wurde",
                         "ja": "インデックスをリセットしますが、作業ツリーはリセットせず、更新されていないものを報告します",
-                        "es": "Reinicia el índice pero no el arbol de trabajo y reporta lo que no ha sido actualizado"
+						"de": "Setzt den Index zurück, jedoch nicht den Arbeitsbaum. Zeigt an was nicht aktualisiert wurde",
+                        "es": "Reinicia el índice pero no el arbol de trabajo y reporta lo que no ha sido actualizado",
+                        "ptBR": "Reinicia o indice mas não a árvore de trabalho e reporta o que não foi atualizado"
                     }
                 },
                 {
@@ -1406,7 +1514,9 @@
                         "id": "Atur ulang indeks dan pohon kerja. Setiap perubahan pada file yang dilacak di pohon kerja sejak komit dibuang",
                         "de": "Index und Arbeitsbaum werden zurückgesetzt. Alle Änderungen im Arbeitsbaum seit dem letzten Commit werden zurückgesetzt",
                         "ja": "インデックスと作業ツリーをリセットします。コミット以降の作業ツリー内の追跡ファイルへの変更は破棄されます",
-                        "es": "Fuerza el reinicio y sobreescribe todo lo que no estaba en seguimiento al estado del último commit"
+						"de": "Index und Arbeitsbaum werden zurückgesetzt. Alle Änderungen im Arbeitsbaum seit dem letzten Commit werden zurückgesetzt",
+                        "es": "Fuerza el reinicio y sobreescribe todo lo que no estaba en seguimiento al estado del último commit",
+                        "ptBR": "Reinicia o índice e a áre de trabalho para o último commit. Todas as asterações não rastreadas são descartadas"
                     }
                 }
             ]
@@ -1423,7 +1533,9 @@
                 "id": "Batalkan",
                 "de": "Rückgängig",
                 "ja": "取り消し",
-                "es": "Deshacer"
+				"de": "Rückgängig",
+                "es": "Deshacer",
+                "ptBR": "Desfazer"
             },
             "keywords": "reset undo clean",
             "desc": {
@@ -1435,7 +1547,9 @@
                 "id": "Memperlihatkan file yang tidak terlacak yang akan dihapus",
                 "de": "Zeigt nicht getrackte Dateien welche entfernt werden",
                 "ja": "削除されようとしている追跡されていないファイルを表示します",
-                "es": "Muestra los ficheros sin seguimiento que se van a borrar"
+				"de": "Zeigt nicht getrackte Dateien welche entfernt werden",
+                "es": "Muestra los ficheros sin seguimiento que se van a borrar",
+                "ptBR": "Mostra os arquivos não rastreados que serão excluídos"
             },
             "url": "https://git-scm.com/docs/git-clean",
             "options": [
@@ -1451,7 +1565,9 @@
                         "id": "Memperlihatkan file yang tidak terlacak yang akan dihapus",
                         "de": "Zeigt nicht getrackte Dateien an welche entfernt werden",
                         "ja": "削除されようとしている追跡されていないファイルを表示します",
-                        "es": "Muestra los ficheros sin seguimiento que se van a borrar"
+						"de": "Zeigt nicht getrackte Dateien an welche entfernt werden",
+                        "es": "Muestra los ficheros sin seguimiento que se van a borrar",
+                        "ptBR": "Mostra os arquivos não rastreados que serão excluídos"
                     }
                 },
                 {
@@ -1466,7 +1582,9 @@
                         "id": "Menghapus semua file yang tidak terlacak",
                         "de": "Alle nicht getrackten Dateien entfernen",
                         "ja": "追跡されていないファイルを全て削除する",
-                        "es": "Borra los ficheros que no están en seguimiento o añadidos"
+						"de": "Alle nicht getrackten Dateien entfernen",
+                        "es": "Borra los ficheros que no están en seguimiento o añadidos",
+                        "ptBR": "Remove todos os arquivos não rastreados"
                     }
                 }
             ]
@@ -1483,7 +1601,9 @@
                 "id": "Sejarah",
                 "de": "Historie",
                 "ja": "履歴",
-                "es": "Historia"
+				"de": "Historie",
+                "es": "Historia",
+                "ptBR": "Histórico"
             },
             "keywords": "history log",
             "desc": {
@@ -1495,7 +1615,9 @@
                 "id": "Daftar riwayat versi untuk cabang saat ini",
                 "de": "Listet die Versionshistorie der aktuellen Branch auf",
                 "ja": "現在のブランチのバージョン履歴をリスト表示する",
-                "es": "Lista la historia de versiones de la rama actual"
+				"de": "Listet die Versionshistorie der aktuellen Branch auf",
+                "es": "Lista la historia de versiones de la rama actual",
+                "ptBR": "Lista o histório de versões da Branch atual"
             },
             "url": "https://git-scm.com/docs/git-log",
             "options": [
@@ -1511,7 +1633,9 @@
                         "id": "Tampilkan semua komitmen",
                         "de": "Alle Commits anzeigen",
                         "ja": "全てのコミットを表示する",
-                        "es": "Muestra todos los commits"
+						"de": "Alle Commits anzeigen",
+                        "es": "Muestra todos los commits",
+                        "ptBR": "Mostra todos os commits"
                     }
                 },
                 {
@@ -1526,7 +1650,9 @@
                         "id": "Tampilkan perubahan pada file",
                         "de": "Zeigt Änderungen der Datei an",
                         "ja": "ファイルの変更内容を表示する",
-                        "es": "Muestra los cambios de un fichero"
+						"de": "Zeigt Änderungen der Datei an",
+                        "es": "Muestra los cambios de un fichero",
+                        "ptBR": "Mostra as alterações de um arquivo"
                     }
                 },
                 {
@@ -1541,7 +1667,9 @@
                         "id": "Menampilkan semua komit sebagai grafik",
                         "de": "Zeigt alle Änderungen als Graph an",
                         "ja": "グラフで全てのコミットを表示する",
-                        "es": "Muestra todos los commits en un gráfico"
+						"de": "Zeigt alle Änderungen als Graph an",
+                        "es": "Muestra todos los commits en un gráfico",
+                        "ptBR": "Mostra todos os commits em um gráfico"
                     }
                 }
             ]
@@ -1558,7 +1686,9 @@
                 "id": "Ekstensi",
                 "de": "Erweiterungen",
                 "ja": "拡張機能",
-                "es": "Extensiones"
+				"de": "Erweiterungen",
+                "es": "Extensiones",
+                "ptBR": "Extensões"
             },
             "keywords": "extensions flow init feature release hotfix start finish",
             "desc": {
@@ -1570,7 +1700,9 @@
                 "id": "Ekstensi git untuk alur kerja cabang fitur",
                 "de": "Eine Git Erweiterung für Funktionalitäts Branch Arbeitsablauf",
                 "ja": "機能ブランチのワークフローのためのGitの拡張機能",
-                "es": "Extesión de git para conocer el flujo de trabajo en las ramas"
+				"de": "Eine Git Erweiterung für Funktionalitäts Branch Arbeitsablauf",
+                "es": "Extesión de git para conocer el flujo de trabajo en las ramas",
+                "ptBR": "Estensão do git para um fluxo de trabalho (Gitflow)"
             },
             "url": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow",
             "options": [
@@ -1584,7 +1716,9 @@
                         "id": "Inisialisasi aliran di dalam repositori yang ada",
                         "de": "Arbeitsablauf innerhalb eines bestehenden Repositories initialisieren",
                         "ja": "既存のリポジトリ内のフローを初期化します",
-                        "es": "Inicializa el flujo dentro de un repositorio existente"
+						"de": "Arbeitsablauf innerhalb eines bestehenden Repositories initialisieren",
+                        "es": "Inicializa el flujo dentro de un repositorio existente",
+                        "ptBR": "Inicializa o Gitflow dentro de um repositório"
                     }
                 },
                 {
@@ -1599,7 +1733,9 @@
                         "id": "Buat cabang baru dari pengembangan terbaru sebagai fitur / nama-fitur",
                         "de": "Neue Branch aus letzter Entwicklung als Funktionalität/Funktionalitäts-Name erstellen",
                         "ja": "最新のdevelopからfeature/feature-nameとして新しいブランチを作成します",
-                        "es": "Crea una nueva rama para el último desarrollo con nombre feature-name"
+						"de": "Neue Branch aus letzter Entwicklung als Funktionalität/Funktionalitäts-Name erstellen",
+                        "es": "Crea una nueva rama para el último desarrollo con nombre feature-name",
+                        "ptBR": "Cria uma nova Branch da última Branch 'develop' como feature/nome-da-feature"
                     }
                 },
                 {
@@ -1614,7 +1750,9 @@
                         "id": "Menggabungkan fitur-nama ke dalam mengembangkan dan menghapus cabang",
                         "de": "Funktionalitäts-Name in Entwicklungs und Remote Branch zusammenführen",
                         "ja": "developにfeature-nameブランチをマージし、ブランチを削除します",
-                        "es": "Fusiona la rama feature-name dentro del desarrollo y borra otras ramas"
+						"de": "Funktionalitäts-Name in Entwicklungs und Remote Branch zusammenführen",
+                        "es": "Fusiona la rama feature-name dentro del desarrollo y borra otras ramas",
+                        "ptBR": "Mescla a Branch 'nome-da-feature' dentro da 'develop' e apaga a Branch"
                     }
                 },
                 {
@@ -1629,7 +1767,9 @@
                         "id": "Menerbitkan fitur ke remote",
                         "de": "Veröffentlicht eine Funktionalität in Remote-Branch",
                         "ja": "リモートにfeatureブランチを共有します",
-                        "es": "Publica features en el remoto"
+						"de": "Veröffentlicht eine Funktionalität in Remote-Branch",
+                        "es": "Publica features en el remoto",
+                        "ptBR": "Publica a 'feature' no remoto"
                     }
                 },
                 {
@@ -1644,7 +1784,9 @@
                         "id": "Tarik fitur dari jarak jauh ke repositori lokal Anda",
                         "de": "Eine Funktionalität aus Remote Branch in lokales Repository ziehen",
                         "ja": "リモートレポジトリからローカルレポジトリに、featureブランチをプルします",
-                        "es": "Trae feature del remoto a tu rama local "
+						"de": "Eine Funktionalität aus Remote Branch in lokales Repository ziehen",
+                        "es": "Trae feature del remoto a tu rama local ",
+                        "ptBR": "Puxa a 'feature' do remoto para o seu repositório local"
                     }
                 },
                 {
@@ -1659,7 +1801,9 @@
                         "id": "Membuat cabang rilis dari pengembangan terbaru",
                         "de": "Ein Veröffentlichungsbranch aus der letzten Entwicklung erstellen",
                         "ja": "最新のdevelopブランチからreleaseブランチを作成します",
-                        "es": "Crea una rama release del último desarrollo"
+						"de": "Ein Veröffentlichungsbranch aus der letzten Entwicklung erstellen",
+                        "es": "Crea una rama release del último desarrollo",
+                        "ptBR": "Cria uma Branch de 'release' da última 'develop'"
                     }
                 },
                 {
@@ -1674,7 +1818,9 @@
                         "id": "Menggabungkan cabang rilis menjadi master dan berkembang",
                         "de": "Veröffentlichungsbranch in Master und Entwicklung zusammenführen",
                         "ja": "releaseブランチをmasterとdevelopブランチにマージします",
-                        "es": "Fusiona la rama release en la rama master y desarrollo"
+						"de": "Veröffentlichungsbranch in Master und Entwicklung zusammenführen",
+                        "es": "Fusiona la rama release en la rama master y desarrollo",
+                        "ptBR": "Mescla a Branch 'release' nas Branches 'master' e 'develop'"
                     }
                 },
                 {
@@ -1689,7 +1835,9 @@
                         "id": "Membuat cabang hotfix / fix-name dari master",
                         "de": "Erstellt einen Hotfix/Fix-Name Branch aus Master",
                         "ja": "masterブランチから、hotfix/fix-nameブランチを作成します",
-                        "es": "Crea la rama hotfix/fix-name desde master"
+						"de": "Erstellt einen Hotfix/Fix-Name Branch aus Master",
+                        "es": "Crea la rama hotfix/fix-name desde master",
+                        "ptBR": "Cria a Branch 'hotfix/fix-name' a partir da 'master'"
                     }
                 },
                 {
@@ -1704,7 +1852,9 @@
                         "id": "Menggabungkan fix-name menjadi master dan berkembang",
                         "de": "Fügt Fix-Name in Master und Entwicklung zusammen",
                         "ja": "fix-nameブランチをmasterとdevelopブランチにマージします",
-                        "es": "Fusiona la rama fix-name en master y desarrollo"
+						"de": "Fügt Fix-Name in Master und Entwicklung zusammen",
+                        "es": "Fusiona la rama fix-name en master y desarrollo",
+                        "ptBR": "Mescla a Branch 'fix-name' na 'master' e na 'develop'"
                     }
                 }
             ]
@@ -1721,6 +1871,7 @@
                 "id": "Administrasi",
                 "de": "Administration",
                 "ja": "管理"
+                "ptBR": "Administração"
             },
             "keywords": "administration config",
             "desc": {
@@ -1732,7 +1883,9 @@
                 "id": "Dapatkan dan atur opsi penyimpanan atau global",
                 "de": "Repository oder globale Optionen anpassen",
                 "ja": "レポジトリまたは全体のオプションの取得や設定を行います",
-                "es": "Muestra y configura las opciones globales de un repositorio"
+				"de": "Repository oder globale Optionen anpassen",
+                "es": "Muestra y configura las opciones globales de un repositorio",
+                "ptBR": "Exibe e configura as opções gloais e locais de um repositório"
             },
             "url": "https://git-scm.com/docs/git-config",
             "options": [
@@ -1748,7 +1901,10 @@
                         "id": "Edit file konfigurasi repositori",
                         "de": "Repository Konfiguration anpassen",
                         "ja": "レポジトリの設定ファイルを編集します",
-                        "es": "Edita el fichero de configuración de un repositorio"
+						"de": "Repository Konfiguration anpassen",
+                        "es": "Edita el fichero de configuración de un repositorio",
+                        "ptBR": "Edita as configurações de um repositório"
+						
                     }
                 },
                 {
@@ -1763,7 +1919,9 @@
                         "id": "Edit file konfigurasi global",
                         "de": "Globale Konfiguration anpassen",
                         "ja": "全体設定のファイルを編集します",
-                        "es": "Edita el fichero de configuración global de un repositorio"
+						"de": "Globale Konfiguration anpassen",
+                        "es": "Edita el fichero de configuración global de un repositorio",
+                        "ptBR": "Edita as configurações globais"
                     }
                 },
                 {
@@ -1778,7 +1936,9 @@
                         "id": "Tetapkan nama pengguna Anda di pengaturan global",
                         "de": "Benutzernamen in globalen Einstellungen anpassen",
                         "ja": "全体設定のファイルにあなたのユーザネームを定義します",
-                        "es": "Define tu nombre de usuario en la configuración global"
+						"de": "Benutzernamen in globalen Einstellungen anpassen",
+                        "es": "Define tu nombre de usuario en la configuración global",
+                        "ptBR": "Define o seu nome de usuário nas configurações globais"
                     }
                 },
                 {
@@ -1793,7 +1953,9 @@
                         "id": "Tetapkan email Anda di pengaturan global",
                         "de": "E-Mail Adresse in globale Optionen anpassen",
                         "ja": "全体設定のファイルにあなたのメールアドレスを定義します",
-                        "es": "Define tu email en la configuración global"
+						"de": "E-Mail Adresse in globale Optionen anpassen",
+                        "es": "Define tu email en la configuración global",
+                        "ptBR": "Define o seu email nas configurações globais"
                     }
                 }
             ]
@@ -1810,6 +1972,7 @@
                 "id": "Administrasi",
                 "de": "Administration",
                 "ja": "管理"
+                "ptBR": "Administração"
             },
             "keywords": "administration gc garbage collection",
             "desc": {
@@ -1821,7 +1984,9 @@
                 "id": "Bersihkan file yang tidak perlu dan optimalkan repositori lokal",
                 "de": "Nicht benötigte Dateien entfernen und lokales Repository optimieren",
                 "ja": "不必要なファイルを削除し、ローカルレポジトリを最適化します",
-                "es": "Limpia y optimiza el repositorio global de archivos innecesarios"
+				"de": "Nicht benötigte Dateien entfernen und lokales Repository optimieren",
+                "es": "Limpia y optimiza el repositorio global de archivos innecesarios",
+                "ptBR": "Limpa os arquivos desnecessários e otimiza o repositório local"
             },
             "url": "https://git-scm.com/docs/git-gc",
             "options": [
@@ -1837,7 +2002,9 @@
                         "id": "Menjalankan garbage collection untuk repositori lokal Anda",
                         "de": "Garbage Collection in lokalem Repository ausführen",
                         "ja": "ローカルレポジトリでガベージコレクションを走らせます",
-                        "es": "Limpia el repositorio global de archivos innecesarios"
+						"de": "Garbage Collection in lokalem Repository ausführen",
+                        "es": "Limpia el repositorio global de archivos innecesarios",
+                        "ptBR": "Executa o coletor de lixo no seu repositório local"
                     }
                 },
                 {
@@ -1852,7 +2019,9 @@
                         "id": "Jalankan gc lebih agresif untuk mengoptimalkan repositori lokal Anda",
                         "de": "Garbage Collection aggressiver in lokalem Repository ausführen",
                         "ja": "ローカルレポジトリの最適化するために、より積極的なガベージコレクションを実行します",
-                        "es": "Limpia más agresivamente tu repositorio local de archivos innecesario y no añadidos"
+						"de": "Garbage Collection aggressiver in lokalem Repository ausführen",
+                        "es": "Limpia más agresivamente tu repositorio local de archivos innecesario y no añadidos",
+                        "ptBR": "Executa o coletor de lixo agressivamente para otimizar seu repositório local"
                     }
                 }
             ]
@@ -1869,7 +2038,9 @@
                 "id": "Administrasi",
                 "de": "Administration",
                 "ja": "管理",
-                "es": "Administración"
+				"de": "Administration",
+                "es": "Administración",
+                "ptBR": "Administração"
             },
             "keywords": "administration prune",
             "desc": {
@@ -1879,7 +2050,9 @@
                 "id": "Pangkas semua objek yang tidak dapat dijangkau dari basis data objek",
                 "de": "Alle nicht erreichbaren Objekte aus der Objekte Datenbank löschen",
                 "ja": "オブジェクトデータベースから到達不能なオブジェクトをすべて整理します",
-                "es": "Poda/capa todos los objetos inalcanzables de la base de datos de objetos"
+				"de": "Alle nicht erreichbaren Objekte aus der Objekte Datenbank löschen",
+                "es": "Poda/capa todos los objetos inalcanzables de la base de datos de objetos",
+                "ptBR": "Exclui todos os objetos inalcançáveis da base de dados de objetos"
             },
             "url": "https://git-scm.com/docs/git-prune",
             "options": [
@@ -1895,7 +2068,9 @@
                         "id": "Menghapus objek yang tidak lagi menunjuk ke objek apa pun di cabang yang dapat dijangkau",
                         "de": "Entfernt Objekte welche aus aktueller Branch nicht mehr erreicht werden können",
                         "ja": "到達可能なブランチ内で、オブジェクトをポイントしなくなったオブジェクトを削除します",
-                        "es": "Borra los objetos que no apuntan a ninguna rama alcanzable"
+						"de": "Entfernt Objekte welche aus aktueller Branch nicht mehr erreicht werden können",
+                        "es": "Borra los objetos que no apuntan a ninguna rama alcanzable",
+                        "ptBR": "Exclui todos os objetos que não possuem referência em alguma Branch alcançável"
                     }
                 },
                 {
@@ -1911,6 +2086,9 @@
                         "de": "Ausgabe aller zu entfernenden Objekte",
                         "ja": "何も削除しません; ただ何が削除されるか報告するだけ",
                         "es": "No borra nada, solo notifica que se borraría"
+						"de": "Ausgabe aller zu entfernenden Objekte",
+                        "es": "No borra nada, solo notifica que se borraría",
+                        "ptBR": "Lista o que pode ser removido sem efetuar nenhuma remoção"
                     }
                 },
                 {
@@ -1925,7 +2103,9 @@
                         "id": "Memperlihatkan proses pemangkasan",
                         "de": "Fortschritt anzeigen",
                         "ja": "整理の進捗を表示します",
-                        "es": "Muestra el proceso de poda"
+						"de": "Fortschritt anzeigen",
+                        "es": "Muestra el proceso de poda",
+                        "ptBR": "Mostra o processo de exlusão do 'prune'"
                     }
                 }
             ]
@@ -1942,7 +2122,9 @@
                 "id": "Debug",
                 "de": "Debug",
                 "ja": "デバッグ",
-                "es": "Debug"
+				"de": "Debug",
+                "es": "Debug",
+                "ptBR": "Debug"
             },
             "keywords": "debug bisect",
             "desc": {
@@ -1954,7 +2136,9 @@
                 "id": "Gunakan pencarian biner untuk menemukan komit yang memperkenalkan bug",
                 "de": "Binäre Suche nutzen um den Commit zu finden, welcher den Bug hinzugefügt hat",
                 "ja": "二分検索を使用して、バグを取り込んだコミットを発見します",
-                "es": "Usa búsqueda binaria para encontrar el fichero que produce fallos"
+				"de": "Binäre Suche nutzen um den Commit zu finden, welcher den Bug hinzugefügt hat",
+                "es": "Usa búsqueda binaria para encontrar el fichero que produce fallos",
+                "ptBR": "Utiliza uma busca binária para encontrar um commit que introduziu um Bug"
             },
             "url": "https://git-scm.com/docs/git-bisect",
             "options": [
@@ -1970,7 +2154,9 @@
                         "id": "Mulai git bisect wizard",
                         "de": "Den Git Bisect Wizard starten",
                         "ja": "git bisectウィザードを起動します",
-                        "es": "Empieza el asistente del comando bisect"
+						"de": "Den Git Bisect Wizard starten",
+                        "es": "Empieza el asistente del comando bisect",
+                        "ptBR": "Inicia o assistente do comando 'bisect'"
                     }
                 },
                 {
@@ -1985,7 +2171,10 @@
                         "id": "Biarkan git wizard membagi dua komit yang baik",
                         "de": "Dem Git Bisect Wizard einen guten Commit zeigen",
                         "ja": "git bisectウィザードに問題がないコミットを知らせます",
-                        "es": "Enseña al asistente que es un buen commit"
+						"de": "Dem Git Bisect Wizard einen guten Commit zeigen",
+                        "es": "Enseña al asistente que es un buen commit",
+                        "ptBR": "Esina o assistente do 'bisect' o que é um bom commit"
+
                     }
                 },
                 {
@@ -2000,7 +2189,9 @@
                         "id": "Biarkan git wizard membagi dua komit buruk",
                         "de": "Dem Git Bisect Wizard einen schlechten Commit zeigen",
                         "ja": "git bisectウィザードに問題のあるコミットを知らせます",
-                        "es": "Enseña al asistente de bisect que es un mal commit"
+						"de": "Dem Git Bisect Wizard einen schlechten Commit zeigen",
+                        "es": "Enseña al asistente de bisect que es un mal commit",
+                        "ptBR": "Esina o assistente do 'bisect' o que é um commit ruim"
                     }
                 },
                 {
@@ -2015,7 +2206,9 @@
                         "id": "Akhiri git bisect wizard",
                         "de": "Den Git Bisect Wizard beenden",
                         "ja": "git bisectウィザードを終了します",
-                        "es": "Finaliza el asistente de bisect"
+						"de": "Den Git Bisect Wizard beenden",
+                        "es": "Finaliza el asistente de bisect",
+                        "ptBR": "Finaliza o assistente do 'git bisect'"
                     }
                 }
             ]
@@ -2032,7 +2225,8 @@
                 "id": "Debug",
                 "de": "Debug",
                 "ja": "デバック",
-                "es": "Debug"
+                "es": "Debug",
+                "ptBR": "Debug"
             },
             "keywords": "debug blame",
             "desc": {
@@ -2044,7 +2238,9 @@
                 "id": "Menampilkan metadata penulis yang dilampirkan ke baris yang dikomit khusus dalam file",
                 "de": "Anzeige der Autor Metadaten welche zu einer bestimmten Zeile des Commits gehören",
                 "ja": "ファイル内の特定のコミットされた行に付随する著者メタデータを表示します",
-                "es": "Muestra los metadatos del autor de un commit especifico y las líneas del fichero"
+				"de": "Anzeige der Autor Metadaten welche zu einer bestimmten Zeile des Commits gehören",
+                "es": "Muestra los metadatos del autor de un commit especifico y las líneas del fichero",
+                "ptBR": "Mostra os metadados do autor de linhas especificas de um commit en um arquivo"
             },
             "url": "https://git-scm.com/docs/git-blame",
             "options": [
@@ -2061,6 +2257,9 @@
                         "de": "Zeigt alle Autoren einer Quelle mit Datum, Zeit und Zeilennummer an",
                         "ja": "sourceファイルを作業した各著者を日付、時刻、行番号など含めて表示する",
                         "es": "Muestra cada autor que trabajó en cada fuente, incluyendo fecha, tiempo y número de líneas"
+						"de": "Zeigt alle Autoren einer Quelle mit Datum, Zeit und Zeilennummer an",
+                        "es": "Muestra cada autor que trabajó en cada fuente, incluyendo fecha, tiempo y número de líneas",
+                        "ptBR": "Mostra cada autor que trabalhou no fonte incluindo data, hora e número das linhas"
                     }
                 },
                 {
@@ -2075,7 +2274,8 @@
                         "id": "Batasi keluaran sumber antara garis x dan y",
                         "de": "Beschränkt Ausgabe der Quelle auf die Zeilen x bis y",
                         "ja": "ソースコードの出力を、x行とy行間で制限します",
-                        "es": "Restringe la salida del codigo entre un intervalo x e y líneas"
+                        "es": "Restringe la salida del codigo entre un intervalo x e y líneas",
+                        "ptBR": "Restringe a saída do código en um intervalo entre as linhas 'x' e 'y'"
                     }
                 },
                 {
@@ -2090,7 +2290,8 @@
                         "id": "Tampilkan alamat email penulis dan bukan nama pengguna",
                         "de": "Zeigt die Email Adresse des Autors anstelle des Benutzernamen",
                         "ja": "著者のユーザネームの代わりにEメールアドレスを表示します",
-                        "es": "Muestra el email del autor en vez del nombre"
+                        "es": "Muestra el email del autor en vez del nombre",
+                        "ptBR": "Mostra o email do autor ao invés do nome"
                     }
                 },
                 {
@@ -2104,7 +2305,8 @@
                         "kli": "chIm logh choH buSHa'",
                         "id": "Abaikan perubahan spasi putih",
                         "ja": "スペースの変更を無視します",
-                        "es": "Ignora los cambios que son espacios en blanco"
+                        "es": "Ignora los cambios que son espacios en blanco",
+                        "ptBR": "Ignora as alterações de espaço em branco"
                     }
                 }
             ]
