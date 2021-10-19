@@ -5,7 +5,7 @@
     <img src="assets/images/anim.gif">
 </p>
 <p align="center">
-	<a href="http://gitcheats.com/">
+	<a href="https://excalith.github.io/git-cheats/">
     <img src="https://img.shields.io/badge/GitCheats-APP-orange.svg?longCache=true&style=for-the-badge">
 	</a>
 	<a href="https://github.com/excalith/git-cheats-cli">
@@ -13,10 +13,11 @@
 	</a>
 </p>
 
+> This project is very old and outdated, yet it still exists since it may help someone out there.
 
 **Git Cheats** is a small project for people who wants to get into git using commands but don't know where to start. It started as a side-project to help my friends / colleagues check commands easily, but it turned out it has been shared through my friends lots of times and it is being used on a daily basis. Suprising enough, I wanted to create a repository for this. Maybe someone finds it useful and / or wants to contribute!
 
-### GitCheats App [(Link)](http://gitcheats.com)
+### GitCheats App [(Link)](https://excalith.github.io/git-cheats/)
 A simple web-based app where you can filter out commands in need easily.
 
 ### GitCheats CLI [(Link)](https://github.com/excalith/Git-Cheats-Cli)
@@ -38,6 +39,12 @@ If you find this project useful, please consider <a href="https://www.buymeacoff
 * [excalith](https://github.com/excalith) - Maintainer / English, Turkish & Klingon
 * [aemmadi](https://github.com/aemmadi) - Telugu & Hindi
 * [aladhims](https://github.com/aladhims) - Indonesian
+* [munex-com](https://github.com/munex-com) - Japanese
+* [Moonstroke82](https://github.com/Moonstroke82) - German
+* [bhabermann](https://github.com/bhabermann) - Portuguese
+* [Maluzzz](https://github.com/Maluzzz) - Spanish
+* [osamagoraya](https://github.com/osamagoraya) - Urdu
+* [LucaArgentieri](https://github.com/LucaArgentieri) - Italian
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

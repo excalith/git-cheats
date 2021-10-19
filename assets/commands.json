@@ -1,17 +1,17 @@
 {
     "settings": {
         "languages": {
-            "it": "Italiano",
             "en": "English",
-            "tr": "Türkçe",
-            "tel": "తెలుగు",
-            "hin": "हिंदी",
-            "kli": "Klingon",
-            "id": "Indonesia",
             "de": "Deutsch",
-            "ja": "Japanese",
-            "es": "Spanish",
-            "ptBR": "Portuguese"
+            "es": "Español",
+            "hin": "हिंदी",
+            "it": "Italiano",
+            "id": "Indonesia",
+            "ja": "日本語",
+            "ptBR": "Portuguese",
+            "tel": "తెలుగు",
+            "tr": "Türkçe",
+            "kli": "Klingon"
         },
         "search": {
             "it": "Comando di Ricerca",
