@@ -1,6 +1,7 @@
 {
     "settings": {
         "languages": {
+            "it": "Italiano",
             "en": "English",
             "tr": "Türkçe",
             "tel": "తెలుగు",
@@ -13,6 +14,7 @@
             "ptBR": "Portuguese"
         },
         "search": {
+            "it": "Comando di Ricerca",
             "en": "Search Command",
             "tr": "Komut Ara",
             "tel": "శోధన ఆదేశం",
@@ -25,6 +27,7 @@
             "ptBR": "Comando de Pesquisa"
         },
         "advancedCommands": {
+            "it": "Comandi Avanzati",
             "en": "Advanced Commands",
             "tr": "Gelişmiş Komutlar",
             "tel": "అధునాతన ఆదేశాలు",
@@ -37,6 +40,7 @@
             "ptBR": "Comandos Avançados"
         },
         "settings": {
+            "it": "Impostazioni",
             "en": "Settings",
             "tr": "Ayarlar",
             "tel": "సెట్టింగులు",
@@ -49,6 +53,7 @@
             "ptBR": "Configuração"
         },
         "readMore": {
+            "it": "Scopri di più",
             "en": "Read More",
             "tr": "Devamını Oku",
             "tel": "ఇంకా చదవండి",
@@ -61,6 +66,7 @@
             "ptBR": "Leia Mais"
         },
         "options": {
+            "it": "Opzioni",
             "en": "Options",
             "tr": "Seçenekler",
             "tel": "ఎంపికలు",
@@ -78,6 +84,7 @@
             "advanced": false,
             "type": "create",
             "category": {
+                "it": "Crea,
                 "en": "Create",
                 "tr": "Yarat",
                 "tel": "సృష్టించడానికి",
@@ -91,6 +98,7 @@
             },
             "keywords": "create init start",
             "desc": {
+                "it": "Crea una repository di Git vuota oppure reinizializzane una già esistente",
                 "en": "Create an empty Git repository or reinitialize an existing one",
                 "tr": "Depo tanımlamaya yarar",
                 "tel": "ఒక ఖాళీ గిట్ పోజిటరీను సృష్టించండి లేదా ఇప్పటికే ఉన్న ఒకటిని పునఃప్రారంభించండి",
@@ -108,6 +116,7 @@
                     "advanced": false,
                     "code": "init",
                     "desc": {
+                        "it": "Crea una repository di Git vuota oppure reinizializzane una già esistente",
                         "en": "Create an empty Git repository or reinitialize an existing one",
                         "tr": "Boş ya da dolu bir klasöre git deposu oluşturur",
                         "tel": "ఒక ఖాళీ గిట్ పోజిటరీను సృష్టించండి లేదా ఇప్పటికే ఉన్న ఒకటిని పునఃప్రారంభించండి",
@@ -126,6 +135,7 @@
             "advanced": false,
             "type": "create",
             "category": {
+                "it": "Crea",
                 "en": "Create",
                 "tr": "Yarat",
                 "tel": "సృష్టించడానికి",
@@ -139,6 +149,7 @@
             },
             "keywords": "create clone new",
             "desc": {
+                "it": "Crea una copia locale del progetto che esiste in remoto",
                 "en": "Creates a local copy of a project that already exists remotely",
                 "tr": "Klasöre depo klonla",
                 "tel": "కొత్త డైరెక్టరీలో రిపోజిటరీను క్లోన్ చేయండి",
@@ -156,6 +167,7 @@
                     "advanced": false,
                     "code": "clone ssh://user@domain.com/repo.git",
                     "desc": {
+                        "it": "Clona una determinata repository",
                         "en": "Clone target repository",
                         "tr": "Klasöre hedef deponun kopyasını oluşturur",
                         "tel": "రిపోజిటరీ క్లోన్",
@@ -172,6 +184,7 @@
                     "advanced": false,
                     "code": "clone -b [branch-name] ssh://user@domain.com/repo.git",
                     "desc": {
+                        "it": "Clona una repository con un branch specifico",
                         "en": "Clone a repository with branch-name checked out",
                         "tr": "Depoyu klonlarken ilgili ağacı çeker",
                         "tel": "శాఖ-పేరుతో రిపోజిటరీ క్లోన్ చేయబడింది",
@@ -190,6 +203,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -203,6 +217,7 @@
             },
             "keywords": "changes add",
             "desc": {
+                "it": "Area di preparazione per il lavoro",
                 "en": "Stages changes in the working tree",
                 "tr": "Eklemek istediğiniz değişiklikleri belirtmenizi sağlar",
                 "tel": "తదుపరి చందా కోసం నిర్వహించిన కంటెంట్ను సిద్ధం చేయడానికి, పని చెట్టులో ఉన్న ప్రస్తుత కంటెంట్ను ఉపయోగించి ఇండెక్స్ను నవీకరించడం",
@@ -220,6 +235,7 @@
                     "advanced": false,
                     "code": "add [source]",
                     "desc": {
+                        "it": "Aggiungi il file all'area di lavoro",
                         "en": "Adds given file to stage area",
                         "tr": "İlgili dosyayı ekler",
                         "tel": "ఇచ్చిన ఫైల్ను వేదిక ప్రాంతానికి జోడిస్తుంది",
@@ -236,6 +252,7 @@
                     "advanced": false,
                     "code": "add --patch [source]",
                     "desc": {
+                        "it": "Scegli interattivamente blocchi di patch tra l'indice e l'albero di lavoro e aggiungili all'indice",
                         "en": "Interactively choose hunks of patch between the index and the work tree and add them to the index",
                         "tr": "Hangi değişiklikleri ekleyeceğinizi seçmenize olanak sağlar",
                         "tel": "ఇంటరాక్టివ్గా ఇండెక్స్ మరియు పని ట్రీ మధ్య పాచ్ యొక్క hunks ఎంచుకోండి మరియు ఇండెక్స్ వాటిని జోడించండి",
@@ -252,6 +269,7 @@
                     "advanced": false,
                     "code": "add folder/*",
                     "desc": {
+                        "it": "Aggiunge tutti i file all'interno di una determinata cartella",
                         "en": "Adds all files within given folder",
                         "tr": "İlgili klasördeki tüm değişiklikleri eklemenizi sağlar",
                         "tel": "ఇచ్చిన ఫోల్డర్లోని అన్ని ఫైళ్లను జోడిస్తుంది",
@@ -268,6 +286,7 @@
                     "advanced": false,
                     "code": "add *.extension",
                     "desc": {
+                        "it": "Aggiunge tutti i file di estensione all'area dello stage",
                         "en": "Adds all extension files to stage area",
                         "tr": "İlgili uzantıya sahip tüm dosyaları eklemenizi sağlar",
                         "tel": "దశ విస్తరణకు అన్ని పొడిగింపు ఫైళ్లను జోడిస్తుంది",
@@ -286,6 +305,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -299,6 +319,7 @@
             },
             "keywords": "changes status",
             "desc": {
+                "it": "Mostra lo stato delle modifiche come non tracciato, modificato o organizzato",
                 "en": "Shows the status of changes as untracked, modified, or staged",
                 "tr": "Takip edilmeyen, değişmiş ya da eklenmiş değişikliklerin durmunu gösterir",
                 "tel": "మీ పని డైరెక్టరీలో మార్చబడిన ఫైల్లు",
@@ -316,6 +337,7 @@
                     "advanced": false,
                     "code": "status",
                     "desc": {
+                        "it": "File modificati nella directory di lavoro",
                         "en": "Changed files on your working directory",
                         "tr": "Değişen dosyaları göster",
                         "tel": "మీ పని డైరెక్టరీలో మార్చబడిన ఫైల్లు",
@@ -332,6 +354,7 @@
                     "advanced": false,
                     "code": "status -s",
                     "desc": {
+                        "it": "Fornisci l'output in formato breve",
                         "en": "Give the output in the short-format",
                         "tr": "Sonucu kısa formatta göster",
                         "tel": "చిన్న ఫార్మాట్లో ఉత్పత్తిని ఇవ్వండి",
@@ -348,6 +371,7 @@
                     "advanced": false,
                     "code": "status -b",
                     "desc": {
+                        "it": "Mostra le informazioni sulla filiale e sul tracciamento anche in formato breve",
                         "en": "Show the branch and tracking info even in short-format",
                         "tr": "Sonucu branş ve değişiklikler olarak kısa formatta göster",
                         "tel": "చిన్న ఫార్మాట్లో కూడా బ్రాంచ్ మరియు ట్రాకింగ్ సమాచారాన్ని చూపించు",
@@ -366,6 +390,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -379,6 +404,7 @@
             },
             "keywords": "changes diff",
             "desc": {
+                "it": "Mostra le differenze di file non ancora messe in scena",
                 "en": "Shows file differences not yet staged",
                 "tr": "Değişiklikleri karşılaştır",
                 "tel": "పని చెట్టు మరియు ఇండెక్స్ లేదా చెట్టు మధ్య మార్పులను చూపించు, ఇండెక్స్ మరియు చెట్టు మధ్య మార్పులు",
@@ -396,6 +422,7 @@
                     "advanced": false,
                     "code": "diff",
                     "desc": {
+                        "it": "Mostra cambia tutte le modifiche tra l'albero di lavoro e l'indice",
                         "en": "Show changes all changes between the working tree and the index",
                         "tr": "Tüm değişiklikleri karşılaştır",
                         "tel": "పని చెట్టు మరియు ఇండెక్స్ మధ్య ఉన్న అన్ని మార్పులను చూపుతుంది",
@@ -412,6 +439,7 @@
                     "advanced": false,
                     "code": "diff [source]",
                     "desc": {
+                        "it": "Mostra le modifiche a un file tra l'albero di lavoro e l'indice",
                         "en": "Show changes to a file between the working tree and the index",
                         "tr": "İlgili dosyanın eski haliyle kıyaslamasını gösterir",
                         "tel": "పని చెట్టు మరియు సూచిక మధ్య ఒక ఫైల్కు మార్పులను చూపించు",
@@ -430,6 +458,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -443,6 +472,7 @@
             },
             "keywords": "changes commit",
             "desc": {
+                "it": "Salva l'istantanea nella cronologia del progetto",
                 "en": "Saves the snapshot to the project history",
                 "tr": "Eklenen tüm değişiklikleri kaydet",
                 "tel": "మార్పులను వివరిస్తున్న వినియోగదారు నుండి లాగ్ మెసేజ్తో పాటు ఇండెక్స్ యొక్క ప్రస్తుత విషయాలను ఒక నూతన కమిట్ లో నిల్వ చేస్తుంది",
@@ -460,6 +490,7 @@
                     "advanced": false,
                     "code": "commit -m [message]",
                     "desc": {
+                        "it": "Usa il messaggio dato come messaggio di commit. Se vengono fornite più opzioni -m, i loro valori vengono concatenati come paragrafi separati",
                         "en": "Use the given message as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs",
                         "tr": "Eklenen değişikliklere mesaj ekleyerek kaydet",
                         "tel": "ఇవ్వబడిన message ను నిబద్ధత సందేశం వలె ఉపయోగించండి. బహుళ -m ఎంపికలు ఇచ్చినట్లయితే, వారి విలువలు ప్రత్యేక పేరాలుగా జతచేయబడతాయి",
@@ -476,6 +507,7 @@
                     "advanced": false,
                     "code": "commit --all",
                     "desc": {
+                        "it": "Indica al comando di eseguire automaticamente lo stage dei file che sono stati modificati ed eliminati, ma i nuovi file di cui non hai parlato con Git non sono interessati",
                         "en": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected",
                         "tr": "Takip edilmeyenler hariç tüm eklenen, değişen ve silinen dosyaları ekler",
                         "tel": "స్వయంచాలకంగా దశలను మార్చిన మరియు తొలగించిన ఫైల్లను ఆదేశానికి చెప్పండి, కానీ క్రొత్త ఫైల్లు మీరు Git కు తెలియకపోతే ప్రభావితం కాదు",
@@ -492,6 +524,7 @@
                     "advanced": false,
                     "code": "commit --amend",
                     "desc": {
+                        "it": "Aggiorna l'ultimo commit senza creare un nuovo commit",
                         "en": "Updates the last commit without creating a new commit",
                         "tr": "Son kayıt üzerine ekleme ya da düzenleme yapar",
                         "tel": "చివరి నిబద్ధత మార్పులు / నవీకరణలు",
@@ -508,6 +541,7 @@
                     "advanced": false,
                     "code": "commit --squash",
                     "desc": {
+                        "it":"Crea un singolo commit in cima al ramo corrente",
                         "en": "Create a single commit on top of the current branch",
                         "tr": "Aktif ağacın üzerine tek bir kayıt oluşturur",
                         "tel": "ప్రస్తుత బ్రాంచ్ పైన ఒక ఒడంబడిక సృష్టించండి",
@@ -526,6 +560,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -539,6 +574,7 @@
             },
             "keywords": "changes stash",
             "desc": {
+                "it": "Conserva e ripristina le modifiche incomplete",
                 "en": "Stash and restore incomplete changes",
                 "tr": "Değişiklikleri sonra kullanılmak üzere kasaya atar",
                 "tel": "మురికి పని డైరెక్టరీలో మార్పులను దూరం చేయండి",
@@ -556,6 +592,7 @@
                     "advanced": false,
                     "code": "stash list",
                     "desc": {
+                        "it": "Mostra tutte le tue scorte",
                         "en": "Shows all your stashes",
                         "tr": "Tüm kasa verilerinizi gösterir",
                         "tel": "మీ అన్ని గీతలు చూపుతుంది",
@@ -572,6 +609,7 @@
                     "advanced": false,
                     "code": "stash save [Stash Message]",
                     "desc": {
+                        "it": "Salva le tue modifiche locali in una nuova voce di scorta",
                         "en": "Saves your local modifications to a new stash entry",
                         "tr": "Kasanıza lokal değişiklikleri mesaj ile kaydeder",
                         "tel": "మీ స్థానిక మార్పులను కొత్త స్టాండ్ ఎంట్రీకి సేవ్ చేస్తుంది",
@@ -588,6 +626,7 @@
                     "advanced": false,
                     "code": "stash apply stash@{index}",
                     "desc": {
+                        "it": "Applica la scorta nell'indice",
                         "en": "Applies the stash in index",
                         "tr": "İlgili indexteki kasayı uygular",
                         "tel": "ఇండెక్స్లో స్టాష్ను వర్తిస్తుంది",
@@ -604,6 +643,7 @@
                     "advanced": false,
                     "code": "stash pop stash@{index}",
                     "desc": {
+                        "it": "Applica la scorta nell indice e la rimuove dall elenco delle scorte",
                         "en": "Applies the stash in index and removes it from stash list",
                         "tr": "İlgili indexteki kasayı uygular ve kasadan kaldırır",
                         "tel": "ఇండెక్స్ లో స్టాష్ వర్తిస్తుంది మరియు అది స్టష్ లిస్టు నుండి తొలగిస్తుంది",
@@ -620,6 +660,7 @@
                     "advanced": false,
                     "code": "stash drop stash@{index}",
                     "desc": {
+                        "it": "Rimuove l'indice dall'elenco di scorta senza applicarlo",
                         "en": "Removes the index from stash list without applying",
                         "tr": "İlgili indexteki kasayı uygulamadan siler",
                         "tel": "ఇండెక్స్ లేకుండా స్టాష్ జాబితా నుండి సూచికను తీసివేస్తుంది",
@@ -636,6 +677,7 @@
                     "advanced": false,
                     "code": "stash clear",
                     "desc": {
+                        "it": "Cancella l'elenco delle scorte",
                         "en": "Clears the stash list",
                         "tr": "Kasa listesini temizler",
                         "tel": "స్పష్టం",
@@ -654,6 +696,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -667,6 +710,7 @@
             },
             "keywords": "changes remove rm",
             "desc": {
+                "it": "Rimuovi i file dall'indice",
                 "en": "Remove files from the index",
                 "tr": "İlgili dosyayı indexten kaldırır",
                 "tel": "ఇండెక్స్ నుండి ఫైళ్ళను తొలగించండి",
@@ -684,6 +728,7 @@
                     "advanced": false,
                     "code": "rm [source]",
                     "desc": {
+                        "it": "Rimuove il file dall'area dello stage",
                         "en": "Removes file from stage area",
                         "tr": "İlgili dosyayı indexten kaldırır",
                         "tel": "ఇండెక్స్ నుండి ఫైళ్ళను తొలగించండి",
@@ -702,6 +747,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -715,6 +761,7 @@
             },
             "keywords": "changes move mv",
             "desc": {
+                "it": "Sposta o rinomina un file o una directory",
                 "en": "Move or rename a file or a directory",
                 "tr": "Dosya ya da klasörün yerini ya da adını değiştir",
                 "tel": "ఫైల్ను లేదా డైరెక్టరీని తరలించండి లేదా పేరు మార్చండి",
@@ -732,6 +779,7 @@
                     "advanced": false,
                     "code": "mv [source] [destination]",
                     "desc": {
+                        "it": "Sposta o rinomina la sorgente",
                         "en": "Moves or renames source",
                         "tr": "Kaynağı ilgili yere taşır ya da adını değiştirir",
                         "tel": "మూలాలను మూసివేయడం లేదా పునరుద్ధరించడం",
@@ -748,6 +796,7 @@
                     "advanced": false,
                     "code": "mv -f [source] [destination]",
                     "desc": {
+                        "it": "Forza lo spostamento o la ridenominazione dell'origine anche se esiste nella destinazione",
                         "en": "Forces to move or rename the source even if it exists in destination",
                         "tr": "Kaynak, hedef kalsörde aynı isimde ise üzerine yazar",
                         "tel": "గమ్యస్థానంలో ఉన్నట్లయితే మూలాన్ని తరలించడానికి లేదా పేరు మార్చడానికి ఫోర్సెస్",
@@ -766,6 +815,7 @@
             "advanced": false,
             "type": "changes",
             "category": {
+                "it": "Cambio",
                 "en": "Changes",
                 "tr": "Değişiklikler",
                 "tel": "మార్పులు",
@@ -779,6 +829,7 @@
             },
             "keywords": "changes tag",
             "desc": {
+                "it": "Segna il commit corrente con un tag",
                 "en": "Marks the current commit with a tag",
                 "tr": "İlgili commit'i tag ile işaretler",
                 "tel": "ట్యాగ్తో ప్రస్తుత నిబద్ధతను సూచిస్తుంది",
@@ -796,6 +847,7 @@
                     "advanced": false,
                     "code": "tag --list",
                     "desc": {
+                        "it": "Elenca tutti i tag",
                         "en": "Lists all tags",
                         "tr": "Tag listesini gösterir",
                         "tel": "అన్ని ట్యాగ్లను జాబితా చేస్తుంది",
@@ -812,6 +864,7 @@
                     "advanced": false,
                     "code": "tag [name]",
                     "desc": {
+                        "it": "Contrassegna il commit corrente con un tag",
                         "en": "Marks the current commit with a tag",
                         "tr": "Aktif kayıt üzerine tag ekler",
                         "tel": "ట్యాగ్తో ప్రస్తుత నిబద్ధతను సూచిస్తుంది",
@@ -828,6 +881,7 @@
                     "advanced": false,
                     "code": "tag --delete [name]",
                     "desc": {
+                        "it": "Elimina i tag esistenti con i nomi dati",
                         "en": "Delete existing tags with the given names",
                         "tr": "İlgili isimdeki tagi siler",
                         "tel": "ఇచ్చిన పేర్లతో ఉన్న ట్యాగ్లను తొలగించండి",
@@ -846,6 +900,7 @@
             "advanced": false,
             "type": "branch",
             "category": {
+                "it": "Ramo",
                 "en": "Branch",
                 "tr": "Ağaç",
                 "tel": "శాఖ",
@@ -859,6 +914,7 @@
             },
             "keywords": "branch",
             "desc": {
+                "it": "Elenca, crea o elimina rami",
                 "en": "List, create, or delete branches",
                 "tr": "Ağaç üzerinde dal yaratma, silme ve listeleme",
                 "tel": "జాబితా, సృష్టించండి లేదా శాఖలను తొలగించండి",
@@ -876,6 +932,7 @@
                     "advanced": false,
                     "code": "branch [name]",
                     "desc": {
+                        "it": "Crea un nuovo branch da HEAD chiamato branch-name",
                         "en": "Creates a new branch from HEAD called branch-name",
                         "tr": "Yeni bir dal yaratır",
                         "tel": "శాఖ పేరును పిలిచే HEAD నుండి కొత్త శాఖను సృష్టిస్తుంది",
@@ -892,6 +949,7 @@
                     "advanced": false,
                     "code": "branch -b [name]",
                     "desc": {
+                        "it": "Crea ed effettua il check-out su un nuovo ramo da HEAD chiamato nome-branch",
                         "en": "Creates and checks out to a new branch from HEAD called branch-name",
                         "tr": "Yeni bir dal yaratır ve ilgili dala geçer",
                         "tel": "బ్రాడ్-నేమ్ అని పిలవబడే HEAD నుండి కొత్త బ్రాంచ్కి వెతుకుతుంది మరియు తనిఖీ చేస్తుంది",
@@ -908,6 +966,7 @@
                     "advanced": false,
                     "code": "branch --all",
                     "desc": {
+                        "it": "Elenca sia le filiali di monitoraggio remoto che le filiali locali",
                         "en": "List both remote-tracking branches and local branches",
                         "tr": "Lokal ve sunucuda takip edilen tüm dalları listeler",
                         "tel": "రిమోట్ ట్రాకింగ్ శాఖలు మరియు స్థానిక శాఖలు రెండింటిని జాబితా చేయండి",
@@ -924,6 +983,7 @@
                     "advanced": false,
                     "code": "branch --delete",
                     "desc": {
+                        "it": "Elimina un ramo. Il ramo deve essere completamente unito nel suo ramo upstream, o in HEAD se nessun upstream è stato impostato con --track o --set-upstream",
                         "en": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream",
                         "tr": "İlgili dalı siler",
                         "tel": "ఒక శాఖను తొలగించండి. అప్స్ట్రీమ్ సంఖ్య - స్ట్రక్ లేదా - సెట్ అప్స్ట్రీమ్తో అప్స్ట్రీమ్ సెట్ చేయకపోతే, శాఖ దాని పూర్తిస్థాయి శాఖలో లేదా HEAD లో పూర్తిగా విలీనం కావాలి",
@@ -942,6 +1002,7 @@
             "advanced": false,
             "type": "branch",
             "category": {
+                "it": "Cambio",
                 "en": "Branch",
                 "tr": "Ağaç",
                 "tel": "శాఖ",
@@ -955,6 +1016,7 @@
             },
             "keywords": "branch checkout",
             "desc": {
+                "it": "Cambia rami o ripristina i file dell'albero funzionante",
                 "en": "Switch branches or restore working tree files",
                 "tr": "Dallar arası geçişi sağlar",
                 "tel": "శాఖలు మారండి లేదా పని చెట్టు ఫైళ్లను పునరుద్ధరించండి",
@@ -972,6 +1034,7 @@
                     "advanced": false,
                     "code": "checkout [name]",
                     "desc": {
+                        "it": "Cambia rami o ripristina i file dell'albero funzionante",
                         "en": "Switch branches or restore working tree files",
                         "tr": "Branşlar arası geçişi sağlar",
                         "tel": "శాఖలు మారండి లేదా పని చెట్టు ఫైళ్లను పునరుద్ధరించండి",
@@ -988,6 +1051,7 @@
                     "advanced": false,
                     "code": "checkout --track [origin/name]",
                     "desc": {
+                        "it": "Acquista e segui una filiale remota",
                         "en": "Checkout and track a remote branch",
                         "tr": "Sunucudaki bir dalı yerel depoya kopyalar",
                         "tel": "రిమోట్ బ్రాంచ్ని తనిఖీ చేయండి మరియు ట్రాక్ చేయండి",
@@ -1004,6 +1068,7 @@
                     "advanced": false,
                     "code": "checkout .",
                     "desc": {
+                        "it": "Elimina tutte le modifiche locali rilevate in HEAD",
                         "en": "Discard all tracked local changes in HEAD",
                         "tr": "Yerelde yapılan ve kaydedilmemiş tüm değişiklikleri siler",
                         "tel": "HEAD లో ఉన్న అన్ని స్థానిక స్థానిక మార్పులను విస్మరించండి",
@@ -1020,6 +1085,7 @@
                     "advanced": false,
                     "code": "checkout HEAD [source]",
                     "desc": {
+                        "it": "Reimposta un file tracciato",
                         "en": "Resets a tracked file",
                         "tr": "Takip edilen ve üzerinde değişiklik yapılmış bir dosyayı bir önceki haline getirir",
                         "tel": "ట్రాక్ చేయబడిన ఫైల్ను రీసెట్ చేస్తుంది",
@@ -1038,6 +1104,7 @@
             "advanced": false,
             "type": "update",
             "category": {
+                "it": "Carica",
                 "en": "Update",
                 "tr": "Güncelleme",
                 "tel": "నవీకరణ",
@@ -1051,6 +1118,7 @@
             },
             "keywords": "update fetch",
             "desc": {
+                "it": "Scarica tutta la cronologia dal repository remoto",
                 "en": "Downloads all history from the remote repository",
                 "tr": "Sunucudaki tüm değişiklik bilgilerini yerel depoya indirir",
                 "tel": "మరొక రిపోజిటరీ నుండి వస్తువులు మరియు రిఫరెన్సులను డౌన్లోడ్ చేయండి",
@@ -1068,6 +1136,7 @@
                     "advanced": false,
                     "code": "fetch --all",
                     "desc": {
+                        "it": "Scarica tutti i telecomandi",
                         "en": "Fetch all remotes",
                         "tr": "Sunucudaki tüm obje ve referansları güncelle",
                         "tel": "అన్ని రిమోట్లను పొందు",
@@ -1084,6 +1153,7 @@
                     "advanced": false,
                     "code": "fetch --prune",
                     "desc": {
+                        "it": "Prima di recuperare, rimuovi tutti i riferimenti di tracciamento remoto che non esistono più sul telecomando",
                         "en": "Before fetching, remove any remote-tracking references that no longer exist on the remote",
                         "tr": "Sunucudaki bilgileri güncellerken lokalinizde olup sunucuda olmayan referansları siler",
                         "tel": "పొందటానికి ముందు, రిమోట్లో ఇకపై ఉన్న ఏ రిమోట్ ట్రాకింగ్ సూచనలను తొలగించండి",
@@ -1102,6 +1172,7 @@
             "advanced": false,
             "type": "update",
             "category": {
+                "it": "Carica",
                 "en": "Update",
                 "tr": "Güncelleme",
                 "tel": "నవీకరణ",
@@ -1115,6 +1186,7 @@
             },
             "keywords": "update pull",
             "desc": {
+                "it": "Aggiorna la filiale locale dalla sua controparte remota",
                 "en": "Updates the local branch from its remote counterpart",
                 "tr": "Sunucudan lokalinize kaydedilmiş güncel verileri çeker",
                 "tel": "మరొక రిపోజిటరీ లేదా స్థానిక బ్రాంచ్తో కలిపి ఇంటిగ్రేట్ చేయండి",
@@ -1132,6 +1204,7 @@
                     "advanced": false,
                     "code": "pull",
                     "desc": {
+                        "it": "Recupera e integra con un altro repository o un ramo locale",
                         "en": "Fetch from and integrate with another repository or a local branch",
                         "tr": "Sunucudan lokalinize kaydedilmiş güncel verileri çeker",
                         "tel": "మరొక రిపోజిటరీ లేదా స్థానిక బ్రాంచ్తో కలిపి ఇంటిగ్రేట్ చేయండి",
@@ -1150,6 +1223,7 @@
             "advanced": false,
             "type": "update",
             "category": {
+                "it": "Carica",
                 "en": "Update",
                 "tr": "Güncelleme",
                 "tel": "నవీకరణ",
@@ -1163,6 +1237,7 @@
             },
             "keywords": "update push",
             "desc": {
+                "it": "Carica tutti i commit della filiale locale nella sua controparte remota",
                 "en": "Uploads all local branch commits to its remote counterpart",
                 "tr": "Yapmış olduğunuz tüm kayıtları sunucuya gönderir",
                 "tel": "అనుబంధ వస్తువులతో రిమోట్ రిఫాంలను అప్డేట్ చేయండి",
@@ -1180,6 +1255,7 @@
                     "advanced": false,
                     "code": "push",
                     "desc": {
+                        "it": "Aggiorna i riferimenti remoti insieme agli oggetti associati",
                         "en": "Update remote refs along with associated objects",
                         "tr": "Yapmış olduğunuz tüm kayıtları sunucuya gönderir",
                         "tel": "అనుబంధ వస్తువులతో రిమోట్ రిఫాంలను అప్డేట్ చేయండి",
@@ -1198,6 +1274,7 @@
             "advanced": false,
             "type": "merge",
             "category": {
+                "it": "Unisci",
                 "en": "Merge",
                 "tr": "Birleştirme",
                 "tel": "విలీనం",
@@ -1211,6 +1288,7 @@
             },
             "keywords": "merge",
             "desc": {
+                "it": "Combina la cronologia del ramo specificato nel ramo corrente",
                 "en": "Combines the specified branch’s history into the current branch",
                 "tr": "Bir dalı, aktif dalınız ile birleştirir",
                 "tel": "మీ ప్రస్తుత HEAD కి శాఖను విలీనం చేస్తుంది",
@@ -1228,6 +1306,7 @@
                     "advanced": false,
                     "code": "merge [branch-name]",
                     "desc": {
+                        "it": "Unisce un ramo alla tua attuale HEAD",
                         "en": "Merges a branch to your current HEAD",
                         "tr": "Aktif dalınızın üzerine başka bir dalı ekleyerek birleştirir",
                         "tel": "మీ ప్రస్తుత HEAD కి శాఖను విలీనం చేస్తుంది",
@@ -1246,6 +1325,7 @@
             "advanced": false,
             "type": "patch",
             "category": {
+                "it": "Toppa",
                 "en": "Patch",
                 "tr": "Yama",
                 "tel": "పాచ్",
@@ -1258,6 +1338,7 @@
             },
             "keywords": "patch rebase",
             "desc": {
+                "it": "Ribasa il tuo HEAD attuale sul ramo di destinazione",
                 "en": "Rebase your current HEAD onto target branch",
                 "tr": "Aktif dalınızı başka bir dala geçmişi koruyarak aktarır",
                 "tel": "మీ ప్రస్తుత HEAD ను బ్రాంచ్-పేరుకు మార్చండి",
@@ -1274,6 +1355,7 @@
                     "advanced": false,
                     "code": "rebase [branch-name]",
                     "desc": {
+                        "it": "Ribasa il tuo HEAD attuale sul nome del ramo",
                         "en": "Rebase your current HEAD onto branch-name",
                         "tr": "AAktif dalınızı başka bir dala geçmişi koruyarak aktarır",
                         "tel": "మీ ప్రస్తుత HEAD ను బ్రాంచ్-పేరుకు మార్చండి",
@@ -1289,6 +1371,7 @@
                     "advanced": false,
                     "code": "rebase --interactive",
                     "desc": {
+                        "it": "Italiano Crea un elenco dei commit che stanno per essere ribasati. L'utente può modificare tale elenco prima di ribasare",
                         "en": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing.",
                         "tr": "Aktif dalınızı başka bir dala interaktif bir şekilde sizden komut bekleyerek aktarır",
                         "tel": "తిరుగుబాటు చేయబోతున్న పనుల జాబితాను చేస్తుంది. వాడుకదారుని ఆ జాబితాను సవరించడం ముందు సవరించవచ్చు",
@@ -1304,6 +1387,7 @@
                     "advanced": false,
                     "code": "rebase --continue",
                     "desc": {
+                        "it": "Continua un rebase dopo aver risolto i conflitti",
                         "en": "Continue a rebase after resolving conflicts",
                         "tr": "Rebase işlemi sırasında çakışma çözümlemesinden sonra devam etmeyi sağlar",
                         "tel": "ఘర్షణలను పరిష్కరించిన తర్వాత పునఃప్రారంభం కొనసాగించండి",
@@ -1319,6 +1403,7 @@
                     "advanced": false,
                     "code": "rebase --abort",
                     "desc": {
+                        "it": "Interrompi un rebase",
                         "en": "Abort a rebase",
                         "tr": "Rebase işlemini iptal eder",
                         "tel": "పునశ్చరణ రద్దు",
@@ -1336,6 +1421,7 @@
             "advanced": false,
             "type": "patch",
             "category": {
+                "it": "Toppa",
                 "en": "Patch",
                 "tr": "Yama",
                 "tel": "పాచ్",
@@ -1348,6 +1434,7 @@
             },
             "keywords": "patch cherry-pick",
             "desc": {
+                "it": "Applica le modifiche da un commit diverso al tuo HEAD attuale",
                 "en": "Apply the changes from a different commit to your current HEAD",
                 "tr": "Herhangi bir kayıttaki tüm değişiklikleri dalınıza aktarır",
                 "tel": "మీ ప్రస్తుత HEAD కు కట్టుబడి వేరే మార్పులను వర్తించండి",
@@ -1364,6 +1451,7 @@
                     "advanced": false,
                     "code": "cherry-pick [commit]",
                     "desc": {
+                        "it": "Scegli e applica le modifiche dall'hash di commit al tuo HEAD attuale",
                         "en": "Pick and apply changes from commit hash to your current HEAD",
                         "tr": "Herhangi bir kayıttaki tüm değişiklikleri dalınıza aktarır",
                         "tel": "మీ ప్రస్తుత HEAD కు కమిట్ హాష్ నుండి మార్పులను ఎంచుకోండి మరియు వర్తింప చేయండి",
@@ -1381,6 +1469,7 @@
             "advanced": false,
             "type": "undo",
             "category": {
+                "it": "Torna indietro",
                 "en": "Undo",
                 "tr": "Geri Al",
                 "tel": "దిద్దుబాటు రద్దుచెయ్యి",
@@ -1394,6 +1483,7 @@
             },
             "keywords": "reset undo",
             "desc": {
+                "it": "Annulla tutti i commit dopo [commit], preservando le modifiche localmente",
                 "en": "Undoes all commits after [commit], preserving changes locally",
                 "tr": "Aktif dalı istediğiniz bir kayıt numarasına geri çevirir",
                 "tel": "ఈ ఫారమ్ వారి స్థితికి అన్ని మార్గాల కోసం ఇండెక్స్ ఎంట్రీలను రీసెట్ చేస్తుంది",
@@ -1411,6 +1501,7 @@
                     "advanced": false,
                     "code": "reset",
                     "desc": {
+                        "it": "Reimposta le voci dell'indice per tutti i percorsi al loro stato",
                         "en": "Resets the index entries for all paths to their state",
                         "tr": "Aktif dalı istediğiniz bir kayıt numarasına geri çevirir",
                         "tel": "వారి స్థితికి అన్ని మార్గాల కోసం ఇండెక్స్ ఎంట్రీలను రీసెట్ చేస్తుంది",
@@ -1427,6 +1518,7 @@
                     "advanced": false,
                     "code": "reset --soft",
                     "desc": {
+                        "it": "Non tocca affatto il file indice o l'albero di lavoro",
                         "en": "Does not touch the index file or the working tree at all",
                         "tr": "Geri çevirme işlemindeki güncel dosyaları silmez",
                         "tel": "ఇండెక్స్ ఫైలును లేదా పని చెట్టును తాకదు",
@@ -1443,6 +1535,7 @@
                     "advanced": false,
                     "code": "reset --mixed",
                     "desc": {
+                        "it": "Reimposta l'indice ma non l'albero di lavoro e riporta ciò che non è stato aggiornato",
                         "en": "Resets the index but not the working tree and reports what has not been updated",
                         "tr": "İlgili kaydı ilk haline çevirir ve değişiklikleri gösterir",
                         "tel": "ఇండెక్స్ను రీసెట్ చేస్తోంది కానీ పని చెట్టు కాదు మరియు నవీకరించబడలేదు ఏమి నివేదికలు",
@@ -1459,6 +1552,7 @@
                     "advanced": false,
                     "code": "reset --hard",
                     "desc": {
+                        "it": "Reimposta l'indice e l'albero di lavoro. Qualsiasi modifica ai file tracciati nell'albero di lavoro dopo il commit viene eliminata",
                         "en": "Resets the index and working tree. Any changes to tracked files in the working tree since commit are discarded",
                         "tr": "Geri çevirme işleminde güncel tüm dosyaları siler",
                         "tel": "ఇండెక్స్ మరియు వర్కింగ్ చెట్టును రీసెట్ చేస్తుంది. కట్టుబడి నుండి పని చెట్టు లో ట్రాక్ ఫైళ్లు ఏ మార్పులు విస్మరించిన",
@@ -1477,6 +1571,7 @@
             "advanced": false,
             "type": "undo",
             "category": {
+                "it": "Torna indetro",
                 "en": "Undo",
                 "tr": "Geri Al",
                 "tel": "దిద్దుబాటు రద్దుచెయ్యి",
@@ -1490,6 +1585,7 @@
             },
             "keywords": "reset undo clean",
             "desc": {
+                "it": "Mostra i file non tracciati che stanno per essere rimossi",
                 "en": "Shows untracked files about to be removed",
                 "tr": "Takip edilmeyen dosyaları göstermeye ya da silmeye yarar",
                 "tel": "తీసివేయబడకుండా గురించి అన్ట్రాక్డ్ ఫైల్లను చూపుతుంది",
@@ -1507,6 +1603,7 @@
                     "advanced": false,
                     "code": "clean -n",
                     "desc": {
+                        "it": "Mostra i file non tracciati che stanno per essere rimossi",
                         "en": "Shows untracked files about to be removed",
                         "tr": "Takip edilmeyen tüm dosyaları gösterir",
                         "tel": "తీసివేయబడకుండా గురించి అన్ట్రాక్డ్ ఫైల్లను చూపుతుంది",
@@ -1523,6 +1620,7 @@
                     "advanced": false,
                     "code": "clean -f",
                     "desc": {
+                        "it": "Rimuove tutti i file non tracciati",
                         "en": "Removes all untracked files",
                         "tr": "Takip edilmeyen tüm dosyaları siler",
                         "tel": "అన్ని ట్రాక్ చేయని ఫైళ్లను తొలగిస్తుంది",
@@ -1541,6 +1639,7 @@
             "advanced": false,
             "type": "history",
             "category": {
+                "it": "Cronologia",
                 "en": "History",
                 "tr": "Geçmiş",
                 "tel": "చరిత్ర",
@@ -1554,6 +1653,7 @@
             },
             "keywords": "history log",
             "desc": {
+                "it": "Elenca la cronologia delle versioni per il ramo corrente",
                 "en": "Lists version history for the current branch",
                 "tr": "Tüm kayıtları listeler",
                 "tel": "అన్ని పనులను చూపించు",
@@ -1571,6 +1671,7 @@
                     "advanced": false,
                     "code": "log",
                     "desc": {
+                        "it": "Mostra tutti i commit",
                         "en": "Show all commits",
                         "tr": "Tüm kayıtları listeler",
                         "tel": "అన్ని పనులను చూపించు",
@@ -1587,6 +1688,7 @@
                     "advanced": false,
                     "code": "log -p [source]",
                     "desc": {
+                        "it": "Mostra modifiche a file",
                         "en": "Show changes to file",
                         "tr": "Kaynak dosyadaki tüm değişiklikleri gösterir",
                         "tel": "ఫైల్లకు మార్పులను చూపించు",
@@ -1603,6 +1705,7 @@
                     "advanced": false,
                     "code": "log --graph",
                     "desc": {
+                        "it": "Mostra tutti i commit come grafico",
                         "en": "Shows all commits as graph",
                         "tr": "Tüm kayıtları ağaç grafiği olarak gösterir",
                         "tel": "అన్ని పనులను గ్రాఫ్గా చూపిస్తుంది",
@@ -1621,6 +1724,7 @@
             "advanced": false,
             "type": "extensions",
             "category": {
+                "it": "Estensioni",
                 "en": "Extensions",
                 "tr": "Eklentiler",
                 "tel": "పొడిగింపులు",
@@ -1634,6 +1738,7 @@
             },
             "keywords": "extensions flow init feature release hotfix start finish",
             "desc": {
+                "it": "Un'estensione git per il flusso di lavoro del ramo di funzionalità",
                 "en": "A git extension for feature branch workflow",
                 "tr": "Feature ağaç metoduyla çalışan bir eklenti",
                 "tel": "ఫీచర్ శాఖ వర్క్ఫ్లో ఒక జిట్ పొడిగింపు",
@@ -1651,6 +1756,7 @@
                     "advanced": false,
                     "code": "flow init",
                     "desc": {
+                        "it": "Inizializza il flusso all'interno di un repository esistente",
                         "en": "Initialize flow inside an existing repository",
                         "tr": "Varolan bir git deposunda flow eklentisini tanımlar",
                         "kli": "loj qoD waw'",
@@ -1665,6 +1771,7 @@
                     "advanced": false,
                     "code": "flow feature start [name]",
                     "desc": {
+                        "it": "Crea un nuovo ramo dall'ultimo sviluppo come funzione/nome-funzione",
                         "en": "Create a new branch from latest develop as feature/feature-name",
                         "tr": "Güncel develop dalından feature/name adına bir dal açar",
                         "tel": "ఇప్పటికే ఉన్న రిపోజిటరీ లోపల ప్రవాహాన్ని ప్రారంభించండి",
@@ -1681,6 +1788,7 @@
                     "advanced": false,
                     "code": "flow feature finish [name]",
                     "desc": {
+                        "it": "Unisce feature-name in developer e rimuove branch",
                         "en": "Merges feature-name into develop and removes branch",
                         "tr": "İlgili dalı develop dalına merge eder",
                         "tel": "విశిష్ట-పేరును అభివృద్ధి చేయడానికి మరియు శాఖను తొలగిస్తుంది",
@@ -1697,6 +1805,7 @@
                     "advanced": false,
                     "code": "flow feature publish [name]",
                     "desc": {
+                        "it": "Pubblica una funzione sul telecomando",
                         "en": "Publishes a feature to the remote",
                         "tr": "İlgili dalı sunucuya gönderir",
                         "tel": "రిమోట్కు ఒక లక్షణాన్ని ప్రచురిస్తుంది",
@@ -1713,6 +1822,7 @@
                     "advanced": false,
                     "code": "flow feature pull origin [name]",
                     "desc": {
+                        "it": "Trascina una funzionalità da remoto al tuo repository locale",
                         "en": "Pull a feature from remote to your local repository",
                         "tr": "İlgili dalı sunucudan lokalinize çeker",
                         "tel": "రిమోట్ నుండి మీ స్థానిక రిపోజిటరీకి ఫీచర్ను లాగండి",
@@ -1729,6 +1839,7 @@
                     "advanced": false,
                     "code": "flow release start [name]",
                     "desc": {
+                        "it": "Crea un ramo di rilascio dall'ultimo sviluppo",
                         "en": "Creates a release branch from latest develop",
                         "tr": "Son develop kaydından bir release dalı başlatır",
                         "tel": "తాజా అభివృద్ధి నుండి విడుదల శాఖను సృష్టిస్తుంది",
@@ -1745,6 +1856,7 @@
                     "advanced": false,
                     "code": "flow release finish [name]",
                     "desc": {
+                        "it": "Unisce il ramo di rilascio in master e sviluppa",
                         "en": "Merges release branch into master and develop",
                         "tr": "Release dalını master ve develop'a merge eder",
                         "tel": "బ్రాంచ్ బ్రాంచిని మాస్టర్ గా మార్చి విడదలస్తుంది",
@@ -1761,6 +1873,7 @@
                     "advanced": false,
                     "code": "flow hotfix start [name]",
                     "desc": {
+                        "it": "Crea un ramo hotfix/fix-name da master",
                         "en": "Creates a hotfix/fix-name branch from master",
                         "tr": "Master dalından hotfix altında bir dal açar",
                         "tel": "మాస్టర్స్ నుండి హాట్ఫిక్స్ / ఫిక్సేషన్-పేరు శాఖను సృష్టిస్తుంది",
@@ -1777,6 +1890,7 @@
                     "advanced": false,
                     "code": "flow hotfix finish [name]",
                     "desc": {
+                        "it": "Unisce fix-name in master e developer",
                         "en": "Merges fix-name into master and develop",
                         "tr": "Açılan hotfix dalını master ve develop'a merge eder",
                         "tel": "మాస్టర్ లోకి పరిష్కరించడానికి-పేరు విలీనం మరియు అభివృద్ధి",
@@ -1795,6 +1909,7 @@
             "advanced": true,
             "type": "administration",
             "category": {
+                "it": "Amministrazione",
                 "en": "Administration",
                 "tr": "Yönetim",
                 "tel": "అడ్మినిస్ట్రేషన్",
@@ -1808,6 +1923,7 @@
             },
             "keywords": "administration config",
             "desc": {
+                "it": "Ottieni e imposta repository o opzioni globali",
                 "en": "Get and set repository or global options",
                 "tr": "Depo ya da global git ayarlarını değiştir",
                 "tel": "రిపోజిటరీ లేదా గ్లోబల్ ఆప్షన్స్ ను పొందండి మరియు సెట్ చేయండి",
@@ -1825,6 +1941,7 @@
                     "advanced": true,
                     "code": "config -e",
                     "desc": {
+                        "it": "Modifica il file di configurazione del repository",
                         "en": "Edit repository config file",
                         "tr": "Depo ayarlarını değiştir",
                         "tel": "రిపోజిటరీ ఆకృతీకరణ ఫైలును సరికూర్చుము",
@@ -1841,6 +1958,7 @@
                     "advanced": true,
                     "code": "config --global -e",
                     "desc": {
+                        "it": "Modifica il file di configurazione globale",
                         "en": "Edit global config file",
                         "tr": "Global ayarları değiştir",
                         "tel": "గ్లోబల్ config ఫైలును సవరించు",
@@ -1857,6 +1975,7 @@
                     "advanced": true,
                     "code": "config --global user.name 'Your Name'",
                     "desc": {
+                        "it": "Definisci il tuo nome utente nelle impostazioni globali",
                         "en": "Define your user name in global settings",
                         "tr": "Global kullanıcı adını güncelle",
                         "tel": "గ్లోబల్ సెట్టింగులలో మీ యూజర్ పేరును నిర్వచించండి",
@@ -1873,6 +1992,7 @@
                     "advanced": true,
                     "code": "config --global user.email you@mail.com",
                     "desc": {
+                        "it": "Definisci la tua posta nelle impostazioni globali",
                         "en": "Define your mail in global settings",
                         "tr": "Global mail adresini güncelle",
                         "tel": "మీ మెయిల్ను గ్లోబల్ సెట్టింగులలో నిర్వచించండి",
@@ -1891,6 +2011,7 @@
             "advanced": true,
             "type": "administration",
             "category": {
+                "it": "Amministrazione",
                 "en": "Administration",
                 "tr": "Yönetim",
                 "tel": "అడ్మినిస్ట్రేషన్",
@@ -1904,6 +2025,7 @@
             },
             "keywords": "administration gc garbage collection",
             "desc": {
+                "it": "Pulisci i file non necessari e ottimizza il repository locale",
                 "en": "Cleanup unnecessary files and optimize the local repository",
                 "tr": "Kullanılmayan tüm dosyaların referanslarını silerek depoyu optimize et",
                 "tel": "అనవసరమైన ఫైళ్లను శుభ్రపరచండి మరియు స్థానిక రిపోజిటరీని ఆప్టిమైజ్ చేయండి",
@@ -1921,6 +2043,7 @@
                     "advanced": true,
                     "code": "gc",
                     "desc": {
+                        "it": "Esegue una garbage collection per il tuo repository locale",
                         "en": "Runs a garbage collection for your local repository",
                         "tr": "Lokal depoda garbage collection çalıştırır",
                         "tel": "మీ స్థానిక రిపోజిటరీ కోసం చెత్త సేకరణను అమలు చేస్తుంది",
@@ -1937,6 +2060,7 @@
                     "advanced": true,
                     "code": "gc --aggressive",
                     "desc": {
+                        "it": "Esegue gc in modo più aggressivo per ottimizzare il tuo repository locale",
                         "en": "Runs gc more aggressively to optimize your local repository",
                         "tr": "gc komutunu daha detaylı bir şekilde çalıştırır",
                         "tel": "మీ స్థానిక రిపోజిటరీను ఆప్టిమైజ్ చేయడానికి GC మరింత దూకుడుగా అమలు అవుతుంది",
@@ -1955,6 +2079,7 @@
             "advanced": true,
             "type": "administration",
             "category": {
+                "it": "Amministrazione",
                 "en": "Administration",
                 "tr": "Yönetim",
                 "tel": "అడ్మినిస్ట్రేషన్",
@@ -1968,6 +2093,7 @@
             },
             "keywords": "administration prune",
             "desc": {
+                "it": "Elimina tutti gli oggetti irraggiungibili dal database degli oggetti",
                 "en": "Prune all unreachable objects from the object database",
                 "tr": "Sunucuda referansı olmayan tüm objeleri siler",
                 "kli": "Hoch QIH objects teq waw' vo'",
@@ -1983,6 +2109,7 @@
                     "advanced": true,
                     "code": "prune",
                     "desc": {
+                        "it": "Rimuove gli oggetti che non sono più puntati su nessun oggetto nel ramo raggiungibile",
                         "en": "Removes objects that are no longer pointed to any object in reachable branch",
                         "tr": "Sunucuda referansı olmayan tüm objeleri siler",
                         "tel": "అందుబాటులోని శాఖలోని ఏ వస్తువును ఇకపై సూచించని వస్తువులను తొలగిస్తుంది",
@@ -1999,6 +2126,7 @@
                     "advanced": true,
                     "code": "prune -n",
                     "desc": {
+                        "it": "Non rimuovere nulla; segnala solo cosa rimuoverebbe",
                         "en": "Do not remove anything; just report what it would remove",
                         "tr": "Silinecek tüm dosyaları gösterir",
                         "tel": "ఏదైనా తొలగించవద్దు; దానిని తీసివేస్తానని రిపోర్ట్ చెయ్యండి",
@@ -2015,6 +2143,7 @@
                     "advanced": true,
                     "code": "prune --progress",
                     "desc": {
+                        "it": "Mostra i progressi della potatura",
                         "en": "Shows prune progress",
                         "tr": "Silme işlemini gösterir",
                         "tel": "ప్రూనే పురోగతి చూపిస్తుంది",
@@ -2033,6 +2162,7 @@
             "advanced": true,
             "type": "debug",
             "category": {
+                "it": "Debug",
                 "en": "Debug",
                 "tr": "Hata Ayıklama",
                 "tel": "డీబగ్",
@@ -2046,6 +2176,7 @@
             },
             "keywords": "debug bisect",
             "desc": {
+                "it": "Usa la ricerca binaria per trovare il commit che ha introdotto un bug",
                 "en": "Use binary search to find the commit that introduced a bug",
                 "tr": "Hata oluşturan kaydı bulmaya yardımcı olur",
                 "tel": "బగ్ను పరిచయం చేసిన నిబద్ధతను కనుగొనడానికి బైనరీ శోధనను ఉపయోగించండి",
@@ -2063,6 +2194,7 @@
                     "advanced": true,
                     "code": "bisect start",
                     "desc": {
+                        "it": "Avvia la procedura guidata di git bisect",
                         "en": "Start up the git bisect wizard",
                         "tr": "Bisect işlemini başlatır",
                         "tel": "జిట్ బిస్క్ట్ విజర్డ్ ప్రారంభించండి",
@@ -2079,6 +2211,7 @@
                     "advanced": true,
                     "code": "bisect good [commit]",
                     "desc": {
+                        "it": "Fai sapere al mago di git bisect di un buon commit",
                         "en": "Let the git bisect wizard know of a good commit",
                         "tr": "İşleme düzgün çalışan bir kaydı tanımlar",
                         "tel": "జిట్ బితెచ్ విజర్డ్ మంచి కట్టుబడి గురించి తెలుసుకోండి",
@@ -2095,6 +2228,7 @@
                     "advanced": true,
                     "code": "bisect bad [commit]",
                     "desc": {
+                        "it": "Fai sapere al mago di git bisect di un cattivo commit",
                         "en": "Let the git bisect wizard know of a bad commit",
                         "tr": "İşleme hata içeren bir kaydı tanımlar",
                         "tel": "జిట్ బిస్క్ట్ విజర్డ్ ఒక చెడ్డ నిబద్ధత గురించి తెలపండి",
@@ -2111,6 +2245,7 @@
                     "advanced": true,
                     "code": "bisect reset",
                     "desc": {
+                        "it": "Termina la tua procedura guidata di git bisect",
                         "en": "End your git bisect wizard",
                         "tr": "Bisect işlemini sonlandırır",
                         "tel": "మీ గేట్ను విజ్జార్డ్ను అంతం చేయండి",
@@ -2129,6 +2264,7 @@
             "advanced": true,
             "type": "debug",
             "category": {
+                "it": "Debug",
                 "en": "Debug",
                 "tr": "Hata Ayıklama",
                 "tel": "డీబగ్",
@@ -2142,6 +2278,7 @@
             },
             "keywords": "debug blame",
             "desc": {
+                "it": "Mostra i metadati dell'autore allegati a specifiche righe di commit in un file",
                 "en": "Display author metadata attached to specific committed lines in a file",
                 "tr": "Bir dosyaya tüm kullanıcıların yaptığı değişiklikleri gösterir",
                 "tel": "ఒక ఫైల్ లో నిర్దిష్ట కట్టుబడి పంక్తులు జోడించిన ప్రదర్శన మెటాడేటా ప్రదర్శించు",
@@ -2159,6 +2296,7 @@
                     "advanced": true,
                     "code": "blame [source]",
                     "desc": {
+                        "it": "Mostra che ogni autore ha lavorato sulla fonte includendo data, ora e numeri di riga",
                         "en": "Show each author worked on the source including date, time and line numbers",
                         "tr": "Tüm kullanıcıların değişiklikleri zaman ve satır numarası ile gösterir",
                         "tel": "తేదీ, సమయం మరియు లైన్ సంఖ్యలతో సహా ప్రతి రచయితను సోర్స్లో పని చేయండి",
@@ -2175,6 +2313,7 @@
                     "advanced": true,
                     "code": "blame -L x,y [source]",
                     "desc": {
+                        "it": "Limita l'output della sorgente tra le righe x e y",
                         "en": "Restrict the output of source between x and y lines",
                         "tr": "İlgili dosyadaki x ve y satırları arasındaki değişiklikleri gösterir",
                         "tel": "X మరియు y లైన్ల మధ్య మూలం యొక్క అవుట్పుట్ను పరిమితం చేయండి",
@@ -2191,6 +2330,7 @@
                     "advanced": true,
                     "code": "blame -e [source]",
                     "desc": {
+                        "it": "Mostra l'indirizzo email dell'autore invece del nome utente",
                         "en": "Show author email address instead of username",
                         "tr": "Kullanıcı adı yerine mail adresi gösterir",
                         "tel": "వినియోగదారు పేరుకు బదులుగా రచయిత ఇమెయిల్ చిరునామాను చూపించు",
@@ -2207,6 +2347,7 @@
                     "advanced": true,
                     "code": "blame -w [source]",
                     "desc": {
+                        "it": "Ignora le modifiche agli spazi bianchi",
                         "en": "Ignore whitespace changes",
                         "tr": "Boşlukları görmezden gelir",
                         "tel": "తెల్లని మార్పులు విస్మరించండి",
