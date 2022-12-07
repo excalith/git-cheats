@@ -1,0 +1,135 @@
+.card {
+	margin-bottom: 1rem !important;
+	background-color: #24273a;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-content {
+	margin: 0.35rem 0.35rem 0 0.65rem;
+}
+
+.card-title {
+	line-height: 1.5rem;
+	font-family: "Rubik", sans-serif;
+	text-align: left;
+	color:white;
+}
+
+.card-description {
+	line-height: 1rem;
+	color: white;
+}
+
+.card-usage {
+	font-family: "Rubik", sans-serif;
+	color: white;
+	margin-top: 2.5rem;
+}
+.card-category {
+	font-family: "Rubik", sans-serif;
+	text-align: right;
+	font-size:18px;
+}
+
+.card-accent {
+	position: absolute;
+	min-height: 100%;
+	border-radius: 0.355rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.card-title a, .card-title a:visited, .card-title a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.documentation-icon {
+	font-size: 20px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+div.create {
+	border-left: 5px solid #8bc34a;
+}
+
+p.create {
+	color: #8bc34a;
+}
+
+div.changes,
+div.administration {
+	border-left: 5px solid #ff8800;
+}
+
+p.changes,
+p.administration {
+	color: #ff8800;
+}
+
+div.branch,
+div.checkout {
+	border-left: 5px solid #774aff;
+}
+
+p.branch,
+p.checkout {
+	color: #774aff;
+}
+
+div.update {
+	border-left: 5px solid #00bcd4;
+}
+
+p.update {
+	color: #00bcd4;
+}
+
+div.merge,
+div.rebase,
+div.patch,
+div.cherry-pick {
+	border-left: 5px solid #c2185b;
+}
+
+p.merge,
+p.rebase,
+p.patch,
+p.cherry-pick {
+	color: #c2185b;
+}
+
+div.undo {
+	border-left: 5px solid #ff5252;
+}
+
+p.undo {
+	color: #ff5252;
+}
+
+div.extensions {
+	border-left: 5px solid #8fffa7;
+}
+
+p.extensions {
+	color: #8fffa7;
+}
+
+div.history {
+	border-left: 5px solid #5270f5;
+}
+
+p.history {
+	color: #5270f5;
+}
+
+div.debug {
+	border-left: 5px solid #9c0000;
+}
+
+p.debug {
+	color: #9c0000;
+}

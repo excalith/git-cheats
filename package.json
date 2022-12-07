@@ -1,0 +1,60 @@
+{
+  "name": "git-cheats",
+  "version": "0.1.0",
+  "homepage": "https://github.com/excalith/git-cheats.git",
+  "description": "A companion for git commands",
+  "repository": "https://github.com/excalith/git-cheats.git",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fontsource/fira-code": "^4.5.12",
+    "@fontsource/rubik": "^4.5.11",
+    "bootstrap": "^5.2.3",
+    "next": "13.0.6",
+    "next-global-css": "^1.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-spinners": "^0.13.7",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "eslint": "<8.29.0",
+    "eslint-config-next": "13.0.6",
+    "eslint-plugin-json": "^3.1.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.0"
+  },
+  "browserslist": {
+    "production": [
+      ">10%",
+      "not dead",
+      "not ie 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "eslint src/data.json"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node ./"
+    }
+  }
+}
