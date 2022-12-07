@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react"
+import React, { useRef, useEffect } from "react"
 
 const Search = ({ handleSearch, handleAdvanced,...rest }) => {
 	const inputElement = useRef(null)

@@ -1,4 +1,4 @@
-<!-- Filling out the template is required. You can keep it simple, but please descripe as much as you can -->
+<!-- Filling out the template is required. You can keep it simple, but please describe as much as you can -->
 ### Description of the Change
 <!-- What have you changed and why -->
 

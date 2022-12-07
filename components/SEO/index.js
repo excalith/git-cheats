@@ -1,8 +1,8 @@
 import Head from "next/head"
 
 const SEO = () => {
-	const title = "Git Cheats • Cheatsheet For Git Commands"
-	const description = "Cheatsheet for git commands"
+	const title = "Git Cheats • Interactive Git Cheatsheet"
+	const description = "Interactive cheatsheet for git commands to ease the pain while transitioning from sluggish GUI clients to blazing-fast terminal commands"
 	// const socialImage = "https://cancellek.com/social-image.png"
 
 	return (
