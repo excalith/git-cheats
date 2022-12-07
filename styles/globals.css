@@ -1,0 +1,24 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #181926;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+  color: #df8e1d;
+}
+
+a:hover {
+  color: #df8e1d;
+  text-decoration: underline;
+}
+
