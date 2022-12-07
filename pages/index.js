@@ -7,12 +7,16 @@ import Card from "../components/Card"
 import Footer from "../components/Footer"
 import Loader from "../components/Loader"
 
-const fetcher = (url) => fetch(url).then((res) => res.json())
+// const fetcher = (url) => fetch(url).then((res) => res.json())
+
+const fetcher = (url, lang) => fetch(`${url}?lang=${lang}`).then((res) => res.json())
+
 
 export default function Home() {   
-	//Set up SWR to run the fetcher function when calling "/api/staticdata"
-	//There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
-	const { data, error } = useSWR("/api/staticdata", fetcher)
+	const router = useRouter()
+	const { lang } = router.query
+	const { data, error } = useSWR(["/api/language", lang], fetcher)
+
 	const [ search, setSearch ] = useState("")
 	const [ isAdvanced, setAdvanced ] = useState(false)
 	const { query: filterQuery } = useRouter()
