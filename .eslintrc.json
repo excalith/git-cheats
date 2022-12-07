@@ -4,6 +4,7 @@
         "browser": true,
         "es2021": true
     },
+    "plugins": ["prettier"],
     "rules": {
         "@next/next/no-img-element": 0,
         "react/no-unescaped-entities": 0,
@@ -11,8 +12,6 @@
         "import/no-anonymous-default-export": 0,
         "react-hooks/exhaustive-deps": "warn",
         "react-hooks/rules-of-hooks": "error",
-        "semi": ["error", "never"],
-        "indent": ["error", 4],
-        "quotes": [2, "double", { "avoidEscape": true }]
+        "prettier/prettier": "error"
     }
 }
