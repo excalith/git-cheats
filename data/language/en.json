@@ -1,10 +1,12 @@
-[{
+[
+    {
         "name": "init",
         "description": "Create an empty Git repository or reinitialize an existing one",
         "category": "Create",
         "keywords": "create init start",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "init",
                 "description": "Create an empty Git repository or reinitialize an existing one"
@@ -22,7 +24,8 @@
         "category": "Create",
         "keywords": "create clone new",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "clone ssh://user@domain.com/repo.git",
                 "description": "Clone target repository"
@@ -45,7 +48,8 @@
         "category": "Changes",
         "keywords": "changes add",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "add [source]",
                 "description": "Adds given file to stage area"
@@ -73,7 +77,8 @@
         "category": "Changes",
         "keywords": "changes status",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "status",
                 "description": "Changed files on your working directory"
@@ -96,7 +101,8 @@
         "category": "Changes",
         "keywords": "changes diff",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "diff",
                 "description": "Show changes all changes between the working tree and the index"
@@ -114,7 +120,8 @@
         "category": "Changes",
         "keywords": "changes commit",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "commit -m [message]",
                 "description": "Use the given message as the commit message. If multiple -m usage are given, their values are concatenated as separate paragraphs"
@@ -142,7 +149,8 @@
         "category": "Changes",
         "keywords": "changes stash",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "stash list",
                 "description": "Shows all your stashes"
@@ -180,11 +188,13 @@
         "category": "Changes",
         "keywords": "changes remove rm",
         "isAdvanced": false,
-        "usage": [{
-            "isAdvanced": false,
-            "code": "rm [source]",
-            "description": "Removes file from stage area"
-        }]
+        "usage": [
+            {
+                "isAdvanced": false,
+                "code": "rm [source]",
+                "description": "Removes file from stage area"
+            }
+        ]
     },
     {
         "name": "mv",
@@ -192,7 +202,8 @@
         "category": "Changes",
         "keywords": "changes move mv",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "mv [source] [destination]",
                 "description": "Moves or renames source"
@@ -210,7 +221,8 @@
         "category": "Changes",
         "keywords": "changes tag",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "tag --list",
                 "description": "Lists all tags"
@@ -233,7 +245,8 @@
         "category": "Branch",
         "keywords": "branch",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "branch [name]",
                 "description": "Creates a new branch from HEAD called branch-name"
@@ -261,7 +274,8 @@
         "category": "Branch",
         "keywords": "branch checkout",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "checkout [name]",
                 "description": "Switch branches or restore working tree files"
@@ -289,7 +303,8 @@
         "category": "Update",
         "keywords": "update fetch",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "fetch --all",
                 "description": "Fetch all remotes"
@@ -307,11 +322,13 @@
         "category": "Update",
         "keywords": "update pull",
         "isAdvanced": false,
-        "usage": [{
-            "isAdvanced": false,
-            "code": "pull",
-            "description": "Fetch from and integrate with another repository or a local branch"
-        }]
+        "usage": [
+            {
+                "isAdvanced": false,
+                "code": "pull",
+                "description": "Fetch from and integrate with another repository or a local branch"
+            }
+        ]
     },
     {
         "name": "push",
@@ -319,7 +336,8 @@
         "category": "Update",
         "keywords": "update push",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "push",
                 "description": "Update remote refs along with associated objects"
@@ -342,11 +360,13 @@
         "category": "Merge",
         "keywords": "merge",
         "isAdvanced": false,
-        "usage": [{
-            "isAdvanced": false,
-            "code": "merge [branch-name]",
-            "description": "Merges a branch to your current HEAD"
-        }]
+        "usage": [
+            {
+                "isAdvanced": false,
+                "code": "merge [branch-name]",
+                "description": "Merges a branch to your current HEAD"
+            }
+        ]
     },
     {
         "name": "rebase",
@@ -354,7 +374,8 @@
         "category": "Patch",
         "keywords": "patch rebase",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "rebase [branch-name]",
                 "description": "Rebase your current HEAD onto branch-name"
@@ -382,11 +403,13 @@
         "category": "Patch",
         "keywords": "patch cherry-pick",
         "isAdvanced": false,
-        "usage": [{
-            "isAdvanced": false,
-            "code": "cherry-pick [commit]",
-            "description": "Pick and apply changes from commit hash to your current HEAD"
-        }]
+        "usage": [
+            {
+                "isAdvanced": false,
+                "code": "cherry-pick [commit]",
+                "description": "Pick and apply changes from commit hash to your current HEAD"
+            }
+        ]
     },
     {
         "name": "reset",
@@ -394,7 +417,8 @@
         "category": "Undo",
         "keywords": "reset undo",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "reset",
                 "description": "Resets the index entries for all paths to their state"
@@ -422,7 +446,8 @@
         "category": "Undo",
         "keywords": "reset undo clean",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "clean -n",
                 "description": "Shows untracked files about to be removed"
@@ -440,7 +465,8 @@
         "category": "History",
         "keywords": "history log",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "log",
                 "description": "Show all commits"
@@ -463,7 +489,8 @@
         "category": "Extensions",
         "keywords": "extensions flow init feature release hotfix start finish",
         "isAdvanced": false,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": false,
                 "code": "flow init",
                 "description": "Initialize flow inside an existing repository"
@@ -516,7 +543,8 @@
         "category": "Administration",
         "keywords": "administration config",
         "isAdvanced": true,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": true,
                 "code": "config -e",
                 "description": "Edit repository config file"
@@ -544,7 +572,8 @@
         "category": "Administration",
         "keywords": "administration gc garbage collection",
         "isAdvanced": true,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": true,
                 "code": "gc",
                 "description": "Runs a garbage collection for your local repository"
@@ -562,7 +591,8 @@
         "category": "Administration",
         "keywords": "administration prune",
         "isAdvanced": true,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": true,
                 "code": "prune",
                 "description": "Removes objects that are no longer pointed to any object in reachable branch"
@@ -585,7 +615,8 @@
         "category": "Debug",
         "keywords": "debug bisect",
         "isAdvanced": true,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": true,
                 "code": "bisect start",
                 "description": "Start up the git bisect wizard"
@@ -613,7 +644,8 @@
         "category": "Debug",
         "keywords": "debug blame",
         "isAdvanced": true,
-        "usage": [{
+        "usage": [
+            {
                 "isAdvanced": true,
                 "code": "blame [source]",
                 "description": "Show each author worked on the source including date, time and line numbers"
