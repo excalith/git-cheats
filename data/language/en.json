@@ -1,670 +1,670 @@
 [
-    {
-        "name": "init",
-        "description": "Create an empty Git repository or reinitialize an existing one",
-        "category": "Create",
-        "keywords": "create init start",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "init",
-                "description": "Create an empty Git repository or reinitialize an existing one"
-            },
-            {
-                "isAdvanced": true,
-                "code": "init --template=[template-directory]",
-                "description": "Create Git repository with template directory contents"
-            }
-        ]
-    },
-    {
-        "name": "clone",
-        "description": "Creates a local copy of a project that already exists remotely",
-        "category": "Create",
-        "keywords": "create clone new",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "clone ssh://user@domain.com/repo.git",
-                "description": "Clone target repository"
-            },
-            {
-                "isAdvanced": false,
-                "code": "clone -b [branch-name] ssh://user@domain.com/repo.git",
-                "description": "Clone a repository with branch-name checked out"
-            },
-            {
-                "isAdvanced": true,
-                "code": "clone ssh://user@domain.com/repo.git --depth=[number] ",
-                "description": "Clones target repository with history truncated to depth"
-            }
-        ]
-    },
-    {
-        "name": "add",
-        "description": "Stages changes in the working tree",
-        "category": "Changes",
-        "keywords": "changes add",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "add [source]",
-                "description": "Adds given file to stage area"
-            },
-            {
-                "isAdvanced": false,
-                "code": "add folder/*",
-                "description": "Adds all files within given folder"
-            },
-            {
-                "isAdvanced": false,
-                "code": "add *.extension",
-                "description": "Adds all extension files to stage area"
-            },
-            {
-                "isAdvanced": true,
-                "code": "add --patch [source]",
-                "description": "Interactively choose hunks of patch between the index and the work tree and add them to the index"
-            }
-        ]
-    },
-    {
-        "name": "status",
-        "description": "Shows the status of changes as untracked, modified, or staged",
-        "category": "Changes",
-        "keywords": "changes status",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "status",
-                "description": "Changed files on your working directory"
-            },
-            {
-                "isAdvanced": false,
-                "code": "status -s",
-                "description": "Give the output in the short-format"
-            },
-            {
-                "isAdvanced": false,
-                "code": "status -b",
-                "description": "Show the branch and tracking info even in short-format"
-            }
-        ]
-    },
-    {
-        "name": "diff",
-        "description": "Shows file differences not yet staged",
-        "category": "Changes",
-        "keywords": "changes diff",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "diff",
-                "description": "Show changes all changes between the working tree and the index"
-            },
-            {
-                "isAdvanced": false,
-                "code": "diff [source]",
-                "description": "Show changes to a file between the working tree and the index"
-            }
-        ]
-    },
-    {
-        "name": "commit",
-        "description": "Saves the snapshot to the project history",
-        "category": "Changes",
-        "keywords": "changes commit",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "commit -m [message]",
-                "description": "Use the given message as the commit message. If multiple -m usage are given, their values are concatenated as separate paragraphs"
-            },
-            {
-                "isAdvanced": false,
-                "code": "commit --all",
-                "description": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected"
-            },
-            {
-                "isAdvanced": false,
-                "code": "commit --amend",
-                "description": "Updates the last commit without creating a new commit"
-            },
-            {
-                "isAdvanced": false,
-                "code": "commit --squash",
-                "description": "Create a single commit on top of the current branch"
-            }
-        ]
-    },
-    {
-        "name": "stash",
-        "description": "Stash and restore incomplete changes",
-        "category": "Changes",
-        "keywords": "changes stash",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "stash list",
-                "description": "Shows all your stashes"
-            },
-            {
-                "isAdvanced": false,
-                "code": "stash save [Stash Message]",
-                "description": "Saves your local modifications to a new stash entry"
-            },
-            {
-                "isAdvanced": false,
-                "code": "stash apply stash@{index}",
-                "description": "Applies the stash in index"
-            },
-            {
-                "isAdvanced": false,
-                "code": "stash pop stash@{index}",
-                "description": "Applies the stash in index and removes it from stash list"
-            },
-            {
-                "isAdvanced": false,
-                "code": "stash drop stash@{index}",
-                "description": "Removes the index from stash list without applying"
-            },
-            {
-                "isAdvanced": false,
-                "code": "stash clear",
-                "description": "Clears the stash list"
-            }
-        ]
-    },
-    {
-        "name": "rm",
-        "description": "Remove files from the index",
-        "category": "Changes",
-        "keywords": "changes remove rm",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "rm [source]",
-                "description": "Removes file from stage area"
-            }
-        ]
-    },
-    {
-        "name": "mv",
-        "description": "Move or rename a file or a directory",
-        "category": "Changes",
-        "keywords": "changes move mv",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "mv [source] [destination]",
-                "description": "Moves or renames source"
-            },
-            {
-                "isAdvanced": false,
-                "code": "mv -f [source] [destination]",
-                "description": "Forces to move or rename the source even if it exists in destination"
-            }
-        ]
-    },
-    {
-        "name": "tag",
-        "description": "Marks the current commit with a tag",
-        "category": "Changes",
-        "keywords": "changes tag",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "tag --list",
-                "description": "Lists all tags"
-            },
-            {
-                "isAdvanced": false,
-                "code": "tag [name]",
-                "description": "Marks the current commit with a tag"
-            },
-            {
-                "isAdvanced": false,
-                "code": "tag --delete [name]",
-                "description": "Delete existing tags with the given names"
-            }
-        ]
-    },
-    {
-        "name": "branch",
-        "description": "List, create, or delete branches",
-        "category": "Branch",
-        "keywords": "branch",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "branch [name]",
-                "description": "Creates a new branch from HEAD called branch-name"
-            },
-            {
-                "isAdvanced": false,
-                "code": "branch -b [name]",
-                "description": "Creates and checks out to a new branch from HEAD called branch-name"
-            },
-            {
-                "isAdvanced": false,
-                "code": "branch --all",
-                "description": "List both remote-tracking branches and local branches"
-            },
-            {
-                "isAdvanced": false,
-                "code": "branch --delete",
-                "description": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream"
-            }
-        ]
-    },
-    {
-        "name": "checkout",
-        "description": "Switch branches or restore working tree files",
-        "category": "Branch",
-        "keywords": "branch checkout",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "checkout [name]",
-                "description": "Switch branches or restore working tree files"
-            },
-            {
-                "isAdvanced": false,
-                "code": "checkout --track [origin/name]",
-                "description": "Checkout and track a remote branch"
-            },
-            {
-                "isAdvanced": false,
-                "code": "checkout .",
-                "description": "Discard all tracked local changes in HEAD"
-            },
-            {
-                "isAdvanced": false,
-                "code": "checkout HEAD [source]",
-                "description": "Resets a tracked file"
-            }
-        ]
-    },
-    {
-        "name": "fetch",
-        "description": "Downloads all history from the remote repository",
-        "category": "Update",
-        "keywords": "update fetch",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "fetch --all",
-                "description": "Fetch all remotes"
-            },
-            {
-                "isAdvanced": false,
-                "code": "fetch --prune",
-                "description": "Before fetching, remove any remote-tracking references that no longer exist on the remote"
-            }
-        ]
-    },
-    {
-        "name": "pull",
-        "description": "Updates the local branch from its remote counterpart",
-        "category": "Update",
-        "keywords": "update pull",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "pull",
-                "description": "Fetch from and integrate with another repository or a local branch"
-            }
-        ]
-    },
-    {
-        "name": "push",
-        "description": "Uploads all local branch commits to its remote counterpart",
-        "category": "Update",
-        "keywords": "update push",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "push",
-                "description": "Update remote refs along with associated objects"
-            },
-            {
-                "isAdvanced": true,
-                "code": "push --force",
-                "description": "Overwrite remote refs with your local branch"
-            },
-            {
-                "isAdvanced": true,
-                "code": "push --force-with-lease",
-                "description": "Prevents overwriting remote refs with your local branch"
-            }
-        ]
-    },
-    {
-        "name": "merge",
-        "description": "Combines the specified branch’s history into the current branch",
-        "category": "Merge",
-        "keywords": "merge",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "merge [branch-name]",
-                "description": "Merges a branch to your current HEAD"
-            }
-        ]
-    },
-    {
-        "name": "rebase",
-        "description": "Rebase your current HEAD onto target branch",
-        "category": "Patch",
-        "keywords": "patch rebase",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "rebase [branch-name]",
-                "description": "Rebase your current HEAD onto branch-name"
-            },
-            {
-                "isAdvanced": false,
-                "code": "rebase --interactive",
-                "description": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing."
-            },
-            {
-                "isAdvanced": false,
-                "code": "rebase --continue",
-                "description": "Continue a rebase after resolving conflicts"
-            },
-            {
-                "isAdvanced": false,
-                "code": "rebase --abort",
-                "description": "Abort a rebase"
-            }
-        ]
-    },
-    {
-        "name": "cherry-pick",
-        "description": "Apply the changes from a different commit to your current HEAD",
-        "category": "Patch",
-        "keywords": "patch cherry-pick",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "cherry-pick [commit]",
-                "description": "Pick and apply changes from commit hash to your current HEAD"
-            }
-        ]
-    },
-    {
-        "name": "reset",
-        "description": "Undoes all commits after [commit], preserving changes locally",
-        "category": "Undo",
-        "keywords": "reset undo",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "reset",
-                "description": "Resets the index entries for all paths to their state"
-            },
-            {
-                "isAdvanced": false,
-                "code": "reset --soft",
-                "description": "Does not touch the index file or the working tree at all"
-            },
-            {
-                "isAdvanced": false,
-                "code": "reset --mixed",
-                "description": "Resets the index but not the working tree and reports what has not been updated"
-            },
-            {
-                "isAdvanced": false,
-                "code": "reset --hard",
-                "description": "Resets the index and working tree. Any changes to tracked files in the working tree since commit are discarded"
-            }
-        ]
-    },
-    {
-        "name": "clean",
-        "description": "Shows untracked files about to be removed",
-        "category": "Undo",
-        "keywords": "reset undo clean",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "clean -n",
-                "description": "Shows untracked files about to be removed"
-            },
-            {
-                "isAdvanced": false,
-                "code": "clean -f",
-                "description": "Removes all untracked files"
-            }
-        ]
-    },
-    {
-        "name": "log",
-        "description": "Lists version history for the current branch",
-        "category": "History",
-        "keywords": "history log",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "log",
-                "description": "Show all commits"
-            },
-            {
-                "isAdvanced": false,
-                "code": "log -p [source]",
-                "description": "Show changes to file"
-            },
-            {
-                "isAdvanced": false,
-                "code": "log --graph",
-                "description": "Shows all commits as graph"
-            }
-        ]
-    },
-    {
-        "name": "flow",
-        "description": "A git extension for feature branch workflow",
-        "category": "Extensions",
-        "keywords": "extensions flow init feature release hotfix start finish",
-        "isAdvanced": false,
-        "usage": [
-            {
-                "isAdvanced": false,
-                "code": "flow init",
-                "description": "Initialize flow inside an existing repository"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow feature start [name]",
-                "description": "Create a new branch from latest develop as feature/feature-name"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow feature finish [name]",
-                "description": "Merges feature-name into develop and removes branch"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow feature publish [name]",
-                "description": "Publishes a feature to the remote"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow feature pull origin [name]",
-                "description": "Pull a feature from remote to your local repository"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow release start [name]",
-                "description": "Creates a release branch from latest develop"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow release finish [name]",
-                "description": "Merges release branch into master and develop"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow hotfix start [name]",
-                "description": "Creates a hotfix/fix-name branch from master"
-            },
-            {
-                "isAdvanced": false,
-                "code": "flow hotfix finish [name]",
-                "description": "Merges fix-name into master and develop"
-            }
-        ]
-    },
-    {
-        "name": "config",
-        "description": "Get and set repository or global usage",
-        "category": "Administration",
-        "keywords": "administration config",
-        "isAdvanced": true,
-        "usage": [
-            {
-                "isAdvanced": true,
-                "code": "config -e",
-                "description": "Edit repository config file"
-            },
-            {
-                "isAdvanced": true,
-                "code": "config --global -e",
-                "description": "Edit global config file"
-            },
-            {
-                "isAdvanced": true,
-                "code": "config --global user.name 'Your Name'",
-                "description": "Define your user name in global settings"
-            },
-            {
-                "isAdvanced": true,
-                "code": "config --global user.email you@mail.com",
-                "description": "Define your mail in global settings"
-            }
-        ]
-    },
-    {
-        "name": "gc",
-        "description": "Cleanup unnecessary files and optimize the local repository",
-        "category": "Administration",
-        "keywords": "administration gc garbage collection",
-        "isAdvanced": true,
-        "usage": [
-            {
-                "isAdvanced": true,
-                "code": "gc",
-                "description": "Runs a garbage collection for your local repository"
-            },
-            {
-                "isAdvanced": true,
-                "code": "gc --aggressive",
-                "description": "Runs gc more aggressively to optimize your local repository"
-            }
-        ]
-    },
-    {
-        "name": "prune",
-        "description": "Prune all unreachable objects from the object database",
-        "category": "Administration",
-        "keywords": "administration prune",
-        "isAdvanced": true,
-        "usage": [
-            {
-                "isAdvanced": true,
-                "code": "prune",
-                "description": "Removes objects that are no longer pointed to any object in reachable branch"
-            },
-            {
-                "isAdvanced": true,
-                "code": "prune -n",
-                "description": "Do not remove anything; just report what it would remove"
-            },
-            {
-                "isAdvanced": true,
-                "code": "prune --progress",
-                "description": "Shows prune progress"
-            }
-        ]
-    },
-    {
-        "name": "bisect",
-        "description": "Use binary search to find the commit that introduced a bug",
-        "category": "Debug",
-        "keywords": "debug bisect",
-        "isAdvanced": true,
-        "usage": [
-            {
-                "isAdvanced": true,
-                "code": "bisect start",
-                "description": "Start up the git bisect wizard"
-            },
-            {
-                "isAdvanced": true,
-                "code": "bisect good [commit]",
-                "description": "Let the git bisect wizard know of a good commit"
-            },
-            {
-                "isAdvanced": true,
-                "code": "bisect bad [commit]",
-                "description": "Let the git bisect wizard know of a bad commit"
-            },
-            {
-                "isAdvanced": true,
-                "code": "bisect reset",
-                "description": "End your git bisect wizard"
-            }
-        ]
-    },
-    {
-        "name": "blame",
-        "description": "Display author metadata attached to specific committed lines in a file",
-        "category": "Debug",
-        "keywords": "debug blame",
-        "isAdvanced": true,
-        "usage": [
-            {
-                "isAdvanced": true,
-                "code": "blame [source]",
-                "description": "Show each author worked on the source including date, time and line numbers"
-            },
-            {
-                "isAdvanced": true,
-                "code": "blame -L x,y [source]",
-                "description": "Restrict the output of source between x and y lines"
-            },
-            {
-                "isAdvanced": true,
-                "code": "blame -e [source]",
-                "description": "Show author email address instead of username"
-            },
-            {
-                "isAdvanced": true,
-                "code": "blame -w [source]",
-                "description": "Ignore whitespace changes"
-            }
-        ]
-    }
+	{
+		"name": "init",
+		"description": "Create an empty Git repository or reinitialize an existing one",
+		"category": "Create",
+		"keywords": "create init start",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "init",
+				"description": "Create an empty Git repository or reinitialize an existing one"
+			},
+			{
+				"isAdvanced": true,
+				"code": "init --template=[template-directory]",
+				"description": "Create Git repository with template directory contents"
+			}
+		]
+	},
+	{
+		"name": "clone",
+		"description": "Creates a local copy of a project that already exists remotely",
+		"category": "Create",
+		"keywords": "create clone new",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "clone ssh://user@domain.com/repo.git",
+				"description": "Clone target repository"
+			},
+			{
+				"isAdvanced": false,
+				"code": "clone -b [branch-name] ssh://user@domain.com/repo.git",
+				"description": "Clone a repository with branch-name checked out"
+			},
+			{
+				"isAdvanced": true,
+				"code": "clone ssh://user@domain.com/repo.git --depth=[number] ",
+				"description": "Clones target repository with history truncated to depth"
+			}
+		]
+	},
+	{
+		"name": "add",
+		"description": "Stages changes in the working tree",
+		"category": "Changes",
+		"keywords": "changes add",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "add [source]",
+				"description": "Adds given file to stage area"
+			},
+			{
+				"isAdvanced": false,
+				"code": "add folder/*",
+				"description": "Adds all files within given folder"
+			},
+			{
+				"isAdvanced": false,
+				"code": "add *.extension",
+				"description": "Adds all extension files to stage area"
+			},
+			{
+				"isAdvanced": true,
+				"code": "add --patch [source]",
+				"description": "Interactively choose hunks of patch between the index and the work tree and add them to the index"
+			}
+		]
+	},
+	{
+		"name": "status",
+		"description": "Shows the status of changes as untracked, modified, or staged",
+		"category": "Changes",
+		"keywords": "changes status",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "status",
+				"description": "Changed files on your working directory"
+			},
+			{
+				"isAdvanced": false,
+				"code": "status -s",
+				"description": "Give the output in the short-format"
+			},
+			{
+				"isAdvanced": false,
+				"code": "status -b",
+				"description": "Show the branch and tracking info even in short-format"
+			}
+		]
+	},
+	{
+		"name": "diff",
+		"description": "Shows file differences not yet staged",
+		"category": "Changes",
+		"keywords": "changes diff",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "diff",
+				"description": "Show changes all changes between the working tree and the index"
+			},
+			{
+				"isAdvanced": false,
+				"code": "diff [source]",
+				"description": "Show changes to a file between the working tree and the index"
+			}
+		]
+	},
+	{
+		"name": "commit",
+		"description": "Saves the snapshot to the project history",
+		"category": "Changes",
+		"keywords": "changes commit",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "commit -m [message]",
+				"description": "Use the given message as the commit message. If multiple -m usage are given, their values are concatenated as separate paragraphs"
+			},
+			{
+				"isAdvanced": false,
+				"code": "commit --all",
+				"description": "Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected"
+			},
+			{
+				"isAdvanced": false,
+				"code": "commit --amend",
+				"description": "Updates the last commit without creating a new commit"
+			},
+			{
+				"isAdvanced": false,
+				"code": "commit --squash",
+				"description": "Create a single commit on top of the current branch"
+			}
+		]
+	},
+	{
+		"name": "stash",
+		"description": "Stash and restore incomplete changes",
+		"category": "Changes",
+		"keywords": "changes stash",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "stash list",
+				"description": "Shows all your stashes"
+			},
+			{
+				"isAdvanced": false,
+				"code": "stash save [Stash Message]",
+				"description": "Saves your local modifications to a new stash entry"
+			},
+			{
+				"isAdvanced": false,
+				"code": "stash apply stash@{index}",
+				"description": "Applies the stash in index"
+			},
+			{
+				"isAdvanced": false,
+				"code": "stash pop stash@{index}",
+				"description": "Applies the stash in index and removes it from stash list"
+			},
+			{
+				"isAdvanced": false,
+				"code": "stash drop stash@{index}",
+				"description": "Removes the index from stash list without applying"
+			},
+			{
+				"isAdvanced": false,
+				"code": "stash clear",
+				"description": "Clears the stash list"
+			}
+		]
+	},
+	{
+		"name": "rm",
+		"description": "Remove files from the index",
+		"category": "Changes",
+		"keywords": "changes remove rm",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "rm [source]",
+				"description": "Removes file from stage area"
+			}
+		]
+	},
+	{
+		"name": "mv",
+		"description": "Move or rename a file or a directory",
+		"category": "Changes",
+		"keywords": "changes move mv",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "mv [source] [destination]",
+				"description": "Moves or renames source"
+			},
+			{
+				"isAdvanced": false,
+				"code": "mv -f [source] [destination]",
+				"description": "Forces to move or rename the source even if it exists in destination"
+			}
+		]
+	},
+	{
+		"name": "tag",
+		"description": "Marks the current commit with a tag",
+		"category": "Changes",
+		"keywords": "changes tag",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "tag --list",
+				"description": "Lists all tags"
+			},
+			{
+				"isAdvanced": false,
+				"code": "tag [name]",
+				"description": "Marks the current commit with a tag"
+			},
+			{
+				"isAdvanced": false,
+				"code": "tag --delete [name]",
+				"description": "Delete existing tags with the given names"
+			}
+		]
+	},
+	{
+		"name": "branch",
+		"description": "List, create, or delete branches",
+		"category": "Branch",
+		"keywords": "branch",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "branch [name]",
+				"description": "Creates a new branch from HEAD called branch-name"
+			},
+			{
+				"isAdvanced": false,
+				"code": "branch -b [name]",
+				"description": "Creates and checks out to a new branch from HEAD called branch-name"
+			},
+			{
+				"isAdvanced": false,
+				"code": "branch --all",
+				"description": "List both remote-tracking branches and local branches"
+			},
+			{
+				"isAdvanced": false,
+				"code": "branch --delete",
+				"description": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream"
+			}
+		]
+	},
+	{
+		"name": "checkout",
+		"description": "Switch branches or restore working tree files",
+		"category": "Branch",
+		"keywords": "branch checkout",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "checkout [name]",
+				"description": "Switch branches or restore working tree files"
+			},
+			{
+				"isAdvanced": false,
+				"code": "checkout --track [origin/name]",
+				"description": "Checkout and track a remote branch"
+			},
+			{
+				"isAdvanced": false,
+				"code": "checkout .",
+				"description": "Discard all tracked local changes in HEAD"
+			},
+			{
+				"isAdvanced": false,
+				"code": "checkout HEAD [source]",
+				"description": "Resets a tracked file"
+			}
+		]
+	},
+	{
+		"name": "fetch",
+		"description": "Downloads all history from the remote repository",
+		"category": "Update",
+		"keywords": "update fetch",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "fetch --all",
+				"description": "Fetch all remotes"
+			},
+			{
+				"isAdvanced": false,
+				"code": "fetch --prune",
+				"description": "Before fetching, remove any remote-tracking references that no longer exist on the remote"
+			}
+		]
+	},
+	{
+		"name": "pull",
+		"description": "Updates the local branch from its remote counterpart",
+		"category": "Update",
+		"keywords": "update pull",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "pull",
+				"description": "Fetch from and integrate with another repository or a local branch"
+			}
+		]
+	},
+	{
+		"name": "push",
+		"description": "Uploads all local branch commits to its remote counterpart",
+		"category": "Update",
+		"keywords": "update push",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "push",
+				"description": "Update remote refs along with associated objects"
+			},
+			{
+				"isAdvanced": true,
+				"code": "push --force",
+				"description": "Overwrite remote refs with your local branch"
+			},
+			{
+				"isAdvanced": true,
+				"code": "push --force-with-lease",
+				"description": "Prevents overwriting remote refs with your local branch"
+			}
+		]
+	},
+	{
+		"name": "merge",
+		"description": "Combines the specified branch’s history into the current branch",
+		"category": "Merge",
+		"keywords": "merge",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "merge [branch-name]",
+				"description": "Merges a branch to your current HEAD"
+			}
+		]
+	},
+	{
+		"name": "rebase",
+		"description": "Rebase your current HEAD onto target branch",
+		"category": "Patch",
+		"keywords": "patch rebase",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "rebase [branch-name]",
+				"description": "Rebase your current HEAD onto branch-name"
+			},
+			{
+				"isAdvanced": false,
+				"code": "rebase --interactive",
+				"description": "Makes a list of the commits which are about to be rebased. User can edit that list before rebasing."
+			},
+			{
+				"isAdvanced": false,
+				"code": "rebase --continue",
+				"description": "Continue a rebase after resolving conflicts"
+			},
+			{
+				"isAdvanced": false,
+				"code": "rebase --abort",
+				"description": "Abort a rebase"
+			}
+		]
+	},
+	{
+		"name": "cherry-pick",
+		"description": "Apply the changes from a different commit to your current HEAD",
+		"category": "Patch",
+		"keywords": "patch cherry-pick",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "cherry-pick [commit]",
+				"description": "Pick and apply changes from commit hash to your current HEAD"
+			}
+		]
+	},
+	{
+		"name": "reset",
+		"description": "Undoes all commits after [commit], preserving changes locally",
+		"category": "Undo",
+		"keywords": "reset undo",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "reset",
+				"description": "Resets the index entries for all paths to their state"
+			},
+			{
+				"isAdvanced": false,
+				"code": "reset --soft",
+				"description": "Does not touch the index file or the working tree at all"
+			},
+			{
+				"isAdvanced": false,
+				"code": "reset --mixed",
+				"description": "Resets the index but not the working tree and reports what has not been updated"
+			},
+			{
+				"isAdvanced": false,
+				"code": "reset --hard",
+				"description": "Resets the index and working tree. Any changes to tracked files in the working tree since commit are discarded"
+			}
+		]
+	},
+	{
+		"name": "clean",
+		"description": "Shows untracked files about to be removed",
+		"category": "Undo",
+		"keywords": "reset undo clean",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "clean -n",
+				"description": "Shows untracked files about to be removed"
+			},
+			{
+				"isAdvanced": false,
+				"code": "clean -f",
+				"description": "Removes all untracked files"
+			}
+		]
+	},
+	{
+		"name": "log",
+		"description": "Lists version history for the current branch",
+		"category": "History",
+		"keywords": "history log",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "log",
+				"description": "Show all commits"
+			},
+			{
+				"isAdvanced": false,
+				"code": "log -p [source]",
+				"description": "Show changes to file"
+			},
+			{
+				"isAdvanced": false,
+				"code": "log --graph",
+				"description": "Shows all commits as graph"
+			}
+		]
+	},
+	{
+		"name": "flow",
+		"description": "A git extension for feature branch workflow",
+		"category": "Extensions",
+		"keywords": "extensions flow init feature release hotfix start finish",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "flow init",
+				"description": "Initialize flow inside an existing repository"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow feature start [name]",
+				"description": "Create a new branch from latest develop as feature/feature-name"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow feature finish [name]",
+				"description": "Merges feature-name into develop and removes branch"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow feature publish [name]",
+				"description": "Publishes a feature to the remote"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow feature pull origin [name]",
+				"description": "Pull a feature from remote to your local repository"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow release start [name]",
+				"description": "Creates a release branch from latest develop"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow release finish [name]",
+				"description": "Merges release branch into master and develop"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow hotfix start [name]",
+				"description": "Creates a hotfix/fix-name branch from master"
+			},
+			{
+				"isAdvanced": false,
+				"code": "flow hotfix finish [name]",
+				"description": "Merges fix-name into master and develop"
+			}
+		]
+	},
+	{
+		"name": "config",
+		"description": "Get and set repository or global usage",
+		"category": "Administration",
+		"keywords": "administration config",
+		"isAdvanced": true,
+		"usage": [
+			{
+				"isAdvanced": true,
+				"code": "config -e",
+				"description": "Edit repository config file"
+			},
+			{
+				"isAdvanced": true,
+				"code": "config --global -e",
+				"description": "Edit global config file"
+			},
+			{
+				"isAdvanced": true,
+				"code": "config --global user.name 'Your Name'",
+				"description": "Define your user name in global settings"
+			},
+			{
+				"isAdvanced": true,
+				"code": "config --global user.email you@mail.com",
+				"description": "Define your mail in global settings"
+			}
+		]
+	},
+	{
+		"name": "gc",
+		"description": "Cleanup unnecessary files and optimize the local repository",
+		"category": "Administration",
+		"keywords": "administration gc garbage collection",
+		"isAdvanced": true,
+		"usage": [
+			{
+				"isAdvanced": true,
+				"code": "gc",
+				"description": "Runs a garbage collection for your local repository"
+			},
+			{
+				"isAdvanced": true,
+				"code": "gc --aggressive",
+				"description": "Runs gc more aggressively to optimize your local repository"
+			}
+		]
+	},
+	{
+		"name": "prune",
+		"description": "Prune all unreachable objects from the object database",
+		"category": "Administration",
+		"keywords": "administration prune",
+		"isAdvanced": true,
+		"usage": [
+			{
+				"isAdvanced": true,
+				"code": "prune",
+				"description": "Removes objects that are no longer pointed to any object in reachable branch"
+			},
+			{
+				"isAdvanced": true,
+				"code": "prune -n",
+				"description": "Do not remove anything; just report what it would remove"
+			},
+			{
+				"isAdvanced": true,
+				"code": "prune --progress",
+				"description": "Shows prune progress"
+			}
+		]
+	},
+	{
+		"name": "bisect",
+		"description": "Use binary search to find the commit that introduced a bug",
+		"category": "Debug",
+		"keywords": "debug bisect",
+		"isAdvanced": true,
+		"usage": [
+			{
+				"isAdvanced": true,
+				"code": "bisect start",
+				"description": "Start up the git bisect wizard"
+			},
+			{
+				"isAdvanced": true,
+				"code": "bisect good [commit]",
+				"description": "Let the git bisect wizard know of a good commit"
+			},
+			{
+				"isAdvanced": true,
+				"code": "bisect bad [commit]",
+				"description": "Let the git bisect wizard know of a bad commit"
+			},
+			{
+				"isAdvanced": true,
+				"code": "bisect reset",
+				"description": "End your git bisect wizard"
+			}
+		]
+	},
+	{
+		"name": "blame",
+		"description": "Display author metadata attached to specific committed lines in a file",
+		"category": "Debug",
+		"keywords": "debug blame",
+		"isAdvanced": true,
+		"usage": [
+			{
+				"isAdvanced": true,
+				"code": "blame [source]",
+				"description": "Show each author worked on the source including date, time and line numbers"
+			},
+			{
+				"isAdvanced": true,
+				"code": "blame -L x,y [source]",
+				"description": "Restrict the output of source between x and y lines"
+			},
+			{
+				"isAdvanced": true,
+				"code": "blame -e [source]",
+				"description": "Show author email address instead of username"
+			},
+			{
+				"isAdvanced": true,
+				"code": "blame -w [source]",
+				"description": "Ignore whitespace changes"
+			}
+		]
+	}
 ]
