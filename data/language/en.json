@@ -484,60 +484,6 @@
 		]
 	},
 	{
-		"name": "flow",
-		"description": "A git extension for feature branch workflow",
-		"category": "Extensions",
-		"keywords": "extensions flow init feature release hotfix start finish",
-		"isAdvanced": false,
-		"usage": [
-			{
-				"isAdvanced": false,
-				"code": "flow init",
-				"description": "Initialize flow inside an existing repository"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow feature start [name]",
-				"description": "Create a new branch from latest develop as feature/feature-name"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow feature finish [name]",
-				"description": "Merges feature-name into develop and removes branch"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow feature publish [name]",
-				"description": "Publishes a feature to the remote"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow feature pull origin [name]",
-				"description": "Pull a feature from remote to your local repository"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow release start [name]",
-				"description": "Creates a release branch from latest develop"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow release finish [name]",
-				"description": "Merges release branch into master and develop"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow hotfix start [name]",
-				"description": "Creates a hotfix/fix-name branch from master"
-			},
-			{
-				"isAdvanced": false,
-				"code": "flow hotfix finish [name]",
-				"description": "Merges fix-name into master and develop"
-			}
-		]
-	},
-	{
 		"name": "config",
 		"description": "Get and set repository or global usage",
 		"category": "Administration",
