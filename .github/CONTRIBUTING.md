@@ -1,4 +1,4 @@
-# Contributing To Interactive Git Cheatsheet
+# Contributing To Git Cheats
 
 :octocat: Thanks for taking the time to contribute! 
 
@@ -7,7 +7,7 @@ The following is a set of guidelines for contributing to this repository.
 [Code of Conduct](#code-of-conduct)
 
 [How Can I Contribute?](#how-can-i-contribute)
-- [Contributing To Interactive Git Cheatsheet](#contributing-to-interactive-git-cheatsheet)
+- [Contributing To Git Cheats](#contributing-to-interactive-git-cheatsheet)
       - [Table Of Contents](#table-of-contents)
   - [Code of Conduct](#code-of-conduct)
   - [How Can I Contribute?](#how-can-i-contribute)
@@ -17,7 +17,7 @@ The following is a set of guidelines for contributing to this repository.
     - [Commit Messages](#commit-messages)
 
 ## Code of Conduct
-This project and everyone participating in it is governed by the [Interactive Git Cheatsheet Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by the [Git Cheats Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## How Can I Contribute?
 ### Reporting Bugs
@@ -42,10 +42,9 @@ Unsure where to begin contributing? You can start by looking through these `begi
 ### Pull Requests
 While creating a Pull Request, fill out the [the required template](PULL_REQUEST_TEMPLATE.md)
 
-* With v1.1.0 you can add complicated commands!
-* **Do not** change design into a complicated and / or overwhelming piece of junk
-* **Do not** include issue numbers in the PR title
-* **Include** screenshots or animated GIFs in your pull request whenever possible
+* **Do not** change design into a complicated and / or overwhelming experience
+* **Do not** include issue numbers in the PR title if any
+* **Include** screenshots or animated GIFs in your pull request if a new feature
 
 
 ### Commit Messages
