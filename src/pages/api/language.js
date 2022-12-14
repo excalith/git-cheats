@@ -2,7 +2,10 @@
 // https://vercel.com/guides/loading-static-file-nextjs-api-route
 import path from "path"
 import { promises as fs } from "fs"
-import { DEFAULT_LANGUAGE, AVAILABLE_LANGUAGES } from "../../gitcheats.config"
+import {
+	DEFAULT_LANGUAGE,
+	AVAILABLE_LANGUAGES
+} from "../../../gitcheats.config"
 
 export default async function handler(req, res) {
 	// Only GET method is allowed
@@ -23,7 +26,7 @@ export default async function handler(req, res) {
 	}
 
 	// Find the absolute path of the json directory
-	const dataDirectory = path.join(process.cwd(), "data/language")
+	const dataDirectory = path.join(process.cwd(), "static/language")
 
 	// Read the json data file data.json
 	const fileContents = await fs.readFile(

@@ -7,8 +7,6 @@ import Card from "../components/Card"
 import Footer from "../components/Footer"
 import Loader from "../components/Loader"
 
-// const fetcher = (url) => fetch(url).then((res) => res.json())
-
 const fetcher = (url, lang) =>
 	fetch(`${url}?lang=${lang}`).then((res) => res.json())
 

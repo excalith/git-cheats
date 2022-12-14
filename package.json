@@ -50,10 +50,10 @@
         ]
     },
     "lint-staged": {
-        "*.{js,jsx,ts,tsx}": [
+        "*.{js,jsx,ts,tsx,json}": [
             "prettier --write",
             "eslint --fix",
-            "eslint data/language/*.json"
+            "eslint static/language/*.json"
         ]
     },
     "husky": {
