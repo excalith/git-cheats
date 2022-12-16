@@ -10,16 +10,16 @@ const Search = ({ handleSearch, handleAdvanced, ...rest }) => {
 	}, [])
 
 	return (
-		<div className="sticky-top search-row row g-2">
+		<div className="sticky-top search-row">
 			<input
-				className="col form-control search-bar"
+				className="form-control search-bar"
 				type="text"
 				onChange={handleSearch}
 				placeholder="Search"
 				autoFocus
 				ref={inputElement}
 			/>
-			<div className="col-sm-2 btn-group search-advanced" role="group">
+			<div className="btn-group search-advanced" role="group">
 				<input
 					type="checkbox"
 					className="btn-check"

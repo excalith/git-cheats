@@ -1,4 +1,3 @@
-
 .copy-button-wrapper {
 	position: absolute;
 	right: 28px;
@@ -13,7 +12,6 @@
 	color: #6c7086 !important;
 }
 
-
 .copy-button-wrapper button:hover {
 	border-color: #cdd6f4 !important;
 	color: #cdd6f4 !important;
@@ -25,16 +23,16 @@
 }
 
 .copy-button-wrapper span {
-	content:"Copied";
+	content: "Copied";
 	opacity: 0;
-	position:absolute;
+	position: absolute;
 	top: -50px !important;
-	right:-12px;
-	height:35px;
+	right: -12px;
+	height: 35px;
 	width: 66px;
 	padding: 8px 10px;
 	background: #181926;
-	border-radius:6px;
+	border-radius: 6px;
 	font-family: "Rubik", sans-serif;
 	font-size: 12px !important;
 	color: #8fffa7;
@@ -43,16 +41,15 @@
 }
 
 .copy-button-wrapper span::after {
-	content:"";
-	position:absolute;
+	content: "";
+	position: absolute;
 	top: 28px;
-	right:26px;
-	width:10px;
+	right: 26px;
+	width: 10px;
 	height: 10px;
 	background: #181926;
-	transform:rotate(45deg);
+	transform: rotate(45deg);
 }
-
 
 .copy-button-wrapper span.active {
 	opacity: 1 !important;
