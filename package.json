@@ -54,8 +54,7 @@
             "prettier --write",
             "eslint --fix"
         ],
-        "static/language/*.json":
-        [
+        "static/language/*.json": [
             "eslint"
         ]
     },

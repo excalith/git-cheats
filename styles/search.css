@@ -5,36 +5,43 @@
 	margin: 15px 0 25px 0;
 	z-index: 999;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	height: 65px;
 }
 
 .search-bar {
 	border: 0px;
-	font: normal 24px/1.6 system-ui, sans-serif;
 	padding: 10px;
-	margin: 0px;
+	font: normal 24px/1.6 system-ui, sans-serif;
 	text-align: center;
 }
 
 .search-advanced {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	height: 51px;
 	display: table;
-	margin: 5px 2px;
+	width: 110px;
 }
 
 .search-advanced label {
 	display: table-cell;
 	vertical-align: middle;
-	height: 50px;
 }
 
 .search-bar,
 .search-bar:active,
 .search-bar:focus {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	height: 52px;
+	width: calc(100% - 130px);
+
 	color: white;
 	background-color: transparent;
 	outline: none !important;
-	-webkit-appearance: none;
 	appearance: none;
 	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
+	background-color: #181926;
 }
