@@ -30,9 +30,7 @@ const Search = ({ handleSearch, handleAdvanced, ...rest }) => {
 					data-bs-title="Tooltip on left"
 					onChange={handleAdvanced}
 				/>
-				<label
-					className="btn btn-outline-warning"
-					htmlFor="advanced-check">
+				<label className="btn btn-outline-warning" htmlFor="advanced-check">
 					Advanced
 				</label>
 			</div>

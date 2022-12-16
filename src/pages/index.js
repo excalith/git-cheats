@@ -7,8 +7,7 @@ import Card from "../components/Card"
 import Footer from "../components/Footer"
 import Loader from "../components/Loader"
 
-const fetcher = (url, lang) =>
-	fetch(`${url}?lang=${lang}`).then((res) => res.json())
+const fetcher = (url, lang) => fetch(`${url}?lang=${lang}`).then((res) => res.json())
 
 export default function Home() {
 	const router = useRouter()
@@ -44,23 +43,13 @@ export default function Home() {
 	return (
 		<div className="container container-sm">
 			<SEO />
-			<Search
-				handleSearch={handleSearch}
-				handleAdvanced={handleAdvanced}
-			/>
+			<Search handleSearch={handleSearch} handleAdvanced={handleAdvanced} />
 
 			<main className="main">
 				<div>
 					{commands.map((card, index) => {
 						{
-							return (
-								<Card
-									key={index}
-									data={card}
-									query={search}
-									isAdvanced={isAdvanced}
-								/>
-							)
+							return <Card key={index} data={card} query={search} isAdvanced={isAdvanced} />
 						}
 					})}
 				</div>

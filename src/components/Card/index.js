@@ -39,21 +39,13 @@ const Card = ({ data, query, isAdvanced }) => {
 							<BsFillArrowUpRightSquareFill className="documentation-icon" />
 						</Link>
 					</h1>
-					<p className={`card-category ${category}`}>
-						{data.category}
-					</p>
+					<p className={`card-category ${category}`}>{data.category}</p>
 					<p className="card-description">{data.description}</p>
 					<h5 className="card-usage">Usage:</h5>
 					<div>
 						{data.usage.map((usage, index) => {
 							{
-								return (
-									<Code
-										key={index}
-										usage={usage}
-										showAdvanced={isAdvanced}
-									/>
-								)
+								return <Code key={index} usage={usage} showAdvanced={isAdvanced} />
 							}
 						})}
 					</div>
