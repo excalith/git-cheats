@@ -18,7 +18,11 @@ const CopyButton = ({ usage }) => {
 
 	return (
 		<div className="copy-button-wrapper">
-			<button className="btn btn-default" onClick={handleCopy}>
+			<button
+				className={
+					isHidden ? "btn btn-default" : "btn btn-default active"
+				}
+				onClick={handleCopy}>
 				<IoCopy />
 			</button>
 			<span className={isHidden ? "tooltip" : "tooltip active"}>

@@ -19,7 +19,7 @@
 	color: #cdd6f4 !important;
 }
 
-.copy-button-wrapper button:active {
+.copy-button-wrapper button.active {
 	border-color: #8fffa7 !important;
 	color: #8fffa7 !important;
 }
