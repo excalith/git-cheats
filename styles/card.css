@@ -16,6 +16,7 @@
 }
 
 .card-description {
+	margin-top: 10px;
 	line-height: 1rem;
 	color: white;
 }
@@ -26,6 +27,9 @@
 	margin-top: 2.5rem;
 }
 .card-category {
+	position: absolute;
+	top: 22px;
+	right: 22px;
 	font-family: "Rubik", sans-serif;
 	text-align: right;
 	font-size: 18px;

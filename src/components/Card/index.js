@@ -42,11 +42,9 @@ const Card = ({ data, query, isAdvanced }) => {
 								</Link>
 							</h1>
 						</div>
-						<div className="col-6 col-md-4">
-							<p className={`card-category ${category}`}>
-								{data.category}
-							</p>
-						</div>
+						<p className={`card-category ${category}`}>
+							{data.category}
+						</p>
 					</div>
 					<p className="card-description">{data.description}</p>
 					<h5 className="card-usage">Usage:</h5>

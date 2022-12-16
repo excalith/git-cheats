@@ -16,18 +16,7 @@ code {
 	display: flex;
 	align-items: center;
 	padding-left: 5px !important;
-}
-
-.code-row button {
-	width: 40px;
-	padding: 0.25rem;
-	border-color: #6c7086 !important;
-	color: #6c7086 !important;
-}
-
-.code-row button:hover {
-	border-color: #cdd6f4 !important;
-	color: #cdd6f4 !important;
+	min-height: 35px;
 }
 
 .code-description {
