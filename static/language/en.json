@@ -37,8 +37,42 @@
 			},
 			{
 				"isAdvanced": true,
-				"code": "clone ssh://user@domain.com/repo.git --depth=[number] ",
+				"code": "clone ssh://user@domain.com/repo.git --depth=[number]",
 				"description": "Clones target repository with history truncated to depth"
+			}
+		]
+	},
+	{
+		"name": "submodule",
+		"description": "Initialize, update or inspect submodules",
+		"category": "Create",
+		"keywords": "create submodule new",
+		"isAdvanced": true,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "submodule add https://github.com/excalith/git-cheats",
+				"description": "Adds url as submodule"
+			},
+			{
+				"isAdvanced": true,
+				"code": "submodule init",
+				"description": "Initializes local config file"
+			},
+			{
+				"isAdvanced": true,
+				"code": "submodule update",
+				"description": "Fetch all data from submodule"
+			},
+			{
+				"isAdvanced": true,
+				"code": "submodule update --init --recursive",
+				"description": "Updates local submodule"
+			},
+			{
+				"isAdvanced": true,
+				"code": "submodule sync --recursive",
+				"description": "If submodule cannot be reached somehow, sync command will help you resync your config"
 			}
 		]
 	},
@@ -157,7 +191,7 @@
 			},
 			{
 				"isAdvanced": false,
-				"code": "stash save [Stash Message]",
+				"code": "stash save [stash message]",
 				"description": "Saves your local modifications to a new stash entry"
 			},
 			{
@@ -224,47 +258,91 @@
 		"usage": [
 			{
 				"isAdvanced": false,
-				"code": "tag --list",
+				"code": "tag",
 				"description": "Lists all tags"
 			},
 			{
 				"isAdvanced": false,
-				"code": "tag [name]",
-				"description": "Marks the current commit with a tag"
+				"code": "tag [tag-name]",
+				"description": "Marks the current commit with a [tag-name]"
 			},
 			{
 				"isAdvanced": false,
-				"code": "tag --delete [name]",
-				"description": "Delete existing tags with the given names"
+				"code": "tag [tag-name] [commit-hash]",
+				"description": "Marks the [commit-hash] commit with a [tag-name]"
+			},
+			{
+				"isAdvanced": false,
+				"code": "tag -a [tag-name]",
+				"description": "Marks the current commit with an annotated [tag-name] such as v1.4"
+			},
+			{
+				"isAdvanced": false,
+				"code": "tag --delete [tag-name]",
+				"description": "Delete existing tags with the given [tag-name]"
 			}
 		]
 	},
 	{
 		"name": "branch",
-		"description": "List, create, or delete branches",
+		"description": "List, rename, create, or delete branches",
 		"category": "Branch",
 		"keywords": "branch",
 		"isAdvanced": false,
 		"usage": [
 			{
 				"isAdvanced": false,
-				"code": "branch [name]",
-				"description": "Creates a new branch from HEAD called branch-name"
+				"code": "branch",
+				"description": "Lists tracked branches"
 			},
 			{
 				"isAdvanced": false,
-				"code": "branch -b [name]",
-				"description": "Creates and checks out to a new branch from HEAD called branch-name"
-			},
-			{
-				"isAdvanced": false,
-				"code": "branch --all",
+				"code": "branch -a",
 				"description": "List both remote-tracking branches and local branches"
 			},
 			{
 				"isAdvanced": false,
-				"code": "branch --delete",
-				"description": "Delete a branch. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream"
+				"code": "branch [branch-name]",
+				"description": "Creates a new branch from HEAD called [branch-name]"
+			},
+			{
+				"isAdvanced": false,
+				"code": "branch -m [branch-name]",
+				"description": "Rename current branch to [branch-name]"
+			},
+			{
+				"isAdvanced": false,
+				"code": "branch -d [branch-name]",
+				"description": "Delete [branch-name]. The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set with --track or --set-upstream"
+			}
+		]
+	},
+	{
+		"name": "switch",
+		"description": "Switch or create branches",
+		"category": "Branch",
+		"keywords": "branch switch",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "switch [branch-name]",
+				"description": "Switches to a branch called [branch-name]"
+			},
+			{
+				"isAdvanced": false,
+				"code": "switch -c [branch-name]",
+				"description": "Creates and switches to a new branch from HEAD called [branch-name]"
+			},
+			{
+				"isAdvanced": false,
+				"code": "switch -c [branch-name] [start-point]",
+				"description": "Creates and switches to a new branch from [start-point] called [branch-name]"
+			},
+			{
+				"isAdvanced": true,
+				"code": "switch --orphan",
+				"description": "Creates a new orphan branch called [branch-name] and removes all tracked files"
 			}
 		]
 	},
@@ -277,12 +355,17 @@
 		"usage": [
 			{
 				"isAdvanced": false,
-				"code": "checkout [name]",
-				"description": "Switch branches or restore working tree files"
+				"code": "checkout [branch-name]",
+				"description": "Switch to [branch-name] or restore working tree files"
 			},
 			{
 				"isAdvanced": false,
-				"code": "checkout --track [origin/name]",
+				"code": "checkout -b [branch-name]",
+				"description": "Create and switch to [branch-name] or restore working tree files"
+			},
+			{
+				"isAdvanced": false,
+				"code": "checkout --track [origin/branch-name]",
 				"description": "Checkout and track a remote branch"
 			},
 			{
@@ -293,7 +376,7 @@
 			{
 				"isAdvanced": false,
 				"code": "checkout HEAD [source]",
-				"description": "Resets a tracked file"
+				"description": "Resets tracked [source] file/folder"
 			}
 		]
 	},
@@ -441,6 +524,30 @@
 		]
 	},
 	{
+		"name": "revert",
+		"description": "Removes all changes made by commits from repository",
+		"category": "Undo",
+		"keywords": "reset undo revert",
+		"isAdvanced": false,
+		"usage": [
+			{
+				"isAdvanced": false,
+				"code": "revert HEAD",
+				"description": "Revert to the latest commit"
+			},
+			{
+				"isAdvanced": false,
+				"code": "revert [commit-hash]",
+				"description": "Revert to the [commit-hash] commit"
+			},
+			{
+				"isAdvanced": false,
+				"code": "revert -n [commit-hash]",
+				"description": "Revert to the [commit-hash] commit but do not commit"
+			}
+		]
+	},
+	{
 		"name": "clean",
 		"description": "Shows untracked files about to be removed",
 		"category": "Undo",
@@ -456,6 +563,16 @@
 				"isAdvanced": false,
 				"code": "clean -f",
 				"description": "Removes all untracked files"
+			},
+			{
+				"isAdvanced": false,
+				"code": "clean -x",
+				"description": "Removes all ignored files"
+			},
+			{
+				"isAdvanced": false,
+				"code": "clean -i",
+				"description": "Runs clean command with interactive menu"
 			}
 		]
 	},
