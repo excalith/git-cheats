@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useRouter } from "next/router"
+import { setCookie } from "cookies-next"
 import useSWR from "swr"
 import SEO from "../components/SEO"
 import Search from "../components/Search"
@@ -23,8 +24,12 @@ export default function Home() {
 		setSearch(e.target.value)
 	}
 
-	const handleComplexity = (e) => {
-		setComplexity(e.target.value)
+	const handleComplexity = (complexityValue) => {
+		setComplexity(complexityValue)
+		setCookie("complexity", complexityValue, {
+			secure: true,
+			sameSite: "strict"
+		})
 	}
 
 	useEffect(() => {

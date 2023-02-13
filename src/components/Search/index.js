@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react"
+import { hasCookie, getCookie } from "cookies-next"
 
 const Search = ({ handleSearch, handleComplexity, ...rest }) => {
 	const searchElement = useRef(null)
@@ -8,10 +9,26 @@ const Search = ({ handleSearch, handleComplexity, ...rest }) => {
 		if (searchElement.current) {
 			searchElement.current.focus()
 		}
+
 		if (complexityElement.current) {
-			complexityElement.current.value = 2
+			let complexityCookie = hasCookie("complexity", {
+				secure: true,
+				sameSite: "strict"
+			})
+				? getCookie("complexity", {
+						secure: true,
+						sameSite: "strict"
+				  })
+				: 2
+			complexityElement.current.value = complexityCookie
+			handleComplexity(complexityCookie)
 		}
 	}, [])
+
+	const changeComplexity = (e) => {
+		complexityElement.current.value = e.target.value
+		handleComplexity(e.target.value)
+	}
 
 	return (
 		<div className="sticky-top search-row">
@@ -25,7 +42,7 @@ const Search = ({ handleSearch, handleComplexity, ...rest }) => {
 			/>
 			<select
 				className="search-complexity form-select form-select-lg mb-3"
-				onChange={handleComplexity}
+				onChange={changeComplexity}
 				ref={complexityElement}>
 				<option value="1">Basic</option>
 				<option value="2">Normal</option>
