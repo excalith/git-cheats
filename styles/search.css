@@ -30,8 +30,7 @@
 
 .search-complexity,
 .search-complexity:active,
-.search-complexity:focus  {
-
+.search-complexity:focus {
 	background-color: transparent;
 	outline: none !important;
 	appearance: none;

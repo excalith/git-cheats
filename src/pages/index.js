@@ -38,25 +38,29 @@ export default function Home() {
 		}
 	}, [filterQuery.filter])
 
-	//Handle the error state
+	// Handle the error state
 	if (error) return <div>Failed to load</div>
 
-	//Handle the loading state
+	// Handle the loading state
 	if (!data) return <Loader />
 
-	let commands = JSON.parse(data)
+	// Parse the data
+	let parsedData = JSON.parse(data)
+	let commandsList = parsedData.commands
+	let complexityList = parsedData.complexity
 
 	return (
 		<div className="container container-sm">
 			<SEO />
 			<Search
+				data={complexityList}
 				handleSearch={handleSearch}
 				handleComplexity={handleComplexity}
 			/>
 
 			<main className="main">
 				<div>
-					{commands.map((card, index) => {
+					{commandsList.map((card, index) => {
 						{
 							return (
 								<Card

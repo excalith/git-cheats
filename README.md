@@ -10,13 +10,14 @@
 </p>
 
 ## Features
-With Git Cheats you can;
-- Easily search for commands
-- Filter a group of commands by category
-- Copy usage examples to paste into your terminal
-- Click any command name to launch the original documentation
-- If you are looking for more advanced commands, you can toggle the advanced button and display even more commands
 
+With Git Cheats you can;
+
+-   Easily search for commands
+-   Filter a group of commands by category
+-   Copy usage examples to paste into your terminal
+-   Click any command name to launch the original documentation
+-   If you are looking for more advanced commands, you can toggle the advanced button and display even more commands
 
 ## Online
 

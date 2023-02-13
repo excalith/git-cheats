@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"
 import { hasCookie, getCookie } from "cookies-next"
 
-const Search = ({ handleSearch, handleComplexity, ...rest }) => {
+const Search = ({ data, handleSearch, handleComplexity, ...rest }) => {
 	const searchElement = useRef(null)
 	const complexityElement = useRef(null)
 
@@ -44,9 +44,13 @@ const Search = ({ handleSearch, handleComplexity, ...rest }) => {
 				className="search-complexity form-select form-select-lg mb-3"
 				onChange={changeComplexity}
 				ref={complexityElement}>
-				<option value="1">Basic</option>
-				<option value="2">Normal</option>
-				<option value="3">Advanced</option>
+				{data.map((item, index) => {
+					return (
+						<option key={index} value={index}>
+							{item}
+						</option>
+					)
+				})}
 			</select>
 		</div>
 	)
