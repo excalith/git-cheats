@@ -17,7 +17,7 @@ export default function Home() {
 	const { data, error } = useSWR(["/api/language", lang], fetcher)
 
 	const [search, setSearch] = useState("")
-	const [complexity, setComplexity] = useState(2)
+	const [complexity, setComplexity] = useState(1)
 	const { query: filterQuery } = useRouter()
 
 	const handleSearch = (e) => {

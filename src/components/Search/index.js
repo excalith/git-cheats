@@ -19,7 +19,7 @@ const Search = ({ data, handleSearch, handleComplexity, ...rest }) => {
 						secure: true,
 						sameSite: "strict"
 				  })
-				: 2
+				: 1
 			complexityElement.current.value = complexityCookie
 			handleComplexity(complexityCookie)
 		}
