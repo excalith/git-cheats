@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useRouter } from "next/router"
+import { setCookie } from "cookies-next"
 import useSWR from "swr"
 import SEO from "../components/SEO"
 import Search from "../components/Search"
@@ -16,15 +17,19 @@ export default function Home() {
 	const { data, error } = useSWR(["/api/language", lang], fetcher)
 
 	const [search, setSearch] = useState("")
-	const [isAdvanced, setAdvanced] = useState(false)
+	const [complexity, setComplexity] = useState(1)
 	const { query: filterQuery } = useRouter()
 
 	const handleSearch = (e) => {
 		setSearch(e.target.value)
 	}
 
-	const handleAdvanced = () => {
-		setAdvanced(!isAdvanced)
+	const handleComplexity = (complexityValue) => {
+		setComplexity(complexityValue)
+		setCookie("complexity", complexityValue, {
+			secure: true,
+			sameSite: "strict"
+		})
 	}
 
 	useEffect(() => {
@@ -33,32 +38,36 @@ export default function Home() {
 		}
 	}, [filterQuery.filter])
 
-	//Handle the error state
+	// Handle the error state
 	if (error) return <div>Failed to load</div>
 
-	//Handle the loading state
+	// Handle the loading state
 	if (!data) return <Loader />
 
-	let commands = JSON.parse(data)
+	// Parse the data
+	let parsedData = JSON.parse(data)
+	let commandsList = parsedData.commands
+	let complexityList = parsedData.complexity
 
 	return (
 		<div className="container container-sm">
 			<SEO />
 			<Search
+				data={complexityList}
 				handleSearch={handleSearch}
-				handleAdvanced={handleAdvanced}
+				handleComplexity={handleComplexity}
 			/>
 
 			<main className="main">
 				<div>
-					{commands.map((card, index) => {
+					{commandsList.map((card, index) => {
 						{
 							return (
 								<Card
 									key={index}
 									data={card}
 									query={search}
-									isAdvanced={isAdvanced}
+									complexity={complexity}
 								/>
 							)
 						}

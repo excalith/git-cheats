@@ -1,5 +1,5 @@
 {
-	"extends": ["next/core-web-vitals", "next", "prettier"],
+	"extends": ["next/core-web-vitals", "plugin:json/recommended", "next", "prettier"],
 	"env": {
 		"browser": true,
 		"es2021": true

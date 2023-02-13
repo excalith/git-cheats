@@ -4,14 +4,14 @@ import Code from "../Code"
 import "@fontsource/rubik"
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs"
 
-const Card = ({ data, query, isAdvanced }) => {
+const Card = ({ data, query, complexity }) => {
 	const [isHidden, setHidden] = useState(false)
 
 	let link = "https://git-scm.com/docs/git-" + data.name
 	let category = data.category.toLowerCase()
 
 	useEffect(() => {
-		if (!isAdvanced && data.isAdvanced) {
+		if (data.complexity > complexity) {
 			setHidden(true)
 			return
 		}
@@ -21,7 +21,7 @@ const Card = ({ data, query, isAdvanced }) => {
 		} else {
 			setHidden(false)
 		}
-	}, [query, isAdvanced, data.keywords, data.isAdvanced]),
+	}, [query, complexity, data.keywords, data.complexity]),
 		[isHidden]
 
 	return (
@@ -51,7 +51,7 @@ const Card = ({ data, query, isAdvanced }) => {
 									<Code
 										key={index}
 										usage={usage}
-										showAdvanced={isAdvanced}
+										complexity={complexity}
 									/>
 								)
 							}

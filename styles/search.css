@@ -15,18 +15,27 @@
 	text-align: center;
 }
 
-.search-advanced {
+.search-complexity {
 	position: absolute;
+	display: table;
 	top: 6px;
 	right: 6px;
-	height: 51px;
-	display: table;
-	width: 110px;
+	height: 52px;
+	width: 150px;
+	border: 0px;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
 }
 
-.search-advanced label {
-	display: table-cell;
-	vertical-align: middle;
+.search-complexity,
+.search-complexity:active,
+.search-complexity:focus {
+	background-color: transparent;
+	outline: none !important;
+	appearance: none;
+	box-shadow: none;
+	background-color: #181926;
 }
 
 .search-bar,
@@ -36,7 +45,7 @@
 	top: 6px;
 	left: 6px;
 	height: 52px;
-	width: calc(100% - 130px);
+	width: calc(100% - 170px);
 
 	color: white;
 	background-color: transparent;
