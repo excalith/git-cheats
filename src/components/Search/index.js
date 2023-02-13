@@ -1,11 +1,15 @@
 import React, { useRef, useEffect } from "react"
 
-const Search = ({ handleSearch, handleAdvanced, ...rest }) => {
-	const inputElement = useRef(null)
+const Search = ({ handleSearch, handleComplexity, ...rest }) => {
+	const searchElement = useRef(null)
+	const complexityElement = useRef(null)
 
 	useEffect(() => {
-		if (inputElement.current) {
-			inputElement.current.focus()
+		if (searchElement.current) {
+			searchElement.current.focus()
+		}
+		if (complexityElement.current) {
+			complexityElement.current.value = 2
 		}
 	}, [])
 
@@ -17,25 +21,16 @@ const Search = ({ handleSearch, handleAdvanced, ...rest }) => {
 				onChange={handleSearch}
 				placeholder="Search"
 				autoFocus
-				ref={inputElement}
+				ref={searchElement}
 			/>
-			<div className="btn-group search-advanced" role="group">
-				<input
-					type="checkbox"
-					className="btn-check"
-					id="advanced-check"
-					autoComplete="off"
-					data-bs-toggle="tooltip"
-					data-bs-placement="left"
-					data-bs-title="Tooltip on left"
-					onChange={handleAdvanced}
-				/>
-				<label
-					className="btn btn-outline-warning"
-					htmlFor="advanced-check">
-					Advanced
-				</label>
-			</div>
+			<select
+				className="search-complexity form-select form-select-lg mb-3"
+				onChange={handleComplexity}
+				ref={complexityElement}>
+				<option value="1">Basic</option>
+				<option value="2">Normal</option>
+				<option value="3">Advanced</option>
+			</select>
 		</div>
 	)
 }

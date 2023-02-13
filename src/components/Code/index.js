@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react"
 import "@fontsource/fira-code"
 import CopyButton from "../CopyButton"
 
-const CodeBlock = ({ usage, showAdvanced }) => {
+const CodeBlock = ({ usage, complexity }) => {
 	const [isHidden, setHidden] = useState(false)
 	const usageCode = "git " + usage.code
 
 	useEffect(() => {
-		setHidden(!showAdvanced && usage.isAdvanced)
-	}, [showAdvanced, usage.isAdvanced])
+		setHidden(usage.complexity > complexity)
+	}, [complexity, usage.complexity])
 
 	return (
 		<div className={isHidden ? "code-block hidden" : "code-block"}>

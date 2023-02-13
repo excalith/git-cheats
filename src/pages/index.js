@@ -16,15 +16,15 @@ export default function Home() {
 	const { data, error } = useSWR(["/api/language", lang], fetcher)
 
 	const [search, setSearch] = useState("")
-	const [isAdvanced, setAdvanced] = useState(false)
+	const [complexity, setComplexity] = useState(2)
 	const { query: filterQuery } = useRouter()
 
 	const handleSearch = (e) => {
 		setSearch(e.target.value)
 	}
 
-	const handleAdvanced = () => {
-		setAdvanced(!isAdvanced)
+	const handleComplexity = (e) => {
+		setComplexity(e.target.value)
 	}
 
 	useEffect(() => {
@@ -46,7 +46,7 @@ export default function Home() {
 			<SEO />
 			<Search
 				handleSearch={handleSearch}
-				handleAdvanced={handleAdvanced}
+				handleComplexity={handleComplexity}
 			/>
 
 			<main className="main">
@@ -58,7 +58,7 @@ export default function Home() {
 									key={index}
 									data={card}
 									query={search}
-									isAdvanced={isAdvanced}
+									complexity={complexity}
 								/>
 							)
 						}
