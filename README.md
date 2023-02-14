@@ -1,8 +1,9 @@
 <p align="center">
 	<h1 align="center">Git Cheats • Interactive Git Cheatsheet</h1>
 </p>
+
 <p align="center">
-<b>Git Cheats</b> aims to ease the pain while transitioning from sluggish GUI clients to blazing-fast terminal commands. It is not a direct replacement for the original documentation, but a companion for beginners.
+Git Cheats is an intuitive and user-friendly interactive Git cheatsheet that provides a handy reference for developers to search and access commonly used Git commands quickly and efficiently.
 </p>
 
 <p align="center">
@@ -13,11 +14,11 @@
 
 With Git Cheats you can;
 
-- Easily search for commands
+- Easily search for commands by name
 - Filter a group of commands by category
 - Copy usage examples to paste into your terminal
 - Click any command name to launch the original documentation
-- Show and hide commands depending on their complexity through dropdown menu (`Basic`, `Normal`, `Advanced`)
+- Show and hide commands depending on their complexity through the menu (`Basic`, `Normal`, `Advanced`)
   
 Also includes `strict` cookies to remember your preferences next time you launch the app. Nothing is stored on the server.
 
