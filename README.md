@@ -2,6 +2,11 @@
 	<h1 align="center">Git Cheats • Interactive Git Cheatsheet</h1>
 </p>
 
+> **Warning**
+> This project has been integrated into a larger project called [Dev Cheats](https://github.com/excalith/dev-cheats), which includes expanded features and resources. As a result, this project will be archived soon. To continue accessing these resources and more, please update your bookmarks by visiting the [Dev Cheats - Git](https://dev-cheats.vercel.app/git) page. Thank you for your support!
+
+---
+
 <p align="center">
 Git Cheats is an intuitive and user-friendly interactive Git cheatsheet that provides a handy reference for developers to search and access commonly used Git commands quickly and efficiently.
 </p>
